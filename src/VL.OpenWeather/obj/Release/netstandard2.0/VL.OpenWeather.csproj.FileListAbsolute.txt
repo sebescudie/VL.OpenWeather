@@ -1,0 +1,8 @@
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\bin\Release\netstandard2.0\VL.OpenWeather.deps.json
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\bin\Release\netstandard2.0\VL.OpenWeather.dll
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\bin\Release\netstandard2.0\VL.OpenWeather.pdb
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\obj\Release\netstandard2.0\VL.OpenWeather.AssemblyInfoInputs.cache
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\obj\Release\netstandard2.0\VL.OpenWeather.AssemblyInfo.cs
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\obj\Release\netstandard2.0\VL.OpenWeather.csproj.CoreCompileInputs.cache
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\obj\Release\netstandard2.0\VL.OpenWeather.dll
+C:\Users\seb\Documents\dev\vvvv\libraries\VL.OpenWeather\src\VL.OpenWeather\obj\Release\netstandard2.0\VL.OpenWeather.pdb

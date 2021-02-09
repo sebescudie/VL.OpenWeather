@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.OpenWeather</id>
+    <version>1.0.0-preview01</version>
+    <title>VL.OpenWeather</title>
+    <authors>sebescudie</authors>
+    <owners>sebescudie</owners>
+    <projectUrl>https://github.com/sebescudie/VL.OpenWeather</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Retrieves weather data from OpenWeather's OneCall API</summary>
+    <description>Retrieves weather data from OpenWeather's OneCall API</description>
+    <copyright>Copyright © 2021 by Seb Escudie</copyright>
+    <tags>VL</tags>
+    <dependencies>
+      <dependency id="RestSharp" version="106.11.7" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\**\*.vl" target=""/>
+    <file src="..\src\VL.OpenWeather\bin\Release\netstandard2.0\VL.OpenWeather.dll" target="lib\netstandard2.0" exclude="" />
+  </files>
+</package>
