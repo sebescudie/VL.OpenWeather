@@ -15,6 +15,8 @@ Go to VL's command line and type
 nuget install VL.OpenWeather -pre
 ```
 
+Please note that this will only work with VL > 2020.3
+
 ## Prerequisites
 
 You'll need a free API key from OpenWeather to use this plugin. Check [this page](https://openweathermap.org/price) for more information.
