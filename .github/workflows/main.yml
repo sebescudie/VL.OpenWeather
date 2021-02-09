@@ -22,6 +22,6 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.29
       with:
-        csproj: src\VL.OpenWeather.csproj
+        csproj: src\VL.OpenWeather\VL.OpenWeather.csproj
         nuspec: deployment\VL.OpenWeather.nuspec
         nuget-key: ${{ secrets.NUGET_KEY }}

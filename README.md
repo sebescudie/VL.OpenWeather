@@ -1,5 +1,8 @@
 # VL.OpenWeather
 
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/VL.OpenWeather?style=flat-square)](https://www.nuget.org/packages/VL.OpenWeather/)
+
+
 Allows to retrieve results from OpenWeather's [OneCall](https://openweathermap.org/api/one-call-api) API. Only retrieves current weather and previsions for the next 60 minutes, 48 hours and 7 days, as well as weather alerts. Historical data from the last five days is not implemented yet.
 
 Works with OpenWeather's API v2.5 (`https://api.openweathermap.org/data/2.5/onecall`).
