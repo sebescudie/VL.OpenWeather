@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VERk8yIN3fSNQW8jZHvkbL" LanguageVersion="2021.3.0.56" Version="0.128">
-  <NugetDependency Id="RKvb0FyskEhO1GFRu1YC4n" Location="VL.CoreLib" Version="2021.3.0-0056-g18cf31e28e" />
+<Document xmlns:p="property" Id="VERk8yIN3fSNQW8jZHvkbL" LanguageVersion="2021.3.2.109" Version="0.128">
+  <NugetDependency Id="RKvb0FyskEhO1GFRu1YC4n" Location="VL.CoreLib" Version="2021.3.2" />
   <Patch Id="NMhQUsCN8yLNRhYJWP0f5c">
     <Canvas Id="ROjFlPijv4SPaUrmLUTYuF" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -45,11 +45,6 @@
             <Pin Id="Iy9REwG7f4yNG9bDTnBvfd" Name="Longitude" Kind="OutputPin" />
             <Pin Id="DUWpb9g3apHMdLc3bcBrgk" Name="Timezone" Kind="OutputPin" />
           </Node>
-          <Pad Id="Iv5CvBTUChULCgFGk3Mh44" Comment="API Key" Bounds="77,145,194,15" ShowValueBox="true" isIOBox="true" Value="">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="VAPtbZ3q9IeNMDKhz6Uw8V" Comment="Trigger" Bounds="258,308,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Boolean" />
@@ -59,12 +54,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RCBz6Z3HnjVLkhus4eUOz5" Comment="Latitude" Bounds="98,174,93,15" ShowValueBox="true" isIOBox="true" Value="48.85341">
+          <Pad Id="RCBz6Z3HnjVLkhus4eUOz5" Comment="Latitude" Bounds="98,249,67,13" ShowValueBox="true" isIOBox="true" Value="48.85341">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="V8C0sj1BSMsPfGTyCUoCfa" Comment="Longitude" Bounds="118,201,89,15" ShowValueBox="true" isIOBox="true" Value="2.3488">
+          <Pad Id="V8C0sj1BSMsPfGTyCUoCfa" Comment="Longitude" Bounds="118,276,63,13" ShowValueBox="true" isIOBox="true" Value="2.3488">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -204,6 +199,33 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="Qxl0XuhfTL1LS4e52fph0l" Name="" Bounds="60,713,388,131" />
+          <Node Bounds="76,198,63,19" Id="I082CnAKda5PIPzUfDPEIi">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="VL.CoreLib.IO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileReader (String)" />
+            </p:NodeReference>
+            <Pin Id="UfvfLP2Bv9TMfwrfPOnx4n" Name="File Path" Kind="InputPin" />
+            <Pin Id="PyHsbIB5U1WO0c9nLFa8t3" Name="Encoding" Kind="InputPin" />
+            <Pin Id="PsDOmliUUKuOt1LOODEblu" Name="Read" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Rw6IIdLGWEdNasvTssKat9" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="M5jQlAXeW2aLVNwU7aW2iq" Comment="File Path" Bounds="78,150,35,15" ShowValueBox="true" isIOBox="true" Value="key.txt">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="134,170,54,19" Id="PneWLT0GPr1PN8rh2R1ltn">
+            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+            </p:NodeReference>
+            <Pin Id="TwXrvHpbA6qPNUmFKaLwYv" Name="Simulate" Kind="InputPin" />
+            <Pin Id="IBekOi2oWOyQT8XnU1OQ9e" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="NlH8RE94ZAROz0zXuDVPsj" Name="Create" />
         <Patch Id="RibxWWdD7FvL7AQXuwPcaz" Name="Update" />
@@ -211,7 +233,6 @@
           <Fragment Id="R0XvOt371KXLSiPsV5tSuU" Patch="NlH8RE94ZAROz0zXuDVPsj" Enabled="true" />
           <Fragment Id="ELiOv8WT97DNbYAKzx8tU2" Patch="RibxWWdD7FvL7AQXuwPcaz" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="S6qDcijtO5yOeNoCDfUIHH" Ids="Iv5CvBTUChULCgFGk3Mh44,MUL8HrxfMbWQAxiyd8rIJ4" />
         <Link Id="FrqruRgkPmbPgsqD25is5r" Ids="VAPtbZ3q9IeNMDKhz6Uw8V,IuLsJEqdPKlLTwnpD0Txec" />
         <Link Id="PaPrZARqXSKLVmTwyJVLJE" Ids="RCBz6Z3HnjVLkhus4eUOz5,Kbsm1zMLOTzNq0TTwB0SLh" />
         <Link Id="RmZeVoXDmlfNhgPDTxKZor" Ids="V8C0sj1BSMsPfGTyCUoCfa,GfN19XzF9zMMhB6B8yubHz" />
@@ -230,10 +251,13 @@
         <Link Id="QQLQsWxkcXSM3ZdrlN15Ad" Ids="K7OmuiTbCfmM2UzM1hAucZ,LVyFjNRYd5SL5A3Dz6sBfB" />
         <Link Id="NmJEj3HxwkPMZ87nPN1HyX" Ids="SDO0KYYCZQPLpC7ZZZTJfq,OFxvS50FBupM2N3PihEdXp" />
         <Link Id="LxLEMBpYGGMPNcXIi7QcMA" Ids="MW1tKSIooK4NyE243O6uD4,NhbJRjXpj6rOXF7SdndBhW" />
+        <Link Id="UZ6baLbXUifMKCekxSQ805" Ids="M5jQlAXeW2aLVNwU7aW2iq,UfvfLP2Bv9TMfwrfPOnx4n" />
+        <Link Id="Ms8OEmr5d8jQNvLOOhsVaA" Ids="Rw6IIdLGWEdNasvTssKat9,MUL8HrxfMbWQAxiyd8rIJ4" />
+        <Link Id="AXVhmvznakWQCX2rTX3vwe" Ids="IBekOi2oWOyQT8XnU1OQ9e,PsDOmliUUKuOt1LOODEblu" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EcC5H8cGMDSQT5suTOi9D6" Location="VL.CoreLib" Version="2021.3.0-0056-g18cf31e28e" />
+  <NugetDependency Id="EcC5H8cGMDSQT5suTOi9D6" Location="VL.CoreLib" Version="2021.3.2" />
   <NugetDependency Id="F9eTlA89oQyPE6Padtr7Ye" Location="VL.OpenWeather" Version="0.0.0.0" />
   <NugetDependency Id="AKs4ThlRpd0OTlbD8eK9Bc" Location="VL.TeamCity.VVVV" Version="0.0.0.0" />
   <PlatformDependency Id="AyUUn7CwMZOPY3aLOaU2tm" Location="System" />
