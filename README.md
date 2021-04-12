@@ -21,4 +21,6 @@ You'll need a free API key from OpenWeather to use this plugin. Check [this page
 
 ## Getting Started
 
-Check the help browser, a help patch shows you how to make a call and retrieve weather data
+Check the help browser, a help patch shows you how to make a call and retrieve weather data, and a small example shows how you can build a basic weather app using this API
+
+![](/img/sunny.gif)
