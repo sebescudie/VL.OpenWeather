@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.OpenWeather</id>
-    <version>1.0.0-preview03</version>
+    <version>1.0.0-preview04</version>
     <title>VL.OpenWeather</title>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
@@ -19,6 +19,7 @@
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\**\*.vl" target=""/>
+    <file src="..\help\assets\**\*" target="..\help\assets" />
     <file src="..\src\VL.OpenWeather\bin\Release\netstandard2.0\VL.OpenWeather.dll" target="lib\netstandard2.0" exclude="" />
   </files>
 </package>
