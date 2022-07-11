@@ -245,16 +245,16 @@
             <Pin Id="BjuC4zuO963M2mmd5SGL03" Name="Wind Degree" Kind="OutputPin" Summary="Wind direction, degrees (meteorological)" />
             <Pin Id="E7Kzt0uU39fMGpCHcjhKol" Name="Weather" Kind="OutputPin" Summary="Weather data" />
           </Patch>
-          <Patch Id="UTJPyad4NNcNNoB4q3sQ5U" Summary="Provides minutely forecast for the next hour" Name="MinutelyReports">
+          <Patch Id="UTJPyad4NNcNNoB4q3sQ5U" Summary="Provides minutely forecast for the next hour" Name="MinuteForecast">
             <Pin Id="UoQ9PguUduzPsQ0NNVRwR9" Name="Minutely Reports" Kind="OutputPin" />
           </Patch>
-          <Patch Id="CWabzFvPNpNNNrcSk1T0vP" Summary="Provides hourly forecast for the next 48 hours" Name="HourlyReports">
+          <Patch Id="CWabzFvPNpNNNrcSk1T0vP" Summary="Provides hourly forecast for the next 48 hours" Name="HourlyForecast">
             <Pin Id="Fv8jWZDigkSMi8J6fxMLKi" Name="Hourly Reports" Kind="OutputPin" />
           </Patch>
-          <Patch Id="NonyTEntjOXOQKrdUDdvsM" Summary="Provides forecast for the next 8 days" Name="DailyReports">
+          <Patch Id="NonyTEntjOXOQKrdUDdvsM" Summary="Provides forecast for the next 8 days" Name="DailyForecast">
             <Pin Id="CZKLW0QSyGUPb7O7IbuBa8" Name="Daily Reports" Kind="OutputPin" />
           </Patch>
-          <Patch Id="DYcqBIurc16QNcQVLxFKkw" Summary="Provides national weather alerts" Name="Alerts">
+          <Patch Id="DYcqBIurc16QNcQVLxFKkw" Summary="Provides national weather alerts" Name="NationalAlerts">
             <Pin Id="R7O5DhYt96OPc9OND8lREz" Name="Alerts" Kind="OutputPin" />
           </Patch>
         </Patch>
