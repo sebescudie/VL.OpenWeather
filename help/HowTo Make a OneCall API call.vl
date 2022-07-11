@@ -29,21 +29,25 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="MqRGIqeNqSQM02SwnKj2WB" Name="Exclude Minutely Reports" Kind="InputPin" />
+            <Pin Id="IlL48EaQPF0OcidXo3b28U" Name="Exclude Minutely Reports" Kind="InputPin" />
             <Pin Id="Pg2J8n2G1GoNCn1Uh3QkwW" Name="Exclude Hourly Reports" Kind="InputPin" DefaultValue="False" />
             <Pin Id="BDOMKZGmBTcMWngmgVJL9d" Name="Exclude Daily Reports" Kind="InputPin" DefaultValue="False" />
-            <Pin Id="PkMFTxZqZrZLfXl103w0OL" Name="Exclude Alerts" Kind="InputPin" />
+            <Pin Id="OZC42zPQxMNQP6JwpevgYx" Name="Exclude Alerts" Kind="InputPin" />
             <Pin Id="Vr6u8YmKij3OK3cjaVeAi7" Name="Units" Kind="InputPin" DefaultValue="Metric">
               <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastSymbolSource="VL.OpenWeather.dll">
                 <Choice Kind="TypeFlag" Name="Units" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="IuLsJEqdPKlLTwnpD0Txec" Name="Execute" Kind="InputPin" />
-            <Pin Id="IGGGYrWrFfQNf0scibj6Td" Name="Value" Kind="OutputPin" />
-            <Pin Id="FyBTUkD62xzLAT7tKYaZjD" Name="On Data" Kind="OutputPin" />
-            <Pin Id="Ih274msk31zQS78Y8GhkXd" Name="Latitude" Kind="OutputPin" />
-            <Pin Id="Iy9REwG7f4yNG9bDTnBvfd" Name="Longitude" Kind="OutputPin" />
+            <Pin Id="IGGGYrWrFfQNf0scibj6Td" Name="Result" Kind="OutputPin" />
+            <Pin Id="RrwlLVkRPLJOFo1LdkPHxc" Name="On Success" Kind="OutputPin" />
+            <Pin Id="UYfyhrKCEX7MrQ5NKGJCmU" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="QqosbiXJDCbQDEF0nHPQTD" Name="On Error" Kind="OutputPin" />
+            <Pin Id="G8K73WNllnaLRjgb4CbIO1" Name="Latitude" Kind="OutputPin" />
+            <Pin Id="Qb9k6zKQODYLfEh120RaJY" Name="Longitude" Kind="OutputPin" />
             <Pin Id="DUWpb9g3apHMdLc3bcBrgk" Name="Timezone" Kind="OutputPin" />
+            <Pin Id="QLFXoLj7aFrNsWjSgC2phR" Name="Is Success" Kind="OutputPin" />
+            <Pin Id="Cw7ZDjvfRJFOz4XhKWuzAF" Name="Is Error" Kind="OutputPin" />
           </Node>
           <Pad Id="VAPtbZ3q9IeNMDKhz6Uw8V" Comment="Trigger" Bounds="258,308,39,20" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -64,8 +68,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="U4Hj9kGdVh4MvJCCV8mrj2" Comment="Timezone" Bounds="258,375,112,13" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="76,469,90,26" Id="REBrxxEXz3BL2eQhsT69bE">
+          <Node Bounds="684,516,90,26" Id="REBrxxEXz3BL2eQhsT69bE">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="MinuteForecast" />
@@ -74,7 +77,7 @@
             <Pin Id="CkhxKBaY4TGNOd5PlMpIo6" Name="Input" Kind="StateInputPin" />
             <Pin Id="UD6T9k2rbGfNxQCrEuSfLW" Name="Minutely Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,469,81,26" Id="Q9EWwDxR3d3LvucuWIqWAj">
+          <Node Bounds="941,516,84,26" Id="Q9EWwDxR3d3LvucuWIqWAj">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="HourlyForecast" />
@@ -83,7 +86,7 @@
             <Pin Id="CmwUCDaSdK6Ou6D3mm4gK7" Name="Input" Kind="StateInputPin" />
             <Pin Id="JMxhxo46p2eMd7Kiwshi7w" Name="Hourly Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="647,469,78,26" Id="NxI8PuTPGjAQcrucBTsvjg">
+          <Node Bounds="1239,516,78,26" Id="NxI8PuTPGjAQcrucBTsvjg">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="DailyForecast" />
@@ -92,7 +95,7 @@
             <Pin Id="F7j7ObUakGsPF2cfBYreoR" Name="Input" Kind="StateInputPin" />
             <Pin Id="LCGAsbI6L01Mmr2l6SFO1P" Name="Daily Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="478,469,78,26" Id="Ifjuj8vfKgrNoOrTTUQcof">
+          <Node Bounds="817,516,81,26" Id="Ifjuj8vfKgrNoOrTTUQcof">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="NationalAlerts" />
@@ -152,7 +155,7 @@
               <Choice Kind="TypeFlag" Name="Units" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1009,469,265,26" Id="DVuC8bVsNGNMSEeZabMdVJ">
+          <Node Bounds="76,506,265,26" Id="DVuC8bVsNGNMSEeZabMdVJ">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="OneCallResponse" />
@@ -174,7 +177,7 @@
             <Pin Id="P7mVocWpA6hPX3TEXCXVzV" Name="Wind Degree" Kind="OutputPin" />
             <Pin Id="IxEsDGL2moAMHxiWN546Nx" Name="Weather" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1269,512,65,26" Id="M47Co5FL68DPjlmCTAWmPj">
+          <Node Bounds="336,549,65,26" Id="M47Co5FL68DPjlmCTAWmPj">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.Weather" LastSymbolSource="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Weather" />
@@ -186,7 +189,7 @@
             <Pin Id="UytS4CKXHrcPZzDro8OUJG" Name="Description" Kind="OutputPin" />
             <Pin Id="JrRb4yakkpOPOMXH62ff8x" Name="Icon Name" Kind="OutputPin" />
           </Node>
-          <Node Bounds="76,512,52,19" Id="P9Tx2kX2kvbOz34cYpNuC5">
+          <Node Bounds="684,559,52,19" Id="P9Tx2kX2kvbOz34cYpNuC5">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -197,7 +200,7 @@
             <Pin Id="MkgYmCVbts3MdRGX32U3x2" Name="Index" Kind="InputPin" />
             <Pin Id="BIDTbWQgxUlQUKn1fiQueY" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="76,550,70,26" Id="TCtSaavNZptQNIfTSIUlH9">
+          <Node Bounds="684,597,70,26" Id="TCtSaavNZptQNIfTSIUlH9">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.MinutelyReport" LastSymbolSource="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MinutelyReport" />
@@ -207,7 +210,7 @@
             <Pin Id="RssDu9pr0xAPVjZOKb2p5S" Name="Datetime" Kind="OutputPin" />
             <Pin Id="PjDmAUtQSdiP1pZWGMTy5v" Name="Precipitation" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,512,52,19" Id="N8Zvx5rv5CKMF9bCORHa6q">
+          <Node Bounds="941,559,52,19" Id="N8Zvx5rv5CKMF9bCORHa6q">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -218,7 +221,7 @@
             <Pin Id="SoeZHP6Y3JBPIEloUAsZjd" Name="Index" Kind="InputPin" />
             <Pin Id="Fhd5WjyXfsUM6Jl1d0fypw" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,550,265,26" Id="ELHM2hXjXd0O6BSWdjmDtY">
+          <Node Bounds="941,597,265,26" Id="ELHM2hXjXd0O6BSWdjmDtY">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.HourlyReport" LastSymbolSource="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="HourlyReport" />
@@ -240,7 +243,7 @@
             <Pin Id="EHDUmJe6ZamNstimVZ0BRs" Name="Weather" Kind="OutputPin" />
             <Pin Id="HiLl8r53ySyMHsogczcYNj" Name="Pop" Kind="OutputPin" />
           </Node>
-          <Node Bounds="478,512,52,19" Id="RIycPIw7xKsPKR3H1zcBNp">
+          <Node Bounds="817,559,52,19" Id="RIycPIw7xKsPKR3H1zcBNp">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -251,7 +254,7 @@
             <Pin Id="CQnEj5TAjUPQOAkRWE0dPH" Name="Index" Kind="InputPin" />
             <Pin Id="J0WwC9AS61yOkJsoy51Hym" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="478,550,85,26" Id="KpCLcoiI0AQPYmUcR638KY">
+          <Node Bounds="817,597,85,26" Id="KpCLcoiI0AQPYmUcR638KY">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.Alert" LastSymbolSource="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Alert" />
@@ -264,7 +267,7 @@
             <Pin Id="TZWD8V9mYJ0PHF0yJ9eNP3" Name="End" Kind="OutputPin" />
             <Pin Id="UwJ09f8yshJNfrxbXXwZ1G" Name="Description" Kind="OutputPin" />
           </Node>
-          <Node Bounds="647,513,52,19" Id="TFryvfRcEdfONu2lZobJkE">
+          <Node Bounds="1239,559,52,19" Id="TFryvfRcEdfONu2lZobJkE">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -275,7 +278,7 @@
             <Pin Id="GzNFsoOrGdiMdHCqe1IJCl" Name="Index" Kind="InputPin" />
             <Pin Id="FkuYmhAbg6xLx0UkldCRHB" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="647,555,345,26" Id="LL8ossw2lo4PYrSMCtlkKa">
+          <Node Bounds="1239,597,345,26" Id="LL8ossw2lo4PYrSMCtlkKa">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.DailyReport" LastSymbolSource="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="DailyReport" />
@@ -301,6 +304,9 @@
             <Pin Id="On7YuEi3hBeOJAF2XkkFIq" Name="Pop" Kind="OutputPin" />
             <Pin Id="PV9pzTJ4FSrLOScomPTqjN" Name="UV Index" Kind="OutputPin" />
           </Node>
+          <Overlay Id="Vs384v9UFDlOG1tMvoTXzo" Name="Forecast data" Bounds="659,423,953,238" />
+          <Pad Id="OlIHtChVkLmNaBL3MUtRDz" Comment="Is Success" Bounds="236,390,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MYRCGRTNHQgLzpQbb3PrJ2" Comment="Is Error" Bounds="258,367,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="NlH8RE94ZAROz0zXuDVPsj" Name="Create" />
         <Patch Id="RibxWWdD7FvL7AQXuwPcaz" Name="Update" />
@@ -311,7 +317,6 @@
         <Link Id="FrqruRgkPmbPgsqD25is5r" Ids="VAPtbZ3q9IeNMDKhz6Uw8V,IuLsJEqdPKlLTwnpD0Txec" />
         <Link Id="PaPrZARqXSKLVmTwyJVLJE" Ids="RCBz6Z3HnjVLkhus4eUOz5,Kbsm1zMLOTzNq0TTwB0SLh" />
         <Link Id="RmZeVoXDmlfNhgPDTxKZor" Ids="V8C0sj1BSMsPfGTyCUoCfa,GfN19XzF9zMMhB6B8yubHz" />
-        <Link Id="BZswl3bg6JdP3aI9UFSv0s" Ids="DUWpb9g3apHMdLc3bcBrgk,U4Hj9kGdVh4MvJCCV8mrj2" />
         <Link Id="If5yT8tpJR5MUipMx5k9l8" Ids="IGGGYrWrFfQNf0scibj6Td,CkhxKBaY4TGNOd5PlMpIo6" />
         <Link Id="MGjbUFw4YTrOzlC0sEttWm" Ids="IGGGYrWrFfQNf0scibj6Td,CmwUCDaSdK6Ou6D3mm4gK7" />
         <Link Id="DUPU2Mc4NpsQKPuM8aoFM4" Ids="IGGGYrWrFfQNf0scibj6Td,F7j7ObUakGsPF2cfBYreoR" />
@@ -330,6 +335,8 @@
         <Link Id="GBRjDXeaXWqP3pSju4o8Fc" Ids="J0WwC9AS61yOkJsoy51Hym,LauQwXRb3txORlhnEWWdZX" />
         <Link Id="LF9Jr9v4UI7Mz0nOkdkS0g" Ids="LCGAsbI6L01Mmr2l6SFO1P,AevRESekvfHO2vOUWwweFO" />
         <Link Id="LHvaUR5JjvyLVrmaT7zwZV" Ids="FkuYmhAbg6xLx0UkldCRHB,GWIuRNqifjiLKijSqYGO2u" />
+        <Link Id="OHaiSc5ADfvLk6qDc9jqQu" Ids="QLFXoLj7aFrNsWjSgC2phR,OlIHtChVkLmNaBL3MUtRDz" />
+        <Link Id="CVd9CggRCcCPAel9hRszkD" Ids="Cw7ZDjvfRJFOz4XhKWuzAF,MYRCGRTNHQgLzpQbb3PrJ2" />
       </Patch>
     </Node>
   </Patch>
