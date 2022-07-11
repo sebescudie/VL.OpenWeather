@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VERk8yIN3fSNQW8jZHvkbL" LanguageVersion="2021.3.2.109" Version="0.128">
-  <NugetDependency Id="RKvb0FyskEhO1GFRu1YC4n" Location="VL.CoreLib" Version="2021.3.2" />
+<Document xmlns:p="property" Id="VERk8yIN3fSNQW8jZHvkbL" LanguageVersion="2021.4.10.1018" Version="0.128">
+  <NugetDependency Id="RKvb0FyskEhO1GFRu1YC4n" Location="VL.CoreLib" Version="2021.4.10-1018-g933c4b477f" />
   <Patch Id="NMhQUsCN8yLNRhYJWP0f5c">
     <Canvas Id="ROjFlPijv4SPaUrmLUTYuF" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -30,8 +30,8 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="MqRGIqeNqSQM02SwnKj2WB" Name="Exclude Minutely Reports" Kind="InputPin" />
-            <Pin Id="Pg2J8n2G1GoNCn1Uh3QkwW" Name="Exclude Hourly Reports" Kind="InputPin" />
-            <Pin Id="BDOMKZGmBTcMWngmgVJL9d" Name="Exclude Daily Reports" Kind="InputPin" />
+            <Pin Id="Pg2J8n2G1GoNCn1Uh3QkwW" Name="Exclude Hourly Reports" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="BDOMKZGmBTcMWngmgVJL9d" Name="Exclude Daily Reports" Kind="InputPin" DefaultValue="False" />
             <Pin Id="PkMFTxZqZrZLfXl103w0OL" Name="Exclude Alerts" Kind="InputPin" />
             <Pin Id="Vr6u8YmKij3OK3cjaVeAi7" Name="Units" Kind="InputPin" DefaultValue="Metric">
               <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastSymbolSource="VL.OpenWeather.dll">
@@ -45,7 +45,7 @@
             <Pin Id="Iy9REwG7f4yNG9bDTnBvfd" Name="Longitude" Kind="OutputPin" />
             <Pin Id="DUWpb9g3apHMdLc3bcBrgk" Name="Timezone" Kind="OutputPin" />
           </Node>
-          <Pad Id="VAPtbZ3q9IeNMDKhz6Uw8V" Comment="Trigger" Bounds="258,308,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VAPtbZ3q9IeNMDKhz6Uw8V" Comment="Trigger" Bounds="258,308,39,20" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -54,132 +54,53 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RCBz6Z3HnjVLkhus4eUOz5" Comment="Latitude" Bounds="98,249,67,13" ShowValueBox="true" isIOBox="true" Value="48.85341">
+          <Pad Id="RCBz6Z3HnjVLkhus4eUOz5" Comment="Latitude" Bounds="98,212,67,15" ShowValueBox="true" isIOBox="true" Value="48.85341">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="V8C0sj1BSMsPfGTyCUoCfa" Comment="Longitude" Bounds="118,276,63,13" ShowValueBox="true" isIOBox="true" Value="2.3488">
+          <Pad Id="V8C0sj1BSMsPfGTyCUoCfa" Comment="Longitude" Bounds="118,236,63,15" ShowValueBox="true" isIOBox="true" Value="2.3488">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="U4Hj9kGdVh4MvJCCV8mrj2" Comment="Timezone" Bounds="258,375,99,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="76,511,265,26" Id="NHb5eaeRdoINeJovM4LH3H">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
+          <Pad Id="U4Hj9kGdVh4MvJCCV8mrj2" Comment="Timezone" Bounds="258,375,112,13" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="76,469,90,26" Id="REBrxxEXz3BL2eQhsT69bE">
+            <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="CurrentWeather" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="MX9GbmiD6uyO6arzNdqIpy" Name="Input" Kind="StateInputPin" />
-            <Pin Id="JjAOFGjTV1LPbvBVlVAZsp" Name="Datetime" Kind="OutputPin" />
-            <Pin Id="Uun5nfgISxAM6ngySnMbaM" Name="Sunrise" Kind="OutputPin" />
-            <Pin Id="DRB6EXo4HeDQKHzuTsFinn" Name="Sunset" Kind="OutputPin" />
-            <Pin Id="QNIqHEXKhqyMWKQr0TicDl" Name="Temperature" Kind="OutputPin" />
-            <Pin Id="KkAFAIpvyoxOQzgD0ZjpHl" Name="Feels Like" Kind="OutputPin" />
-            <Pin Id="CVTVrCjUciFNC0SQoyvRIC" Name="Pressure" Kind="OutputPin" />
-            <Pin Id="Pe9QkhTu5TmOyRNjASexfe" Name="Humidity" Kind="OutputPin" />
-            <Pin Id="Cpb9cCdsmg5LeSvG4ZtMSF" Name="Dew Point" Kind="OutputPin" />
-            <Pin Id="LcwdmaP3EJKLB9f6UvJz22" Name="UV Index" Kind="OutputPin" />
-            <Pin Id="BB2lJNuNtc4NLLVr66SoG9" Name="Clouds" Kind="OutputPin" />
-            <Pin Id="EXLghP3B7jYMqmweqqGaU9" Name="Visibility" Kind="OutputPin" />
-            <Pin Id="OSAnRRBmWF1QFk0Y31xmfd" Name="Wind Speed" Kind="OutputPin" />
-            <Pin Id="GXsYsNve3ldM8fudxUsz17" Name="Wind Degree" Kind="OutputPin" />
-            <Pin Id="Ir6Rbr1plHbQHErMx25R62" Name="Weather" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="410,511,90,26" Id="REBrxxEXz3BL2eQhsT69bE">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="MinutelyReports" />
+              <Choice Kind="OperationCallFlag" Name="MinuteForecast" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="CkhxKBaY4TGNOd5PlMpIo6" Name="Input" Kind="StateInputPin" />
             <Pin Id="UD6T9k2rbGfNxQCrEuSfLW" Name="Minutely Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="524,511,81,26" Id="Q9EWwDxR3d3LvucuWIqWAj">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
+          <Node Bounds="184,469,81,26" Id="Q9EWwDxR3d3LvucuWIqWAj">
+            <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="HourlyReports" />
+              <Choice Kind="OperationCallFlag" Name="HourlyForecast" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="CmwUCDaSdK6Ou6D3mm4gK7" Name="Input" Kind="StateInputPin" />
             <Pin Id="JMxhxo46p2eMd7Kiwshi7w" Name="Hourly Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="629,511,78,26" Id="NxI8PuTPGjAQcrucBTsvjg">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
+          <Node Bounds="647,469,78,26" Id="NxI8PuTPGjAQcrucBTsvjg">
+            <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="DailyReports" />
+              <Choice Kind="OperationCallFlag" Name="DailyForecast" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="F7j7ObUakGsPF2cfBYreoR" Name="Input" Kind="StateInputPin" />
             <Pin Id="LCGAsbI6L01Mmr2l6SFO1P" Name="Daily Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="727,511,78,26" Id="Ifjuj8vfKgrNoOrTTUQcof">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
+          <Node Bounds="478,469,78,26" Id="Ifjuj8vfKgrNoOrTTUQcof">
+            <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Alerts" />
+              <Choice Kind="OperationCallFlag" Name="NationalAlerts" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="EBT6X6yvme9L0vGbu1lbc3" Name="Input" Kind="StateInputPin" />
             <Pin Id="EueWoOdjsXUMNzZBTsrpDM" Name="Alerts" Kind="OutputPin" />
           </Node>
-          <Pad Id="Lh6HoDrvcSqLBbLWl7NzJE" Comment="Temperature" Bounds="138,558,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BToNUd9YMI2QXJejPpdfN3" Comment="Sunset" Bounds="118,590,148,62" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="629,581,52,26" Id="MIh6VMUFXdKQQt3v9w368b">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="GetSlice" />
-              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="J1iyMSLHUDCMVumjXoLmfV" Name="Input" Kind="StateInputPin" />
-            <Pin Id="SfSQc2Rv2KpOR9JRmt8D3j" Name="Default Value" Kind="InputPin" />
-            <Pin Id="U66c49UwdwMOwijXzqt9Ao" Name="Index" Kind="InputPin" />
-            <Pin Id="E9y4CLQMMqtO2ZLiYgQUFa" Name="Result" Kind="OutputPin" />
-          </Node>
-          <Pad Id="OXZ0rJErMbCPmec8Vn6AJG" Comment="Index" Bounds="686,560,35,15" ShowValueBox="true" isIOBox="true" Value="2">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="629,645,265,26" Id="IvUtrQIzOQKPPfMyNMACLN">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.DailyReport" LastSymbolSource="VL.OpenWeather.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="DailyReport" />
-              <Choice Kind="OperationCallFlag" Name="Split" />
-            </p:NodeReference>
-            <Pin Id="KteLEvytPblQL6crRlU6pS" Name="Input" Kind="StateInputPin" />
-            <Pin Id="RPNknlrTKQMM0oMz1BianH" Name="Datetime" Kind="OutputPin" />
-            <Pin Id="HdBdYBaV3tmPoWrB7rBjhq" Name="Sunrise" Kind="OutputPin" />
-            <Pin Id="TUmdNIMyxKoMwwVXtZZ8gV" Name="Sunset" Kind="OutputPin" />
-            <Pin Id="UrsvqiwGEwIOSX774FRaLo" Name="Temperature" Kind="OutputPin" />
-            <Pin Id="P3nWE0UWnGtLy8lS52hGSk" Name="Feels Like" Kind="OutputPin" />
-            <Pin Id="ELf0admpIdpMdmc5nmHseZ" Name="Pressure" Kind="OutputPin" />
-            <Pin Id="Ujgx8xrdlSwQSLtjPB5MF8" Name="Humidity" Kind="OutputPin" />
-            <Pin Id="Ckq8wPtgiwrMKwFoJ3pZcg" Name="Dew Point" Kind="OutputPin" />
-            <Pin Id="JQD0I3EyOqWMyAuHnEsfdD" Name="Wind Speed" Kind="OutputPin" />
-            <Pin Id="QbDMvyOCwNUNetv7F4ape6" Name="Wind Degree" Kind="OutputPin" />
-            <Pin Id="M0zBHrIW2b8OuM0r5WlqLp" Name="Weather" Kind="OutputPin" />
-            <Pin Id="HMR1rIER8N1QNfgApI1Fvu" Name="Clouds" Kind="OutputPin" />
-            <Pin Id="KZdmmlAYYPqMIsdPTUhoNB" Name="Pop" Kind="OutputPin" />
-            <Pin Id="D4ROZ101fvyOGZXdgEpvNF" Name="UV Index" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="689,699,105,26" Id="M1c2lCoHh3oPDsAzlvP0ZM">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.Temperature" LastSymbolSource="VL.OpenWeather.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Temperature" />
-              <Choice Kind="OperationCallFlag" Name="Split" />
-            </p:NodeReference>
-            <Pin Id="Ri2wFuxXXAVQNf1z90NydF" Name="Input" Kind="StateInputPin" />
-            <Pin Id="K7OmuiTbCfmM2UzM1hAucZ" Name="Day" Kind="OutputPin" />
-            <Pin Id="SDO0KYYCZQPLpC7ZZZTJfq" Name="Minimum" Kind="OutputPin" />
-            <Pin Id="MW1tKSIooK4NyE243O6uD4" Name="Maximum" Kind="OutputPin" />
-            <Pin Id="FHQCtEgBVZvOPUv2NTjblD" Name="Night" Kind="OutputPin" />
-            <Pin Id="RJhZwVBCwPINjV211LK9OF" Name="Evening" Kind="OutputPin" />
-            <Pin Id="DPQuhYYxJk7Pw3kWER96hb" Name="Morning" Kind="OutputPin" />
-          </Node>
-          <Pad Id="LVyFjNRYd5SL5A3Dz6sBfB" Comment="Day" Bounds="691,743,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="OFxvS50FBupM2N3PihEdXp" Comment="Minimum" Bounds="711,764,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NhbJRjXpj6rOXF7SdndBhW" Comment="Maximum" Bounds="730,787,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Ju8E37GZp4VOrObFmep2xN" Bounds="97,754,306,44" ShowValueBox="true" isIOBox="true" Value="For more information on the results provided by the API, check OpenWeather's documentation">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -199,7 +120,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="Qxl0XuhfTL1LS4e52fph0l" Name="" Bounds="60,713,388,131" />
-          <Node Bounds="76,198,63,19" Id="I082CnAKda5PIPzUfDPEIi">
+          <Node Bounds="75,169,63,19" Id="I082CnAKda5PIPzUfDPEIi">
             <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="VL.CoreLib.IO.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FileReader (String)" />
@@ -213,18 +134,172 @@
             </Pin>
             <Pin Id="Rw6IIdLGWEdNasvTssKat9" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="M5jQlAXeW2aLVNwU7aW2iq" Comment="File Path" Bounds="78,150,35,15" ShowValueBox="true" isIOBox="true" Value="key.txt">
+          <Pad Id="M5jQlAXeW2aLVNwU7aW2iq" Comment="File Path" Bounds="77,121,35,15" ShowValueBox="true" isIOBox="true" Value="key.txt">
             <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="134,170,54,19" Id="PneWLT0GPr1PN8rh2R1ltn">
+          <Node Bounds="133,141,54,19" Id="PneWLT0GPr1PN8rh2R1ltn">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
             </p:NodeReference>
-            <Pin Id="TwXrvHpbA6qPNUmFKaLwYv" Name="Simulate" Kind="InputPin" />
+            <Pin Id="TwXrvHpbA6qPNUmFKaLwYv" Name="Simulate" Kind="InputPin" DefaultValue="False" />
             <Pin Id="IBekOi2oWOyQT8XnU1OQ9e" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MqlAoNp22NPPKr6rOADaXv" Comment="Units" Bounds="238,286,69,15" ShowValueBox="true" isIOBox="true" Value="Metric">
+            <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastSymbolSource="VL.OpenWeather.dll">
+              <Choice Kind="TypeFlag" Name="Units" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1009,469,265,26" Id="DVuC8bVsNGNMSEeZabMdVJ">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCallResponse" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="OneCallResponse" />
+              <Choice Kind="OperationCallFlag" Name="CurrentWeather" />
+            </p:NodeReference>
+            <Pin Id="RM9J12QCeo3LLMdYgegblD" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Tj2hgKy0bVBOMQRE50cIRJ" Name="Datetime" Kind="OutputPin" />
+            <Pin Id="NpKCiPEFrMBPhqff6pHicL" Name="Sunrise" Kind="OutputPin" />
+            <Pin Id="BvkOehddymAQRNUQXSDOrh" Name="Sunset" Kind="OutputPin" />
+            <Pin Id="BtH3gj4KPj7ONxRhsudtCe" Name="Temperature" Kind="OutputPin" />
+            <Pin Id="UwvniSqu7q4OM3hXYxFUH1" Name="Feels Like" Kind="OutputPin" />
+            <Pin Id="HpJogslrfiRNdtDQtOoiMt" Name="Pressure" Kind="OutputPin" />
+            <Pin Id="RjOlvfsWAgVQbMzhMBDYWC" Name="Humidity" Kind="OutputPin" />
+            <Pin Id="H8UcfM9giXXNww5778sCTm" Name="Dew Point" Kind="OutputPin" />
+            <Pin Id="PetalIr81JyNnO2Xgz5kqB" Name="UV Index" Kind="OutputPin" />
+            <Pin Id="OXamh75WqUKNPsXXLCXkoB" Name="Clouds" Kind="OutputPin" />
+            <Pin Id="SJyGAvEIPH4N3rkjyQHTf0" Name="Visibility" Kind="OutputPin" />
+            <Pin Id="OSzaYkjrBMKMf4KzxKIafr" Name="Wind Speed" Kind="OutputPin" />
+            <Pin Id="P7mVocWpA6hPX3TEXCXVzV" Name="Wind Degree" Kind="OutputPin" />
+            <Pin Id="IxEsDGL2moAMHxiWN546Nx" Name="Weather" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1269,512,65,26" Id="M47Co5FL68DPjlmCTAWmPj">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.Weather" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Weather" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="N2XuKGbPon9Me5NPhIUWih" Name="Input" Kind="StateInputPin" />
+            <Pin Id="QXoCrlZTeDAMdEQR6BSBcO" Name="Id" Kind="OutputPin" />
+            <Pin Id="LhhmvU5moAMLy5VGRvt9J5" Name="Main" Kind="OutputPin" />
+            <Pin Id="UytS4CKXHrcPZzDro8OUJG" Name="Description" Kind="OutputPin" />
+            <Pin Id="JrRb4yakkpOPOMXH62ff8x" Name="Icon Name" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="76,512,52,19" Id="P9Tx2kX2kvbOz34cYpNuC5">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="Kcftf5gxjM2Oo2MGsc1Osg" Name="Input" Kind="StateInputPin" />
+            <Pin Id="EK7KMUJvKCQQU46780Vfk7" Name="Default Value" Kind="InputPin" />
+            <Pin Id="MkgYmCVbts3MdRGX32U3x2" Name="Index" Kind="InputPin" />
+            <Pin Id="BIDTbWQgxUlQUKn1fiQueY" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="76,550,70,26" Id="TCtSaavNZptQNIfTSIUlH9">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.MinutelyReport" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="MinutelyReport" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="P0LrtqtW6sdNERL0yws1Sr" Name="Input" Kind="StateInputPin" />
+            <Pin Id="RssDu9pr0xAPVjZOKb2p5S" Name="Datetime" Kind="OutputPin" />
+            <Pin Id="PjDmAUtQSdiP1pZWGMTy5v" Name="Precipitation" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="184,512,52,19" Id="N8Zvx5rv5CKMF9bCORHa6q">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="KSlh1KZpb6ILo1S6tMyXTz" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VYZn4AVWjfTLeuKLJoNU9L" Name="Default Value" Kind="InputPin" />
+            <Pin Id="SoeZHP6Y3JBPIEloUAsZjd" Name="Index" Kind="InputPin" />
+            <Pin Id="Fhd5WjyXfsUM6Jl1d0fypw" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="184,550,265,26" Id="ELHM2hXjXd0O6BSWdjmDtY">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.HourlyReport" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="HourlyReport" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="LvpzbpDSnMEPYnYDUn4uVF" Name="Input" Kind="StateInputPin" />
+            <Pin Id="NxMZ7tuYyPbMgoddNwZqTA" Name="Datetime" Kind="OutputPin" />
+            <Pin Id="I7x3mXrkvDaOJvY9USi4rc" Name="Temperature" Kind="OutputPin" />
+            <Pin Id="AezUrxlUBxbLAFdqakPEKd" Name="Feels Like" Kind="OutputPin" />
+            <Pin Id="EnFdshnFysvNfOSJyL7y7X" Name="Pressure" Kind="OutputPin" />
+            <Pin Id="OHU3vmrjAyaNkVu9t6cIco" Name="Humidity" Kind="OutputPin" />
+            <Pin Id="QGaY5AR7Mn1MO1KKu9m5H1" Name="Dew Point" Kind="OutputPin" />
+            <Pin Id="A8TYCOtfJGVPgQeCkewJ9a" Name="UV Index" Kind="OutputPin" />
+            <Pin Id="QwZwOdPfcELMJ6Sq0Npm1j" Name="Clouds" Kind="OutputPin" />
+            <Pin Id="JsY3JnJmF5oL6DZwwiI6Da" Name="Visibility" Kind="OutputPin" />
+            <Pin Id="Od520HRG3BsMM5LHmmpZhJ" Name="Wind Speed" Kind="OutputPin" />
+            <Pin Id="PCyIfKfVZIxPeRXQu2AVCd" Name="Wind Degree" Kind="OutputPin" />
+            <Pin Id="KFvLdEPceKVPozs26LbOYS" Name="Wind Gust" Kind="OutputPin" />
+            <Pin Id="EHDUmJe6ZamNstimVZ0BRs" Name="Weather" Kind="OutputPin" />
+            <Pin Id="HiLl8r53ySyMHsogczcYNj" Name="Pop" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="478,512,52,19" Id="RIycPIw7xKsPKR3H1zcBNp">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="HCJuvkSAOjzO5YmpLnLZmh" Name="Input" Kind="StateInputPin" />
+            <Pin Id="GogxvoK4At6PSLJd6EcDTL" Name="Default Value" Kind="InputPin" />
+            <Pin Id="CQnEj5TAjUPQOAkRWE0dPH" Name="Index" Kind="InputPin" />
+            <Pin Id="J0WwC9AS61yOkJsoy51Hym" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="478,550,85,26" Id="KpCLcoiI0AQPYmUcR638KY">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.Alert" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Alert" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="LauQwXRb3txORlhnEWWdZX" Name="Input" Kind="StateInputPin" />
+            <Pin Id="F6w7atgRE3RN6onTGiddhx" Name="Sender Name" Kind="OutputPin" />
+            <Pin Id="FshFlisSR7RPIxqhR8TODJ" Name="Event" Kind="OutputPin" />
+            <Pin Id="AIwiSi3GbJqMzbxpV4LKai" Name="Start" Kind="OutputPin" />
+            <Pin Id="TZWD8V9mYJ0PHF0yJ9eNP3" Name="End" Kind="OutputPin" />
+            <Pin Id="UwJ09f8yshJNfrxbXXwZ1G" Name="Description" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="647,513,52,19" Id="TFryvfRcEdfONu2lZobJkE">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="AevRESekvfHO2vOUWwweFO" Name="Input" Kind="StateInputPin" />
+            <Pin Id="NOjF3OubX3WNhtNGZnjHN0" Name="Default Value" Kind="InputPin" />
+            <Pin Id="GzNFsoOrGdiMdHCqe1IJCl" Name="Index" Kind="InputPin" />
+            <Pin Id="FkuYmhAbg6xLx0UkldCRHB" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="647,555,345,26" Id="LL8ossw2lo4PYrSMCtlkKa">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.DailyReport" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="DailyReport" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="GWIuRNqifjiLKijSqYGO2u" Name="Input" Kind="StateInputPin" />
+            <Pin Id="G8ovJczESsCN6V7i5WzIJK" Name="Datetime" Kind="OutputPin" />
+            <Pin Id="VvRSsXbiIBqMrKztsHCGii" Name="Sunrise" Kind="OutputPin" />
+            <Pin Id="RFlYuJiG26VPwybDRsfBOV" Name="Sunset" Kind="OutputPin" />
+            <Pin Id="B4gs2cr8j9fMmfm8TeUMfZ" Name="Moon Phase" Kind="OutputPin" />
+            <Pin Id="GTmD2nAfcfrP2UabyFC2vx" Name="Moon Rise" Kind="OutputPin" />
+            <Pin Id="HzOryRETqARLLJ1elEVcTQ" Name="Moon Set" Kind="OutputPin" />
+            <Pin Id="DDTYBcQD30vLHPAZ05jnT4" Name="Temperature" Kind="OutputPin" />
+            <Pin Id="MLCdywhD03yPQlv0G7NhAq" Name="Feels Like" Kind="OutputPin" />
+            <Pin Id="TEwAekLXwCSP2vLPLgJsm9" Name="Pressure" Kind="OutputPin" />
+            <Pin Id="D8f5krrVWkTLOXJVg3g2F8" Name="Humidity" Kind="OutputPin" />
+            <Pin Id="CMeRlUwouvtPTCEQ1UTeTh" Name="Dew Point" Kind="OutputPin" />
+            <Pin Id="CsyMfOEKccdM43PXAHsBCl" Name="Wind Speed" Kind="OutputPin" />
+            <Pin Id="R9USZeQO960PZ0s03sBjlh" Name="Wind Degree" Kind="OutputPin" />
+            <Pin Id="GCE8q6yXw9fLb4gNzbqa4Y" Name="Wind Gust" Kind="OutputPin" />
+            <Pin Id="Iw52mtHxN65QLsBBdixhZG" Name="Weather" Kind="OutputPin" />
+            <Pin Id="NO66p6m0Aa8QRdNdo2kVrx" Name="Clouds" Kind="OutputPin" />
+            <Pin Id="On7YuEi3hBeOJAF2XkkFIq" Name="Pop" Kind="OutputPin" />
+            <Pin Id="PV9pzTJ4FSrLOScomPTqjN" Name="UV Index" Kind="OutputPin" />
           </Node>
         </Canvas>
         <Patch Id="NlH8RE94ZAROz0zXuDVPsj" Name="Create" />
@@ -237,27 +312,28 @@
         <Link Id="PaPrZARqXSKLVmTwyJVLJE" Ids="RCBz6Z3HnjVLkhus4eUOz5,Kbsm1zMLOTzNq0TTwB0SLh" />
         <Link Id="RmZeVoXDmlfNhgPDTxKZor" Ids="V8C0sj1BSMsPfGTyCUoCfa,GfN19XzF9zMMhB6B8yubHz" />
         <Link Id="BZswl3bg6JdP3aI9UFSv0s" Ids="DUWpb9g3apHMdLc3bcBrgk,U4Hj9kGdVh4MvJCCV8mrj2" />
-        <Link Id="OkTbthj5hPbMDAvYX783p3" Ids="IGGGYrWrFfQNf0scibj6Td,MX9GbmiD6uyO6arzNdqIpy" />
         <Link Id="If5yT8tpJR5MUipMx5k9l8" Ids="IGGGYrWrFfQNf0scibj6Td,CkhxKBaY4TGNOd5PlMpIo6" />
         <Link Id="MGjbUFw4YTrOzlC0sEttWm" Ids="IGGGYrWrFfQNf0scibj6Td,CmwUCDaSdK6Ou6D3mm4gK7" />
         <Link Id="DUPU2Mc4NpsQKPuM8aoFM4" Ids="IGGGYrWrFfQNf0scibj6Td,F7j7ObUakGsPF2cfBYreoR" />
         <Link Id="SHyT0HOM5mNOeuStLiUso7" Ids="IGGGYrWrFfQNf0scibj6Td,EBT6X6yvme9L0vGbu1lbc3" />
-        <Link Id="Ouhpqp7xnjkOLVoIUW1aga" Ids="QNIqHEXKhqyMWKQr0TicDl,Lh6HoDrvcSqLBbLWl7NzJE" />
-        <Link Id="QFdYiS8R1pVM5KhMjTJS8U" Ids="DRB6EXo4HeDQKHzuTsFinn,BToNUd9YMI2QXJejPpdfN3" />
-        <Link Id="GZAVlps0YuFL780PFYThep" Ids="LCGAsbI6L01Mmr2l6SFO1P,J1iyMSLHUDCMVumjXoLmfV" />
-        <Link Id="BCGvH3m1kfWMpgos7jRndt" Ids="OXZ0rJErMbCPmec8Vn6AJG,U66c49UwdwMOwijXzqt9Ao" />
-        <Link Id="GhYK4AAqLOIOpLYPyqFb8O" Ids="E9y4CLQMMqtO2ZLiYgQUFa,KteLEvytPblQL6crRlU6pS" />
-        <Link Id="QurA7qi0MEbQMvmqWNbtSp" Ids="UrsvqiwGEwIOSX774FRaLo,Ri2wFuxXXAVQNf1z90NydF" />
-        <Link Id="QQLQsWxkcXSM3ZdrlN15Ad" Ids="K7OmuiTbCfmM2UzM1hAucZ,LVyFjNRYd5SL5A3Dz6sBfB" />
-        <Link Id="NmJEj3HxwkPMZ87nPN1HyX" Ids="SDO0KYYCZQPLpC7ZZZTJfq,OFxvS50FBupM2N3PihEdXp" />
-        <Link Id="LxLEMBpYGGMPNcXIi7QcMA" Ids="MW1tKSIooK4NyE243O6uD4,NhbJRjXpj6rOXF7SdndBhW" />
         <Link Id="UZ6baLbXUifMKCekxSQ805" Ids="M5jQlAXeW2aLVNwU7aW2iq,UfvfLP2Bv9TMfwrfPOnx4n" />
-        <Link Id="Ms8OEmr5d8jQNvLOOhsVaA" Ids="Rw6IIdLGWEdNasvTssKat9,MUL8HrxfMbWQAxiyd8rIJ4" />
         <Link Id="AXVhmvznakWQCX2rTX3vwe" Ids="IBekOi2oWOyQT8XnU1OQ9e,PsDOmliUUKuOt1LOODEblu" />
+        <Link Id="NpDXPnJHjY1PRCel5mHqRz" Ids="MqlAoNp22NPPKr6rOADaXv,Vr6u8YmKij3OK3cjaVeAi7" />
+        <Link Id="TdysudrNClpLttkOb6p5C4" Ids="IGGGYrWrFfQNf0scibj6Td,RM9J12QCeo3LLMdYgegblD" />
+        <Link Id="TpFyoEzTyFwPYvqDnO1rjZ" Ids="Rw6IIdLGWEdNasvTssKat9,MUL8HrxfMbWQAxiyd8rIJ4" />
+        <Link Id="FZ8GzHTymqAMonpVN98i5C" Ids="IxEsDGL2moAMHxiWN546Nx,N2XuKGbPon9Me5NPhIUWih" />
+        <Link Id="O6iRFYhJHfiNqxONYkINy9" Ids="UD6T9k2rbGfNxQCrEuSfLW,Kcftf5gxjM2Oo2MGsc1Osg" />
+        <Link Id="DEbCqwweygwLdUxmqQu2YE" Ids="BIDTbWQgxUlQUKn1fiQueY,P0LrtqtW6sdNERL0yws1Sr" />
+        <Link Id="U4pfILEqLtnPdUqIKSEWUK" Ids="JMxhxo46p2eMd7Kiwshi7w,KSlh1KZpb6ILo1S6tMyXTz" />
+        <Link Id="PmSwB66KqmYPZq3b3CEhYL" Ids="Fhd5WjyXfsUM6Jl1d0fypw,LvpzbpDSnMEPYnYDUn4uVF" />
+        <Link Id="GlpnjQ2UABIN2wAS8mT5we" Ids="EueWoOdjsXUMNzZBTsrpDM,HCJuvkSAOjzO5YmpLnLZmh" />
+        <Link Id="GBRjDXeaXWqP3pSju4o8Fc" Ids="J0WwC9AS61yOkJsoy51Hym,LauQwXRb3txORlhnEWWdZX" />
+        <Link Id="LF9Jr9v4UI7Mz0nOkdkS0g" Ids="LCGAsbI6L01Mmr2l6SFO1P,AevRESekvfHO2vOUWwweFO" />
+        <Link Id="LHvaUR5JjvyLVrmaT7zwZV" Ids="FkuYmhAbg6xLx0UkldCRHB,GWIuRNqifjiLKijSqYGO2u" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EcC5H8cGMDSQT5suTOi9D6" Location="VL.CoreLib" Version="2021.3.2" />
+  <NugetDependency Id="EcC5H8cGMDSQT5suTOi9D6" Location="VL.CoreLib" Version="2021.4.10-1018-g933c4b477f" />
   <NugetDependency Id="F9eTlA89oQyPE6Padtr7Ye" Location="VL.OpenWeather" Version="0.0.0.0" />
   <NugetDependency Id="AKs4ThlRpd0OTlbD8eK9Bc" Location="VL.TeamCity.VVVV" Version="0.0.0.0" />
   <PlatformDependency Id="AyUUn7CwMZOPY3aLOaU2tm" Location="System" />
