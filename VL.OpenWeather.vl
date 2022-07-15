@@ -68,8 +68,6 @@
               <Pin Id="FZbSKlfmWBMLBGmzQTP7n7" Name="Clouds" Kind="OutputPin" />
               <Pin Id="Eo6XQ97lkyvPkHO0upk5U0" Name="Visibility" Kind="OutputPin" />
               <Pin Id="Qa5bT9TasfcPhhm8VeXslm" Name="Wind Speed" Kind="OutputPin" />
-              <Pin Id="R5tTPh76bQAOqc6sXgccbK" Name="Last Hour Rain Volume" Kind="OutputPin" />
-              <Pin Id="PgbiRw8JyDOMu0j4z99Ng6" Name="Last Hour Snow Volume" Kind="OutputPin" />
               <Pin Id="EU83yq9eVmlMUp6ll1tUkq" Name="Wind Degree" Kind="OutputPin" />
               <Pin Id="VW0AzxKsxfeLhJZMefjHyW" Name="Weather" Kind="OutputPin" />
             </Node>
@@ -244,8 +242,6 @@
             <Pin Id="TTEu5xSvx0iO5Vk2naVnCU" Name="Clouds" Kind="OutputPin" Summary="Cloudiness, %" />
             <Pin Id="TfkylAiJQk2PHd7cQOGwnR" Name="Visibility" Kind="OutputPin" Summary="Average visibility, metres. The maximum value of the visibility is 10km" />
             <Pin Id="SiBj6mquDPsO55nGwAEfru" Name="Wind Speed" Kind="OutputPin" Summary="Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour." />
-            <Pin Id="DNc5OxLZ6fXOJZD2w1K8PP" Name="Last Hour Rain Volume" Kind="OutputPin" Summary="Rain volume for last hour, mm" />
-            <Pin Id="UWK0UfnYwsVQS6PD9rkXiW" Name="Last Hour Snow Volume" Kind="OutputPin" Summary="Snow volume for last hour, mm" />
             <Pin Id="BjuC4zuO963M2mmd5SGL03" Name="Wind Degree" Kind="OutputPin" Summary="Wind direction, degrees (meteorological)" />
             <Pin Id="E7Kzt0uU39fMGpCHcjhKol" Name="Weather" Kind="OutputPin" Summary="Weather data" />
           </Patch>
@@ -286,7 +282,7 @@
             <Pad Id="BijSXjvRB7sNXbklrEaGGG" SlotId="PrQxZ4Zt2GXLFe3gOZ6sX3" Bounds="1141,410" />
             <Pad Id="VwM8FrIzT2kMdg64fVvLk6" SlotId="GKZGu2hbsCjNJZOHLD5YNi" Bounds="1247,410" />
             <Pad Id="KXqvlfXxLJePO88P7QGNb3" SlotId="OQdIkyo5GPOLMqMENpj4O4" Bounds="1362,410" />
-            <Pad Id="BaD3quqaYkYOBLNJ0cSScQ" SlotId="TRDbgoPYmIWNaKpwj4waqi" Bounds="1806,410" />
+            <Pad Id="BaD3quqaYkYOBLNJ0cSScQ" SlotId="TRDbgoPYmIWNaKpwj4waqi" Bounds="1491,410" />
             <ControlPoint Id="MNggL5h70GrQOddMWdpXJY" Bounds="318,380" />
             <ControlPoint Id="U1sRktJkoqqQOzi7XWuDoz" Bounds="318,440" />
             <ControlPoint Id="B9XTQUeHIe7Nv0O8xRmRtH" Bounds="399,380" />
@@ -311,17 +307,11 @@
             <ControlPoint Id="ILc8HBU2wu6QSKEuUrXDoQ" Bounds="1247,440" />
             <ControlPoint Id="EnXpzY9Q2otQG4yfCyDH1D" Bounds="1362,380" />
             <ControlPoint Id="L1ZF3NT0q7pLDXBfu0rwka" Bounds="1362,440" />
-            <ControlPoint Id="QrAcSyBHjbSOQKISadwlhd" Bounds="1806,380" />
-            <ControlPoint Id="OpOoStUPwceQVnPvKDyb4w" Bounds="1806,440" />
-            <Pad Id="F8UABoZiDWnNbc5UpFRdq9" SlotId="KfKGQLdNjXpMhj9eeM14Qe" Bounds="1900,410" />
-            <ControlPoint Id="TODO2t8pWKwLWDDQ61PwLM" Bounds="1900,380" />
-            <ControlPoint Id="MwVdAtzIONdLHy3EVkvjGX" Bounds="1900,440" />
-            <Pad Id="RNX9GlSRy74LGAMiyAQ6rI" SlotId="TGgfBglW3hPPicCJxYvny6" Bounds="1512,410" />
-            <Pad Id="KeBHMvb38oPLXHsHfAt22f" SlotId="EDvx4q0KxmdNdwFKRoOMHP" Bounds="1653,410" />
-            <ControlPoint Id="MZfBV73heMZNZ7xBAYce8N" Bounds="1653,380" />
-            <ControlPoint Id="UVYUda6Pb4nLZPySA04BdA" Bounds="1653,440" />
-            <ControlPoint Id="Ue5ZgLjKIltQTrzlRsTutv" Bounds="1512,380" />
-            <ControlPoint Id="V7YVdBBBkAOOYU4w2wRYic" Bounds="1512,440" />
+            <ControlPoint Id="QrAcSyBHjbSOQKISadwlhd" Bounds="1491,380" />
+            <ControlPoint Id="OpOoStUPwceQVnPvKDyb4w" Bounds="1491,440" />
+            <Pad Id="F8UABoZiDWnNbc5UpFRdq9" SlotId="KfKGQLdNjXpMhj9eeM14Qe" Bounds="1585,410" />
+            <ControlPoint Id="TODO2t8pWKwLWDDQ61PwLM" Bounds="1585,380" />
+            <ControlPoint Id="MwVdAtzIONdLHy3EVkvjGX" Bounds="1585,440" />
           </Canvas>
           <ProcessDefinition Id="B0mAsFpXVTjLgCAYL9BfMN" IsHidden="true">
             <Fragment Id="T9SEONIGP1IQPXqURQwQiZ" Patch="VRzAeCJFIzeLRikCYIveib" Enabled="true" />
@@ -453,24 +443,6 @@
           <Link Id="FRpPIxr5PwjNXqEB84i94u" Ids="TODO2t8pWKwLWDDQ61PwLM,F8UABoZiDWnNbc5UpFRdq9" />
           <Link Id="CsfQQU89RblNoU4boyeTpl" Ids="MwVdAtzIONdLHy3EVkvjGX,Ky2RnZdIlEJPgsymtDeZlt" IsHidden="true" />
           <Link Id="FO1gstoDBvXLIajAQZEfuW" Ids="F8UABoZiDWnNbc5UpFRdq9,MwVdAtzIONdLHy3EVkvjGX" />
-          <Slot Id="TGgfBglW3hPPicCJxYvny6" Name="Last Hour Rain Volume">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="EDvx4q0KxmdNdwFKRoOMHP" Name="Last Hour Snow Volume">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Link Id="Q4DruMlCvTtLe6DcBMoAAV" Ids="GnjPpSpn1niMMTIdXPJNZW,MZfBV73heMZNZ7xBAYce8N" IsHidden="true" />
-          <Link Id="G494boc2NeHLomBGF4pj8V" Ids="MZfBV73heMZNZ7xBAYce8N,KeBHMvb38oPLXHsHfAt22f" />
-          <Link Id="SSSZfQmfRN2NM7blkzjH3t" Ids="UVYUda6Pb4nLZPySA04BdA,EP2rIv6lChuP2dogOVP17F" IsHidden="true" />
-          <Link Id="HO9tQfPtKUmO6OhjL3hCHN" Ids="KeBHMvb38oPLXHsHfAt22f,UVYUda6Pb4nLZPySA04BdA" />
-          <Link Id="Dj6CMN9P1XuOG7UHXhGmVY" Ids="CMm3v7N8LJgNjls4pORz4x,Ue5ZgLjKIltQTrzlRsTutv" IsHidden="true" />
-          <Link Id="AC3myZ66UTzOKXTgzt4rkQ" Ids="Ue5ZgLjKIltQTrzlRsTutv,RNX9GlSRy74LGAMiyAQ6rI" />
-          <Link Id="RYT7sruG6W0ONDcDFybZrE" Ids="V7YVdBBBkAOOYU4w2wRYic,Db6WRMlcLcgOII7eaKyoz9" IsHidden="true" />
-          <Link Id="VdbU7aMpI2eO1bggQXJdhv" Ids="RNX9GlSRy74LGAMiyAQ6rI,V7YVdBBBkAOOYU4w2wRYic" />
           <Patch Id="VRzAeCJFIzeLRikCYIveib" Name="Create">
             <Pin Id="Rr8f7JlgUKjOCJJVl8RoGb" Name="Datetime" Kind="InputPin" />
             <Pin Id="ScrNWwqZQVVOfnh6DLq7Lj" Name="Sunrise" Kind="InputPin" />
@@ -484,8 +456,6 @@
             <Pin Id="FYAkGylj8cWOWGz9wSuD3Y" Name="Clouds" Kind="InputPin" />
             <Pin Id="I6Ld04Q22TFMCq9L9MuC7z" Name="Visibility" Kind="InputPin" />
             <Pin Id="U56LbT8xQlBMfdkjFwrrYI" Name="Wind Speed" Kind="InputPin" />
-            <Pin Id="CMm3v7N8LJgNjls4pORz4x" Name="Last Hour Rain Volume" Kind="InputPin" />
-            <Pin Id="GnjPpSpn1niMMTIdXPJNZW" Name="Last Hour Snow Volume" Kind="InputPin" />
             <Pin Id="OFHYz3Xi7ZPPMEiyx4NVV6" Name="Wind Degree" Kind="InputPin" />
             <Pin Id="FtQWOcspQrlMpOhXSM4QlZ" Name="Weather" Kind="InputPin" />
           </Patch>
@@ -502,8 +472,6 @@
             <Pin Id="A7oF9XYNSQuOrGaLO9iAwR" Name="Clouds" Kind="OutputPin" />
             <Pin Id="KACVgASCzcgPuAtRmyQqDp" Name="Visibility" Kind="OutputPin" />
             <Pin Id="OLPqveAbCQ0OS8OvSNXT4I" Name="Wind Speed" Kind="OutputPin" />
-            <Pin Id="Db6WRMlcLcgOII7eaKyoz9" Name="Last Hour Rain Volume" Kind="OutputPin" />
-            <Pin Id="EP2rIv6lChuP2dogOVP17F" Name="Last Hour Snow Volume" Kind="OutputPin" />
             <Pin Id="OmuqGSYEiyFNb8KVpMfm3k" Name="Wind Degree" Kind="OutputPin" />
             <Pin Id="Ky2RnZdIlEJPgsymtDeZlt" Name="Weather" Kind="OutputPin" />
           </Patch>
@@ -745,12 +713,6 @@
             <Pad Id="DzL5bzotx77LXiIh2zPHKX" SlotId="TZLzLofzUJ2MYZGwvAtdio" Bounds="1500,498" />
             <ControlPoint Id="Bng1WPeu15RPSNaM2ThAD7" Bounds="1500,451" />
             <ControlPoint Id="FQXYVHkMEILONkwFBU4EjB" Bounds="1500,522" />
-            <Pad Id="OqnGcORh2l4L5HeMwSfNJ3" SlotId="KoGpl4xFgtyQChGXejCZ6n" Bounds="1898,495" />
-            <Pad Id="GizXKQbyqnKMKfQYBD4nQG" SlotId="MyrxKWDmYwMOtXuLoW7HT5" Bounds="2042,495" />
-            <ControlPoint Id="IGJI4PnppWHPSPbUajJNOb" Bounds="2042,465" />
-            <ControlPoint Id="EtG0mE3NJAiOfPQc5Oiu7R" Bounds="2042,525" />
-            <ControlPoint Id="TqTHauATlAFOTibTePxehm" Bounds="1898,465" />
-            <ControlPoint Id="JD51XeoInYgOw8tYSBQgq3" Bounds="1898,525" />
           </Canvas>
           <ProcessDefinition Id="AbGMaDjQhMTOVUZul0szl6" IsHidden="true">
             <Fragment Id="OBKhEYVwApMQMCLRT8f6k1" Patch="FuZTPW627xKOPOnbGC44LU" Enabled="true" />
@@ -921,24 +883,6 @@
           <Link Id="TYFA7IjQ0AJLCOsDqEvWcy" Ids="EhNANbI5UabPVB5n3Lq4hh,Bng1WPeu15RPSNaM2ThAD7" IsHidden="true" />
           <Link Id="A8JQ0Y5YzsALsds4G81Axi" Ids="DzL5bzotx77LXiIh2zPHKX,FQXYVHkMEILONkwFBU4EjB" />
           <Link Id="MqdUPBLvT6VLR2ihdawP0f" Ids="FQXYVHkMEILONkwFBU4EjB,Vat32DtRRIxOAslMkc4nLw" IsHidden="true" />
-          <Slot Id="KoGpl4xFgtyQChGXejCZ6n" Name="Last Hour Rain Volume">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="MyrxKWDmYwMOtXuLoW7HT5" Name="Last Hour Snow Volume">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Link Id="B6cbLDbTWtZOpyXG5TsOJZ" Ids="LsQ7e4cwdzzLYE6ZovqrJe,IGJI4PnppWHPSPbUajJNOb" IsHidden="true" />
-          <Link Id="Nhx5TQ2td8SMXRdMlbejoY" Ids="IGJI4PnppWHPSPbUajJNOb,GizXKQbyqnKMKfQYBD4nQG" />
-          <Link Id="BnS4d7T3AkxQAoNt7G2AOD" Ids="EtG0mE3NJAiOfPQc5Oiu7R,MvTqkiS2AQ7QOHY5WIZsNV" IsHidden="true" />
-          <Link Id="SAr5OOS6yICPiVIfqdOfyQ" Ids="GizXKQbyqnKMKfQYBD4nQG,EtG0mE3NJAiOfPQc5Oiu7R" />
-          <Link Id="OrS1hWppxqPN7ZQI93DpMP" Ids="O3Ysg5cqYfTNu7hyQwfL2Y,TqTHauATlAFOTibTePxehm" IsHidden="true" />
-          <Link Id="EUMJbG9bceiPgvofhcLsQy" Ids="TqTHauATlAFOTibTePxehm,OqnGcORh2l4L5HeMwSfNJ3" />
-          <Link Id="DvlA5Gq4wyELuPohZLx50a" Ids="JD51XeoInYgOw8tYSBQgq3,BUtQoFj5ywSNxrILchdjGG" IsHidden="true" />
-          <Link Id="H2tfbaee2zhOhHnHeVdOjq" Ids="OqnGcORh2l4L5HeMwSfNJ3,JD51XeoInYgOw8tYSBQgq3" />
           <Patch Id="FuZTPW627xKOPOnbGC44LU" Name="Create">
             <Pin Id="HVXGWnmw1xTMXsXmnet5aE" Name="Datetime" Kind="InputPin" />
             <Pin Id="HDYenTEt2qLMrxWUiTvSSj" Name="Temperature" Kind="InputPin" />
@@ -954,8 +898,6 @@
             <Pin Id="EhNANbI5UabPVB5n3Lq4hh" Name="Wind Gust" Kind="InputPin" Bounds="1494,436" />
             <Pin Id="AKI3iMrJCqkQM58xCbS75P" Name="Weather" Kind="InputPin" />
             <Pin Id="MuM4vL1fVJUO74drRG7DTG" Name="Pop" Kind="InputPin" />
-            <Pin Id="O3Ysg5cqYfTNu7hyQwfL2Y" Name="Last Hour Rain Volume" Kind="InputPin" />
-            <Pin Id="LsQ7e4cwdzzLYE6ZovqrJe" Name="Last Hour Snow Volume" Kind="InputPin" />
           </Patch>
           <Patch Id="CJcYZzlZfzDQHUAkSTJ5Oy" Name="Split" ParticipatingElements="A8JQ0Y5YzsALsds4G81Axi">
             <Pin Id="I9BsgfGpSkXN8cSEAxuVXp" Name="Datetime" Kind="OutputPin" Summary="Time of the forecasted data" />
@@ -972,8 +914,6 @@
             <Pin Id="Vat32DtRRIxOAslMkc4nLw" Name="Wind Gust" Kind="OutputPin" Summary="Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour" />
             <Pin Id="SzSrcD6jTWCLEPvxKPjrws" Name="Weather" Kind="OutputPin" Summary="Weather report" />
             <Pin Id="TQ9CHVdBOZhNiMJVMXk9ZE" Name="Pop" Kind="OutputPin" Summary="Probability of precipitation. The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100%" />
-            <Pin Id="BUtQoFj5ywSNxrILchdjGG" Name="Last Hour Rain Volume" Kind="OutputPin" Summary="Rain volume for last hour, mm" />
-            <Pin Id="MvTqkiS2AQ7QOHY5WIZsNV" Name="Last Hour Snow Volume" Kind="OutputPin" Summary="Snow volume for last hour, mm" />
           </Patch>
           <Patch Id="AEcUYw4aoIFQDS14FC7wOj" Name="DateTime">
             <Pin Id="IoHay2ciGLVQMfPvQjjhJa" Name="Datetime" Kind="OutputPin" />
@@ -1027,80 +967,74 @@
         </p:NodeReference>
         <Patch Id="VhZg8NzhjJHMJDBi9dO9R3">
           <Canvas Id="KaheshakyyCNjXXojooky8" CanvasType="Group">
-            <Pad Id="B65I2PedTmrO09AVv73WVv" SlotId="Doji1s9wpOoLNHScGqi1tA" Bounds="455,572" />
-            <Pad Id="DyU9xnJn3ZqMhDOV5kyNF5" SlotId="NHk1A0qsyFNMbHO5GvHtu1" Bounds="549,570" />
-            <Pad Id="OA2ys1BGCxaO6Fcs8lHcUh" SlotId="GUEs43512KDMtcok4G5R9C" Bounds="640,573" />
-            <Pad Id="QLgAQ2FzwjPP1w9sHyhLIH" SlotId="BVCi9xE3NehNNNmJDRySNN" Bounds="1065,577" />
-            <Pad Id="OqvlUBfYdRlMRmQTkEX7CY" SlotId="O60n0BMd2VbMwwSDlty0cB" Bounds="1171,575" />
+            <Pad Id="B65I2PedTmrO09AVv73WVv" SlotId="Doji1s9wpOoLNHScGqi1tA" Bounds="215,564" />
+            <Pad Id="DyU9xnJn3ZqMhDOV5kyNF5" SlotId="NHk1A0qsyFNMbHO5GvHtu1" Bounds="369,564" />
+            <Pad Id="OA2ys1BGCxaO6Fcs8lHcUh" SlotId="GUEs43512KDMtcok4G5R9C" Bounds="505,564" />
+            <Pad Id="QLgAQ2FzwjPP1w9sHyhLIH" SlotId="BVCi9xE3NehNNNmJDRySNN" Bounds="945,564" />
+            <Pad Id="OqvlUBfYdRlMRmQTkEX7CY" SlotId="O60n0BMd2VbMwwSDlty0cB" Bounds="1126,564" />
             <Pad Id="JvVBxctOHGSQQ66LP1oSId" SlotId="KjzyguBIL12PIGth2TY3gJ" Bounds="1285,564" />
-            <ControlPoint Id="EJl1rlWqvYMPjeqSrXKI4B" Bounds="1285,534" />
-            <ControlPoint Id="U2GYzCQ6s9bM2U6NPoiVdz" Bounds="1285,594" />
-            <ControlPoint Id="EmvXU58PEjOLiBemnBuU9E" Bounds="455,542" />
-            <ControlPoint Id="R4U6uyVGjikQcCzKZ52Fvs" Bounds="455,602" />
-            <ControlPoint Id="Du6avegGCKGMxER4MTXBrX" Bounds="549,540" />
-            <ControlPoint Id="EePGYz12zNROVJfslWT0ZT" Bounds="549,600" />
-            <ControlPoint Id="S6oeo2IN4AUOo5iXFaVQux" Bounds="640,543" />
-            <ControlPoint Id="HxIJZvnyeAJNuw3Xbmaqe1" Bounds="640,603" />
-            <ControlPoint Id="HKcy8HwczVrOtncv6nJMYJ" Bounds="1065,547" />
-            <ControlPoint Id="GkidG2yBqeGLObE9sLYyI5" Bounds="1065,607" />
-            <ControlPoint Id="J8uq6EiJh5kL9Cv80XeC69" Bounds="1171,545" />
-            <ControlPoint Id="U54au4BscPLM7eMZTq9uCp" Bounds="1171,605" />
-            <Pad Id="STMHHSOtQnjPqomGKotESY" SlotId="FN0NsMFRZyFN8UdUn1ufSp" Bounds="1431,569" />
-            <Pad Id="FmfrUstYVkpNBid6kl5e3c" SlotId="AhL4JEmGw8WLVXgFQvcMLJ" Bounds="1532,567" />
-            <Pad Id="A4B3JYJ4p6JPzZ1f2ZMTqw" SlotId="MfAGm7rvG5MLBfTyklRaAH" Bounds="1628,569" />
-            <Pad Id="S6aWAQCLQd8M4NV4P3kNiB" SlotId="Vi6wcT8pvaqQH6I8bIfpyi" Bounds="1715,569" />
-            <Pad Id="TzZyWq6kFjBMivMV95HYVK" SlotId="T47H7lkiQubPeneW3O1QjG" Bounds="1968,568" />
-            <Pad Id="R8uJOsG6n4SQXDbswu4Dyk" SlotId="Efdc9ctQJlfNRlKni61KO5" Bounds="2077,564" />
-            <Pad Id="CLuHuPrULD4PmKh3FPqsJj" SlotId="Lj4fLm76UKnPhfHaq6cYDe" Bounds="2141,566" />
-            <Pad Id="FGFVwOQSsvHQFctYd1jo68" SlotId="H5wDJIOvVsjNJL9bnUcOCc" Bounds="2468,567" />
-            <ControlPoint Id="N7f7lgP4vXGLROA4G44oTS" Bounds="2468,537" />
-            <ControlPoint Id="LIPKOuHZNbiPiDAZtTAEP7" Bounds="2468,597" />
-            <ControlPoint Id="GEyu1i3ZWNmOvC2gsPIYxt" Bounds="2077,534" />
-            <ControlPoint Id="HifrUBqgEZpP3gy9bD4UDy" Bounds="2077,594" />
-            <ControlPoint Id="TcqgJVxhDS8OM6S1cbCCVV" Bounds="2141,536" />
-            <ControlPoint Id="DkkzMqsI9bGPWMFARK5OFb" Bounds="2141,596" />
-            <ControlPoint Id="U1bzpNrXpzvP9kin8gy3qz" Bounds="1968,540" />
-            <ControlPoint Id="NcAGjxUdfDcOuat2inCL4h" Bounds="1968,600" />
-            <ControlPoint Id="NgBVaRarvq9N4BTVd7z9uy" Bounds="1715,539" />
-            <ControlPoint Id="PVNrMarBegkMm7FsGDVAIi" Bounds="1715,599" />
-            <ControlPoint Id="DhwANvEfzT9NdNcqtjNPja" Bounds="1628,539" />
-            <ControlPoint Id="FbqnU3iS3JKQUrYEOSCDZL" Bounds="1628,599" />
-            <ControlPoint Id="IqolBMubbbLPSVcGeid8WR" Bounds="1532,537" />
-            <ControlPoint Id="JdPjZu9yo3cLsVjViHRjvn" Bounds="1532,597" />
-            <ControlPoint Id="HJRytRd9TUdNAPyVdtqZPc" Bounds="1431,539" />
-            <ControlPoint Id="VczKQ4BnaQoNjNuTvODUqa" Bounds="1431,599" />
-            <ControlPoint Id="Eqt41n8KngiM5R55fxMWTd" Bounds="478,637" />
-            <ControlPoint Id="QJKjoPvWdIAMHZuRmHcvWR" Bounds="584,663" />
-            <ControlPoint Id="MbDap4gz1HXOOoDU7lVBQQ" Bounds="679,653" />
-            <ControlPoint Id="IPMQSssuwuVLHgE1GguMnR" Bounds="1096,661" />
-            <ControlPoint Id="ScfcAjMX5DBMwwAWPDTTFH" Bounds="1205,653" />
-            <ControlPoint Id="BtTG2fBw4h1NUAWfAz3TjN" Bounds="1314,654" />
-            <ControlPoint Id="FQyU8QSth18NDS5LBoHeTf" Bounds="1455,654" />
-            <ControlPoint Id="HgcpihOMCkgOr3WggUJsmJ" Bounds="1562,659" />
-            <ControlPoint Id="UN2jScWVxVuN4pYpWZQy49" Bounds="1659,652" />
-            <ControlPoint Id="Ni2kFkSeJRZOFq62KNBFdq" Bounds="1763,663" />
-            <ControlPoint Id="T06qCDlA5UXLfT10YBFLDN" Bounds="2004,659" />
-            <ControlPoint Id="RyUFfJVGpSLOzHZLRiZYgU" Bounds="2100,645" />
-            <ControlPoint Id="RCFJapPhltCN1V8EkN9V8r" Bounds="2174,646" />
-            <ControlPoint Id="AR278Q3AXUoPZu7tw49xKY" Bounds="2493,658" />
-            <Pad Id="MDG0x7OyT9BNytWvDR25kf" SlotId="Fdff6PleHLIOueLc00VyCh" Bounds="1830,574" />
-            <ControlPoint Id="EDiPIyaXfnzO4cjWOgHGlZ" Bounds="1831,534" />
-            <ControlPoint Id="CX3LYEubn4XLIG4lDORQTv" Bounds="1831,600" />
-            <Pad Id="BePuEyPOWn3OPs9EmvC2bd" SlotId="JFvyXuYwXkwNcVBFKfK6x8" Bounds="750,575" />
-            <Pad Id="VFx80XRBQHoLvqMPnZntbO" SlotId="LsJXOL1i2CONuXVgYLDuBW" Bounds="836,577" />
-            <Pad Id="J3juLNgC6aAMgqSmvdABRP" SlotId="Hqtkf14Al6KOYkURPeem5e" Bounds="921,580" />
-            <ControlPoint Id="V0hAIeQgirYPSIBS3KKCgm" Bounds="748,534" />
-            <ControlPoint Id="UIDltavwm0qPzvRXRzFXPY" Bounds="835,533" />
-            <ControlPoint Id="UFY4N6ia5ldLQ6FRYsqZWC" Bounds="922,531" />
-            <ControlPoint Id="U4BJLKeg7GPLUaUiWVu2n6" Bounds="748,605" />
-            <ControlPoint Id="OR6iVt33BH9Odf9JKhM8JM" Bounds="835,605" />
-            <ControlPoint Id="ABFyX2aPzeMP85xyJJKJpB" Bounds="922,603" />
-            <Pad Id="BhdcG8wnbIpPJDhGVpFHef" SlotId="Av1TxpqCvR3OQ3nBG7BrVt" Bounds="2275,565" />
-            <Pad Id="Io8IyCT8NnRLKLPMpkZqsD" SlotId="D3ABKW8Yf34OxslUnYI8fY" Bounds="2380,565" />
-            <ControlPoint Id="SVGfPbaXQyfMdOS7xJM2U2" Bounds="2380,535" />
-            <ControlPoint Id="RPdaZN3eZDDMTVaQkU3cxl" Bounds="2380,595" />
-            <ControlPoint Id="T7KzVxDR7tzP18qvQFGfAw" Bounds="2275,535" />
-            <ControlPoint Id="JIess330w4LNqMxobPokf5" Bounds="2275,595" />
+            <ControlPoint Id="EJl1rlWqvYMPjeqSrXKI4B" Bounds="1285,486" />
+            <ControlPoint Id="U2GYzCQ6s9bM2U6NPoiVdz" Bounds="1285,669" />
+            <ControlPoint Id="EmvXU58PEjOLiBemnBuU9E" Bounds="215,486" />
+            <ControlPoint Id="R4U6uyVGjikQcCzKZ52Fvs" Bounds="215,669" />
+            <ControlPoint Id="Du6avegGCKGMxER4MTXBrX" Bounds="369,486" />
+            <ControlPoint Id="EePGYz12zNROVJfslWT0ZT" Bounds="369,669" />
+            <ControlPoint Id="S6oeo2IN4AUOo5iXFaVQux" Bounds="505,486" />
+            <ControlPoint Id="HxIJZvnyeAJNuw3Xbmaqe1" Bounds="505,669" />
+            <ControlPoint Id="HKcy8HwczVrOtncv6nJMYJ" Bounds="945,486" />
+            <ControlPoint Id="GkidG2yBqeGLObE9sLYyI5" Bounds="945,669" />
+            <ControlPoint Id="J8uq6EiJh5kL9Cv80XeC69" Bounds="1126,486" />
+            <ControlPoint Id="U54au4BscPLM7eMZTq9uCp" Bounds="1126,669" />
+            <Pad Id="STMHHSOtQnjPqomGKotESY" SlotId="FN0NsMFRZyFN8UdUn1ufSp" Bounds="1431,564" />
+            <Pad Id="FmfrUstYVkpNBid6kl5e3c" SlotId="AhL4JEmGw8WLVXgFQvcMLJ" Bounds="1622,564" />
+            <Pad Id="A4B3JYJ4p6JPzZ1f2ZMTqw" SlotId="MfAGm7rvG5MLBfTyklRaAH" Bounds="1778,564" />
+            <Pad Id="S6aWAQCLQd8M4NV4P3kNiB" SlotId="Vi6wcT8pvaqQH6I8bIfpyi" Bounds="1955,564" />
+            <Pad Id="TzZyWq6kFjBMivMV95HYVK" SlotId="T47H7lkiQubPeneW3O1QjG" Bounds="2238,564" />
+            <Pad Id="R8uJOsG6n4SQXDbswu4Dyk" SlotId="Efdc9ctQJlfNRlKni61KO5" Bounds="2392,564" />
+            <Pad Id="CLuHuPrULD4PmKh3FPqsJj" SlotId="Lj4fLm76UKnPhfHaq6cYDe" Bounds="2531,564" />
+            <Pad Id="FGFVwOQSsvHQFctYd1jo68" SlotId="H5wDJIOvVsjNJL9bnUcOCc" Bounds="2663,564" />
+            <ControlPoint Id="N7f7lgP4vXGLROA4G44oTS" Bounds="2663,486" />
+            <ControlPoint Id="LIPKOuHZNbiPiDAZtTAEP7" Bounds="2663,669" />
+            <ControlPoint Id="GEyu1i3ZWNmOvC2gsPIYxt" Bounds="2392,486" />
+            <ControlPoint Id="HifrUBqgEZpP3gy9bD4UDy" Bounds="2392,669" />
+            <ControlPoint Id="TcqgJVxhDS8OM6S1cbCCVV" Bounds="2531,486" />
+            <ControlPoint Id="DkkzMqsI9bGPWMFARK5OFb" Bounds="2531,669" />
+            <ControlPoint Id="U1bzpNrXpzvP9kin8gy3qz" Bounds="2238,486" />
+            <ControlPoint Id="NcAGjxUdfDcOuat2inCL4h" Bounds="2238,669" />
+            <ControlPoint Id="NgBVaRarvq9N4BTVd7z9uy" Bounds="1955,486" />
+            <ControlPoint Id="PVNrMarBegkMm7FsGDVAIi" Bounds="1955,669" />
+            <ControlPoint Id="DhwANvEfzT9NdNcqtjNPja" Bounds="1778,486" />
+            <ControlPoint Id="FbqnU3iS3JKQUrYEOSCDZL" Bounds="1778,669" />
+            <ControlPoint Id="IqolBMubbbLPSVcGeid8WR" Bounds="1622,486" />
+            <ControlPoint Id="JdPjZu9yo3cLsVjViHRjvn" Bounds="1622,669" />
+            <ControlPoint Id="HJRytRd9TUdNAPyVdtqZPc" Bounds="1431,486" />
+            <ControlPoint Id="VczKQ4BnaQoNjNuTvODUqa" Bounds="1431,669" />
+            <ControlPoint Id="Eqt41n8KngiM5R55fxMWTd" Bounds="275,669" />
+            <ControlPoint Id="QJKjoPvWdIAMHZuRmHcvWR" Bounds="431,669" />
+            <ControlPoint Id="MbDap4gz1HXOOoDU7lVBQQ" Bounds="560,669" />
+            <ControlPoint Id="IPMQSssuwuVLHgE1GguMnR" Bounds="1026,669" />
+            <ControlPoint Id="ScfcAjMX5DBMwwAWPDTTFH" Bounds="1193,669" />
+            <ControlPoint Id="BtTG2fBw4h1NUAWfAz3TjN" Bounds="1346,669" />
+            <ControlPoint Id="FQyU8QSth18NDS5LBoHeTf" Bounds="1517,669" />
+            <ControlPoint Id="HgcpihOMCkgOr3WggUJsmJ" Bounds="1699,669" />
+            <ControlPoint Id="UN2jScWVxVuN4pYpWZQy49" Bounds="1875,669" />
+            <ControlPoint Id="Ni2kFkSeJRZOFq62KNBFdq" Bounds="2043,669" />
+            <ControlPoint Id="T06qCDlA5UXLfT10YBFLDN" Bounds="2306,669" />
+            <ControlPoint Id="RyUFfJVGpSLOzHZLRiZYgU" Bounds="2443,669" />
+            <ControlPoint Id="RCFJapPhltCN1V8EkN9V8r" Bounds="2575,669" />
+            <ControlPoint Id="AR278Q3AXUoPZu7tw49xKY" Bounds="2739,669" />
+            <Pad Id="MDG0x7OyT9BNytWvDR25kf" SlotId="Fdff6PleHLIOueLc00VyCh" Bounds="2145,564" />
+            <ControlPoint Id="EDiPIyaXfnzO4cjWOgHGlZ" Bounds="2145,486" />
+            <ControlPoint Id="CX3LYEubn4XLIG4lDORQTv" Bounds="2145,669" />
+            <Pad Id="BePuEyPOWn3OPs9EmvC2bd" SlotId="JFvyXuYwXkwNcVBFKfK6x8" Bounds="675,564" />
+            <Pad Id="VFx80XRBQHoLvqMPnZntbO" SlotId="LsJXOL1i2CONuXVgYLDuBW" Bounds="761,564" />
+            <Pad Id="J3juLNgC6aAMgqSmvdABRP" SlotId="Hqtkf14Al6KOYkURPeem5e" Bounds="846,564" />
+            <ControlPoint Id="V0hAIeQgirYPSIBS3KKCgm" Bounds="675,486" />
+            <ControlPoint Id="UIDltavwm0qPzvRXRzFXPY" Bounds="761,486" />
+            <ControlPoint Id="UFY4N6ia5ldLQ6FRYsqZWC" Bounds="846,486" />
+            <ControlPoint Id="U4BJLKeg7GPLUaUiWVu2n6" Bounds="675,669" />
+            <ControlPoint Id="OR6iVt33BH9Odf9JKhM8JM" Bounds="761,669" />
+            <ControlPoint Id="ABFyX2aPzeMP85xyJJKJpB" Bounds="846,669" />
           </Canvas>
           <ProcessDefinition Id="DUeUIDpSpYuPGwTmXmfLhL" IsHidden="true">
             <Fragment Id="N01FWUwTatPPKmUddGn66E" Patch="NqsfZG8alkJOc5zZjyU8q5" Enabled="true" />
@@ -1315,24 +1249,6 @@
           <Link Id="HYsjfjnFm8ALehBVsvotGu" Ids="OR6iVt33BH9Odf9JKhM8JM,JYivUGRcVhMNeIRg7MFcJ9" IsHidden="true" />
           <Link Id="IvTrJA87B0LQA1wceWpzWb" Ids="J3juLNgC6aAMgqSmvdABRP,ABFyX2aPzeMP85xyJJKJpB" />
           <Link Id="GA9pHvl4EZ4M7bbxEMl6kR" Ids="ABFyX2aPzeMP85xyJJKJpB,HiiNlNULve4NTeY0ZbzvAz" IsHidden="true" />
-          <Slot Id="Av1TxpqCvR3OQ3nBG7BrVt" Name="Precipitation Volume">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="D3ABKW8Yf34OxslUnYI8fY" Name="Snow Volume">
-            <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Link Id="HlQq0b8E1NKLT4YNxdxbyD" Ids="AKy6PLAvdQNM0wKd0e6Wzm,SVGfPbaXQyfMdOS7xJM2U2" IsHidden="true" />
-          <Link Id="N5YtDK1WtxYPXvvZ69q3PF" Ids="SVGfPbaXQyfMdOS7xJM2U2,Io8IyCT8NnRLKLPMpkZqsD" />
-          <Link Id="EAPWqKoPYbWLMjaLCPGfYL" Ids="RPdaZN3eZDDMTVaQkU3cxl,PC6HtDcGvKwLuoSd4aBTc6" IsHidden="true" />
-          <Link Id="CwhwGRlMTG8M4mdepboFWJ" Ids="Io8IyCT8NnRLKLPMpkZqsD,RPdaZN3eZDDMTVaQkU3cxl" />
-          <Link Id="LHPKvfacUiYNsaphEqCWCq" Ids="RNJ8T1Vo5AzMfImwixfxTh,T7KzVxDR7tzP18qvQFGfAw" IsHidden="true" />
-          <Link Id="PYJfblhuM5KNvoj30iqRl2" Ids="T7KzVxDR7tzP18qvQFGfAw,BhdcG8wnbIpPJDhGVpFHef" />
-          <Link Id="CaP5NiNbh26NcvSJCeOb36" Ids="JIess330w4LNqMxobPokf5,PGIT9qGmdI6MjMvQZ3iP5n" IsHidden="true" />
-          <Link Id="Rp7fWWoKu6SP7WcR3o1xFG" Ids="BhdcG8wnbIpPJDhGVpFHef,JIess330w4LNqMxobPokf5" />
           <Patch Id="NqsfZG8alkJOc5zZjyU8q5" Name="Create" ParticipatingElements="MoDJoVbaUh7QNcGnpXZYhJ">
             <Pin Id="FXnW88Cq76BPIR8yaajn6T" Name="Datetime" Kind="InputPin" />
             <Pin Id="EL5DhbvcZ7nNfb9STWTyK4" Name="Sunrise" Kind="InputPin" />
@@ -1351,8 +1267,6 @@
             <Pin Id="Coq1ULv9fK9NAVEdUw4TvB" Name="Weather" Kind="InputPin" />
             <Pin Id="GWpwTsYFDfaNKIjaQFVcFX" Name="Clouds" Kind="InputPin" />
             <Pin Id="Rm4212XUfnPMYdjEtK74tY" Name="Pop" Kind="InputPin" />
-            <Pin Id="RNJ8T1Vo5AzMfImwixfxTh" Name="Precipitation Volume" Kind="InputPin" />
-            <Pin Id="AKy6PLAvdQNM0wKd0e6Wzm" Name="Snow Volume" Kind="InputPin" />
             <Pin Id="HdCzKHFBAgiOWkz40pYp9i" Name="UV Index" Kind="InputPin" />
           </Patch>
           <Patch Id="Lq5EoBtnJwLQccnpIkX63Y" Name="Split" ParticipatingElements="SeWbWuyaLfGMtwe0TQt41s,ILdVg9FQqcuNHZvfIHMmOA,GoQV6SFoVhtMb69039F06x,IvTrJA87B0LQA1wceWpzWb">
@@ -1373,8 +1287,6 @@
             <Pin Id="PRoYtzkolPzNcwW4XbUaMw" Name="Weather" Kind="OutputPin" Summary="Weather data" />
             <Pin Id="NYmAwjJOdljLXhg5gAnaKT" Name="Clouds" Kind="OutputPin" Summary="Cloudiness, %" />
             <Pin Id="VUFOLDL2n7CPhEKNFnxYBh" Name="Pop" Kind="OutputPin" Summary="Probability of precipitation. The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100%" />
-            <Pin Id="PGIT9qGmdI6MjMvQZ3iP5n" Name="Precipitation Volume" Kind="OutputPin" Summary="Precipitation volume, mm" />
-            <Pin Id="PC6HtDcGvKwLuoSd4aBTc6" Name="Snow Volume" Kind="OutputPin" Summary="Snow volume, mm" />
             <Pin Id="KukaU94T8xzLtJKcIUc5n1" Name="UV Index" Kind="OutputPin" Summary="The maximum value of UV index for the day" />
           </Patch>
           <Patch Id="Ctngouv65QcMagCiGODV8c" Name="DateTime">
@@ -2280,8 +2192,6 @@
                 <Pin Id="GJazseestWFN3GPtOaYQvv" Name="Clouds" Kind="InputPin" />
                 <Pin Id="FHU9p1jCrmvOTWYOL5SEzu" Name="Visibility" Kind="InputPin" />
                 <Pin Id="AKncmPcPNAsORoZ7hP1c8z" Name="Wind Speed" Kind="InputPin" />
-                <Pin Id="GCNqugaQGKdN9FU69m7VQB" Name="Last Hour Rain Volume" Kind="InputPin" />
-                <Pin Id="TOVQ6BLcpB0PZ7YmlARWwi" Name="Last Hour Snow Volume" Kind="InputPin" />
                 <Pin Id="VPZB7dk5u3mL0PrFhn4vlr" Name="Wind Degree" Kind="InputPin" />
                 <Pin Id="UvUX50j7WmkOzZQX7L5cgc" Name="Weather" Kind="InputPin" />
                 <Pin Id="LjDrymcTRfbLRzbEUftQUo" Name="Output" Kind="StateOutputPin" />
@@ -2602,7 +2512,7 @@
                 <Pin Id="GoflVHlSo97NZYmhIuDBrG" Name="Local Date Time" Kind="OutputPin" />
                 <Pin Id="TMD23rGRLtBOqksAn3SIkX" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="866,1456,82,19" Id="FVf2xJlzThpOEQBWenXX44">
+              <Node Bounds="875,1468,82,19" Id="FVf2xJlzThpOEQBWenXX44">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2636,11 +2546,9 @@
                 <Pin Id="FVRb7unTH9IPYCtSy0FC9L" Name="Wind Gust" Kind="InputPin" />
                 <Pin Id="GfaEBWh2fQNL2Eh2SuM2S5" Name="Weather" Kind="InputPin" />
                 <Pin Id="N2GFXWhCObNPEumhWhbD1C" Name="Pop" Kind="InputPin" />
-                <Pin Id="I3sW8RPxAMaMDsCCq7V8f6" Name="Last Hour Rain Volume" Kind="InputPin" />
-                <Pin Id="Plnra1wHtzLMEtuDSKJqfg" Name="Last Hour Snow Volume" Kind="InputPin" />
                 <Pin Id="CiSu6FhjUVFMR41cnAmQRD" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="886,1491,82,19" Id="SCZbm1xa4DINumyAjCsKW7">
+              <Node Bounds="895,1503,82,19" Id="SCZbm1xa4DINumyAjCsKW7">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2654,7 +2562,7 @@
                 <Pin Id="MNqhsxEp0ZPNp0OYkb0eO5" Name="Value" Kind="OutputPin" />
                 <Pin Id="PP0qBDzzD0wOgcZg8QGnhN" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="905,1529,82,19" Id="KnDdxqDNSTbPjojN1KMW8i">
+              <Node Bounds="914,1541,82,19" Id="KnDdxqDNSTbPjojN1KMW8i">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2668,7 +2576,7 @@
                 <Pin Id="QqK4yK2CA8vLTRkOimpu50" Name="Value" Kind="OutputPin" />
                 <Pin Id="DEeOzV9GU2mLyU6dbsCQU6" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="927,1572,82,19" Id="C1Dsp2XnLWVNRPXgGn86fZ">
+              <Node Bounds="936,1584,82,19" Id="C1Dsp2XnLWVNRPXgGn86fZ">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2682,7 +2590,7 @@
                 <Pin Id="PEot6Gu8UXiPZhLmxBcU7K" Name="Value" Kind="OutputPin" />
                 <Pin Id="QFWB8moQAGXPprjE02MT95" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="946,1613,82,19" Id="DjAHqgaTdwuQYQPoHLcu6u">
+              <Node Bounds="955,1625,82,19" Id="DjAHqgaTdwuQYQPoHLcu6u">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2696,7 +2604,7 @@
                 <Pin Id="JGGHFDoYKIMQcn17REJPep" Name="Value" Kind="OutputPin" />
                 <Pin Id="LyB5jMwT5JKPxpP7iZENaj" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="969,1656,82,19" Id="QxVy1aDTf2hMYwC9um2n13">
+              <Node Bounds="984,1668,82,19" Id="QxVy1aDTf2hMYwC9um2n13">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2710,7 +2618,7 @@
                 <Pin Id="R9g0oeIfArYMRVOVewmJt1" Name="Value" Kind="OutputPin" />
                 <Pin Id="Th6Ebjf4hVcMLWYxblt7TG" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="988,1694,82,19" Id="P4X3zPP6eeHQCe79lz6BdG">
+              <Node Bounds="1012,1712,82,19" Id="P4X3zPP6eeHQCe79lz6BdG">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2724,7 +2632,7 @@
                 <Pin Id="Pfk22H7Zk6gLUOaBOJsTLJ" Name="Value" Kind="OutputPin" />
                 <Pin Id="UN89WxKZHrPOP8ERD8Ii5z" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1007,1730,82,19" Id="AotKc7Jnc1NMRK7Snr06Wu">
+              <Node Bounds="1035,1755,82,19" Id="AotKc7Jnc1NMRK7Snr06Wu">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2738,7 +2646,7 @@
                 <Pin Id="Mt4AP1gCXP6QHxSJ0zP8fX" Name="Value" Kind="OutputPin" />
                 <Pin Id="CGw6it7rGg1PwxDm4cSkHp" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1027,1774,82,19" Id="FNdJRNSOlHzQQOx81zMl6M">
+              <Node Bounds="1055,1799,82,19" Id="FNdJRNSOlHzQQOx81zMl6M">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2752,7 +2660,7 @@
                 <Pin Id="CDJ0x8YMekyNV76htQdbD5" Name="Value" Kind="OutputPin" />
                 <Pin Id="JYOccX2gVarOecBPXgzjs8" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1049,1819,82,19" Id="PI9gQ5GXnpuQJSc8p2zvLE">
+              <Node Bounds="1080,1852,82,19" Id="PI9gQ5GXnpuQJSc8p2zvLE">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2766,7 +2674,7 @@
                 <Pin Id="Q2ZRdJenULCL85kn8LcBwY" Name="Value" Kind="OutputPin" />
                 <Pin Id="NdQOlG9L2zaL0uheulcAPB" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1088,1952,77,19" Id="KwmJWzYo9KEN83maeNy0Re">
+              <Node Bounds="1126,2000,77,19" Id="KwmJWzYo9KEN83maeNy0Re">
                 <p:NodeReference LastCategoryFullName="IO.OpenWeather.Utils" LastSymbolSource="VL.OpenWeather.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ParseWeather" />
@@ -2774,7 +2682,7 @@
                 <Pin Id="KVI4zpboPQdNZMbyxLYff7" Name="Input" Kind="InputPin" />
                 <Pin Id="UAHII1xIm7zPNCKvF1UbBK" Name="Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1108,1997,82,19" Id="Sspgq0svGQMOZD4Nm5VhCh">
+              <Node Bounds="1148,2048,82,19" Id="Sspgq0svGQMOZD4Nm5VhCh">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2821,7 +2729,7 @@
               <Link Id="NO9XMt8GTa9NFUv9ml7Am8" Ids="CiSu6FhjUVFMR41cnAmQRD,OHz12eZ4MUqLtGDXmFod7k" />
               <Pin Id="ReWgpTmkXsqNevmhGOCgQ4" Name="Output" Kind="OutputPin" Bounds="1436,1478" />
               <Link Id="DzA8ys2z8OwMokCbm1RAzl" Ids="OHz12eZ4MUqLtGDXmFod7k,ReWgpTmkXsqNevmhGOCgQ4" IsHidden="true" />
-              <Node Bounds="1088,1903,104,26" Id="MlGYvIqAxRMLhZQJTWdFCK">
+              <Node Bounds="1126,1951,104,26" Id="MlGYvIqAxRMLhZQJTWdFCK">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathSelectElement" />
@@ -2832,7 +2740,7 @@
               </Node>
               <Link Id="Fdila6acVWjQOpstsyLAqk" Ids="FLF5cjd89JSMVBrUKcUZnj,AZEjiaAXD2hOPaIqrl6I0d" />
               <Link Id="CGrtUoFP4xvPYLNqWGUz3b" Ids="J4iEC0kvTNLMlbVHXY8lcV,KVI4zpboPQdNZMbyxLYff7" />
-              <Node Bounds="1069,1856,82,19" Id="SFrmXesWnjaNHKRgpgksRB">
+              <Node Bounds="1100,1889,82,19" Id="SFrmXesWnjaNHKRgpgksRB">
                 <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -2848,36 +2756,6 @@
               </Node>
               <Link Id="NuwRXDKP1zLMWxwu2Fp5eP" Ids="FLF5cjd89JSMVBrUKcUZnj,BuZmxYmtRb8OieD97lL6Z0" />
               <Link Id="RO9f6wZQV9XO59Bgqj9DLg" Ids="URnIiPTzBtiQBeRMXyWiHm,FVRb7unTH9IPYCtSy0FC9L" />
-              <Node Bounds="1128,2029,82,19" Id="MMfrPRYiuQjM3xd8seU4uF">
-                <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
-                </p:NodeReference>
-                <Pin Id="RCLbZeBFJFKLzQf44LxAAD" Name="Input" Kind="InputPin" />
-                <Pin Id="M3sDMWdFs2hOx462ia85aU" Name="Path" Kind="InputPin" DefaultValue="rain/1h">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="String" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="UUdaVrdQSkdOQpEwUnZ59X" Name="Value" Kind="OutputPin" />
-                <Pin Id="PfvEFYeVBsmNW9jxMcJuvs" Name="Success" Kind="OutputPin" />
-              </Node>
-              <Link Id="RYhhMUzN3fdNGTNhXKHMbb" Ids="FLF5cjd89JSMVBrUKcUZnj,RCLbZeBFJFKLzQf44LxAAD" />
-              <Node Bounds="1148,2064,82,19" Id="AI44jDHTHYpNYnozGgbWDQ">
-                <p:NodeReference LastCategoryFullName="System.XML" LastSymbolSource="VL.Xml.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
-                </p:NodeReference>
-                <Pin Id="MNSRfDX5sY4O4aJ7RB2ATQ" Name="Input" Kind="InputPin" />
-                <Pin Id="RJmROGFAZ3HNzcFQEPZHVn" Name="Path" Kind="InputPin" DefaultValue="snow/1h">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="String" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="PPsnvNRTjKxMw8nK3tnjj0" Name="Value" Kind="OutputPin" />
-                <Pin Id="GbuNl7d6IkPLvKJxMcO0pE" Name="Success" Kind="OutputPin" />
-              </Node>
-              <Link Id="KD4p1NxA6hxPZnW34wD0fV" Ids="FLF5cjd89JSMVBrUKcUZnj,MNSRfDX5sY4O4aJ7RB2ATQ" />
             </Patch>
           </Node>
           <!--
@@ -2998,8 +2876,6 @@
                 <Pin Id="OHaHY3ghJOoMuf8Jg5mkr4" Name="Weather" Kind="InputPin" />
                 <Pin Id="BjEFMwYtuIPL5CQpoM2DY5" Name="Clouds" Kind="InputPin" />
                 <Pin Id="APtBtVmhmdqQPBrNsNymkl" Name="Pop" Kind="InputPin" />
-                <Pin Id="PibtxLbhWUSOsF5pWqRxXt" Name="Precipitation Volume" Kind="InputPin" />
-                <Pin Id="AhPZzfDt37AN2uWdiVXhjy" Name="Snow Volume" Kind="InputPin" />
                 <Pin Id="OL1P12CdUwfLKQ026uYFNT" Name="UV Index" Kind="InputPin" />
                 <Pin Id="HiZ57yA2HLvO6yW2OUoQfB" Name="Output" Kind="StateOutputPin" />
               </Node>
