@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.OpenWeather</id>
-    <version>1.0.0-preview05</version>
+    <version>1.0.0-preview06</version>
     <title>VL.OpenWeather</title>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
@@ -13,7 +13,7 @@
     <copyright>Copyright © 2021 by Seb Escudie</copyright>
     <tags>VL</tags>
     <dependencies>
-      <dependency id="RestSharp" version="108.0.1" />
+      <dependency id="RestSharp" version="106.15.0" />
     </dependencies>
   </metadata>
   <files>
