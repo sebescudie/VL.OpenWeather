@@ -81,7 +81,7 @@
             <Pin Id="CmwUCDaSdK6Ou6D3mm4gK7" Name="Input" Kind="StateInputPin" />
             <Pin Id="JMxhxo46p2eMd7Kiwshi7w" Name="Hourly Reports" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1091,507,78,26" Id="NxI8PuTPGjAQcrucBTsvjg">
+          <Node Bounds="1016,507,121,26" Id="NxI8PuTPGjAQcrucBTsvjg">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="DailyForecast" />
@@ -262,7 +262,7 @@
             <Pin Id="TZWD8V9mYJ0PHF0yJ9eNP3" Name="End" Kind="OutputPin" />
             <Pin Id="UwJ09f8yshJNfrxbXXwZ1G" Name="Description" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1091,550,52,19" Id="TFryvfRcEdfONu2lZobJkE">
+          <Node Bounds="1016,550,52,19" Id="TFryvfRcEdfONu2lZobJkE">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSlice" />
@@ -273,7 +273,7 @@
             <Pin Id="GzNFsoOrGdiMdHCqe1IJCl" Name="Index" Kind="InputPin" />
             <Pin Id="FkuYmhAbg6xLx0UkldCRHB" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1091,588,345,26" Id="LL8ossw2lo4PYrSMCtlkKa">
+          <Node Bounds="1016,588,345,26" Id="LL8ossw2lo4PYrSMCtlkKa">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="DailyForecast" />
@@ -304,6 +304,31 @@
           <Pad Id="MYRCGRTNHQgLzpQbb3PrJ2" Comment="Is Error" Bounds="212,422,35,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="Q8W9WKcd1oxLDNNuGqhMHr" Name="Current data" Bounds="77,450,352,202" />
           <Pad Id="FqWv2FNtjIFM7U2zwzxxNt" Comment="Error" Bounds="273,371,109,-12" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="449,331,107,19" Id="AyCF5I94CrEPjIsbLo156g">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather" LastSymbolSource="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CurrentAndForecast (Async)" />
+            </p:NodeReference>
+            <Pin Id="MlYtx55ZP8fLWJMPeqyxGP" Name="API Key" Kind="InputPin" />
+            <Pin Id="RKd8iVW9H00Ngv1z7avvnK" Name="Latitude" Kind="InputPin" />
+            <Pin Id="BUQ0tl8vjw6O16hKmdOxDI" Name="Longitude" Kind="InputPin" />
+            <Pin Id="TqDuuCPBi4ANTsCA1yWA0h" Name="Units" Kind="InputPin" />
+            <Pin Id="MsXcUYDonLRM85Ju77vYpg" Name="Execute" Kind="InputPin" />
+            <Pin Id="BtSrv1LpFp6QF4qgcgODt4" Name="Result" Kind="OutputPin" />
+            <Pin Id="C3aj07qIVKCMVDhVkQhqAC" Name="Is Successful" Kind="OutputPin" />
+            <Pin Id="QUR2lt59M0yLtyejRRDbye" Name="Is Error" Kind="OutputPin" />
+            <Pin Id="V6QvhwnMfEJOYmbRJdoDAX" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="GCcQSVF2kNZQLN6EiN9aSq" Name="In Progress" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BwTPvwBqon0LSKZwntd5kA" Bounds="559,338,85,19" ShowValueBox="true" isIOBox="true" Value="Async friend">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="NlH8RE94ZAROz0zXuDVPsj" Name="Create" />
         <Patch Id="RibxWWdD7FvL7AQXuwPcaz" Name="Update" />
@@ -327,7 +352,6 @@
         <Link Id="LF9Jr9v4UI7Mz0nOkdkS0g" Ids="LCGAsbI6L01Mmr2l6SFO1P,AevRESekvfHO2vOUWwweFO" />
         <Link Id="LHvaUR5JjvyLVrmaT7zwZV" Ids="FkuYmhAbg6xLx0UkldCRHB,GWIuRNqifjiLKijSqYGO2u" />
         <Link Id="CVd9CggRCcCPAel9hRszkD" Ids="Cw7ZDjvfRJFOz4XhKWuzAF,MYRCGRTNHQgLzpQbb3PrJ2" />
-        <Link Id="T21EGLQGxOxP6DooCVv22U" Ids="NPuYH0rAq0RNBpnpYaiIl8,RM9J12QCeo3LLMdYgegblD" />
         <Link Id="UeMBDJ7t6UhLQ3VlQI0tgO" Ids="NPuYH0rAq0RNBpnpYaiIl8,CkhxKBaY4TGNOd5PlMpIo6" />
         <Link Id="KVEHqABtZA2LQHawleQIJL" Ids="NPuYH0rAq0RNBpnpYaiIl8,EBT6X6yvme9L0vGbu1lbc3" />
         <Link Id="SSvT67uyNyJNVUTxoe5yQK" Ids="NPuYH0rAq0RNBpnpYaiIl8,CmwUCDaSdK6Ou6D3mm4gK7" />
@@ -335,6 +359,7 @@
         <Link Id="SeJIozq65MJNdZZjKonhdd" Ids="EdDobBNN2zNL37Yndk96kd,OlIHtChVkLmNaBL3MUtRDz" />
         <Link Id="LJThxbgZ6HdOJJFsIUpHZX" Ids="UdNUPW6UdomNsQTno4CHzj,FqWv2FNtjIFM7U2zwzxxNt" />
         <Link Id="IuOX0duTcG4N2BwEjkjGEu" Ids="Rw6IIdLGWEdNasvTssKat9,MUL8HrxfMbWQAxiyd8rIJ4" />
+        <Link Id="S2XB1qRyG2VNYim5eoVMu5" Ids="NPuYH0rAq0RNBpnpYaiIl8,RM9J12QCeo3LLMdYgegblD" />
       </Patch>
     </Node>
   </Patch>
