@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2021.4.10" />
   <Patch Id="S9iuenDrqEzNzQHPQcl868">
     <Canvas Id="JRcIne9xPwkMXo3eqzNs16" DefaultCategory="IO.OpenWeather" CanvasType="FullCategory">
       <!--
@@ -3582,6 +3582,10 @@
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Pin Id="H2bBsTRuBWyM60bvbwqYGP" Name="Condition" Kind="InputPin" />
+                <ControlPoint Id="Vu4Xn4p617qNdplPxy3LRK" Bounds="848,641" Alignment="Bottom" />
+                <ControlPoint Id="Px7VhqfkWXPNZKUJJ39DVL" Bounds="848,434" Alignment="Top" />
+                <ControlPoint Id="NHIoD9bAUdeNGClTK1gxwg" Bounds="919,641" Alignment="Bottom" />
+                <ControlPoint Id="UxjiGVGF7FUPZ6aJMeBZyD" Bounds="919,434" Alignment="Top" />
                 <Patch Id="MHVJrpkncC7Pvd94xeapyl" ManuallySortedPins="true">
                   <Patch Id="Uro5ML9uVepLmHaGnoKJtM" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="MYKwArvloqVOT7DlFXFxfP" Name="Then" ManuallySortedPins="true" />
@@ -3602,6 +3606,9 @@
                       <CategoryReference Kind="Category" Name="Primitive" />
                     </p:NodeReference>
                     <Pin Id="UK7OdKjzPzZN2EeYw2ZMwK" Name="Break" Kind="OutputPin" />
+                    <ControlPoint Id="En40Oj7UmKXLHSX0J3bGM2" Bounds="792,503" Alignment="Top" />
+                    <ControlPoint Id="VO55IwKxgmAPHQrjcg2YUX" Bounds="848,620" Alignment="Bottom" />
+                    <ControlPoint Id="TqN3OYSeK1ZMejwAxsy5kK" Bounds="919,620" Alignment="Bottom" />
                     <Patch Id="DPmOgDLAApQL1llm4LfFDh" ManuallySortedPins="true">
                       <Patch Id="OiSm6iPWrM4O6mrfw3D0I3" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="VKB9CrrR2G1McUk8E66HR2" Name="Update" ManuallySortedPins="true" />
@@ -3609,20 +3616,22 @@
                       <Node Bounds="790,536,62,26" Id="PrxAXEjXRFbQcH6zgvrgdk">
                         <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastSymbolSource="RestSharp.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="get_Name" />
+                          <Choice Kind="OperationCallFlag" Name="Name" />
+                          <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                         </p:NodeReference>
                         <Pin Id="AeP9N5cBanQMjDSQO1jpzj" Name="Input" Kind="StateInputPin" />
                         <Pin Id="JCRsWmTAbtDLcmgvGFy94I" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="UkrRoGVPTigO5VPFhhPW8w" Name="Result" Kind="OutputPin" />
+                        <Pin Id="TfrsQ7fz4WYLrKExXhFg7N" Name="Name" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="861,536,61,26" Id="OlnxZfHVHKSOEhTtXzbHal">
                         <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastSymbolSource="RestSharp.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="get_Value" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                          <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                         </p:NodeReference>
                         <Pin Id="HYGra7WE08KLUSIv5BmvIK" Name="Input" Kind="StateInputPin" />
                         <Pin Id="FzpoucEYqp2MWZZn9nAObT" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="AdX0vmU4CThN3yUV0PUKo3" Name="Result" Kind="OutputPin" />
+                        <Pin Id="QINLFmkq0vfLyf0fQlaOhl" Name="Value" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="917,579,48,19" Id="R5J5ntqipe1OyzpogsJ2au">
                         <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -3635,21 +3644,12 @@
                         <Pin Id="G4WyMEB6kc2NrhtUExF58I" Name="Success" Kind="OutputPin" />
                       </Node>
                     </Patch>
-                    <ControlPoint Id="En40Oj7UmKXLHSX0J3bGM2" Bounds="792,503" Alignment="Top" />
-                    <ControlPoint Id="VO55IwKxgmAPHQrjcg2YUX" Bounds="848,620" Alignment="Bottom" />
-                    <ControlPoint Id="TqN3OYSeK1ZMejwAxsy5kK" Bounds="919,620" Alignment="Bottom" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="Vu4Xn4p617qNdplPxy3LRK" Bounds="848,641" Alignment="Bottom" />
-                <ControlPoint Id="Px7VhqfkWXPNZKUJJ39DVL" Bounds="848,434" Alignment="Top" />
-                <ControlPoint Id="NHIoD9bAUdeNGClTK1gxwg" Bounds="919,641" Alignment="Bottom" />
-                <ControlPoint Id="UxjiGVGF7FUPZ6aJMeBZyD" Bounds="919,434" Alignment="Top" />
               </Node>
               <Link Id="JBMFhG2z78TMLvg4yuVbUn" Ids="FNH3xzXURDVLHbrK9j6l16,En40Oj7UmKXLHSX0J3bGM2" />
               <Link Id="FVkRoNteaRGNxNTRNzXsnB" Ids="En40Oj7UmKXLHSX0J3bGM2,AeP9N5cBanQMjDSQO1jpzj" />
-              <Link Id="DlAXQ01MoTiOgtUqrdOAwW" Ids="UkrRoGVPTigO5VPFhhPW8w,VO55IwKxgmAPHQrjcg2YUX" />
               <Link Id="DjKN7liyUX8NsX7ugCpJj5" Ids="En40Oj7UmKXLHSX0J3bGM2,HYGra7WE08KLUSIv5BmvIK" />
-              <Link Id="QeuUhJTGg0WQLsAAkRG94W" Ids="AdX0vmU4CThN3yUV0PUKo3,K3XvKy9QdHMOStPstyEk22" />
               <Link Id="D00LWGUWk5SNds8r1RNTga" Ids="JQKEB3QKisJMsr9aR2lflg,TqN3OYSeK1ZMejwAxsy5kK" />
               <Node Bounds="716,388,65,19" Id="VwBwdw1bsHnNpVG0eqoeHn">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -3668,6 +3668,8 @@
               <Link Id="PX8z3H2dfIBN2SSJt03xJW" Ids="UxjiGVGF7FUPZ6aJMeBZyD,NHIoD9bAUdeNGClTK1gxwg" IsFeedback="true" />
               <Link Id="AnP81XYvMLJM1c3hEVjELZ" Ids="TqN3OYSeK1ZMejwAxsy5kK,NHIoD9bAUdeNGClTK1gxwg" />
               <Link Id="Le0CH1SaIC5Qbd1JQWgBDB" Ids="NHIoD9bAUdeNGClTK1gxwg,PFDf4fBV4BlMSGhV99P9vI" />
+              <Link Id="CQVPik1WZHWN6o6teRBELU" Ids="TfrsQ7fz4WYLrKExXhFg7N,VO55IwKxgmAPHQrjcg2YUX" />
+              <Link Id="OHsrPsTXyRsLEVincKi0wP" Ids="QINLFmkq0vfLyf0fQlaOhl,K3XvKy9QdHMOStPstyEk22" />
               <Pin Id="EtoVllyANcFQLh3O8u7aHw" Name="Name" Kind="OutputPin" Bounds="802,677">
                 <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
                   <Choice Kind="TypeFlag" Name="Spread" />
@@ -4868,7 +4870,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Q4sVXpZKxErPXfRSh4230s" Location="VL.CoreLib" Version="2021.4.9" />
+  <NugetDependency Id="Q4sVXpZKxErPXfRSh4230s" Location="VL.CoreLib" Version="2021.4.10" />
   <PlatformDependency Id="O0xlpfB6f4YNjK96wHUb8v" Location="mscorlib" />
   <PlatformDependency Id="IemhgVeTFIWOod06ET9T7r" Location="./src/VL.OpenWeather/bin/Release/netstandard2.0/VL.OpenWeather.dll" />
   <NugetDependency Id="RkC6KZFBYRjLDJhcNJqbQw" Location="RestSharp" Version="106.15.0" />
