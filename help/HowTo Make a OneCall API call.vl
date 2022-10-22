@@ -156,6 +156,7 @@
               <CategoryReference Kind="RecordType" Name="CurrentAndForecastResponse" />
               <Choice Kind="OperationCallFlag" Name="CurrentWeather" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="RM9J12QCeo3LLMdYgegblD" Name="Input" Kind="StateInputPin" />
             <Pin Id="Tj2hgKy0bVBOMQRE50cIRJ" Name="Datetime" Kind="OutputPin" />
             <Pin Id="NpKCiPEFrMBPhqff6pHicL" Name="Sunrise" Kind="OutputPin" />
@@ -309,6 +310,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CurrentAndForecast (Async)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MlYtx55ZP8fLWJMPeqyxGP" Name="API Key" Kind="InputPin" />
             <Pin Id="RKd8iVW9H00Ngv1z7avvnK" Name="Latitude" Kind="InputPin" />
             <Pin Id="BUQ0tl8vjw6O16hKmdOxDI" Name="Longitude" Kind="InputPin" />
