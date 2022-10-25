@@ -143,12 +143,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BinsBnQj4ZZLgoFGFJObnn" Bounds="613,423,499,503" ShowValueBox="true" isIOBox="true" Value="{&#xD;&#xA;    &quot;current&quot;: {&#xD;&#xA;        &quot;clouds&quot;: 74,&#xD;&#xA;        &quot;dew_point&quot;: 19.83,&#xD;&#xA;        &quot;dt&quot;: 1666700186,&#xD;&#xA;        &quot;feels_like&quot;: 26.16,&#xD;&#xA;        &quot;humidity&quot;: 70,&#xD;&#xA;        &quot;pressure&quot;: 1015,&#xD;&#xA;        &quot;sunrise&quot;: 1666685100,&#xD;&#xA;        &quot;sunset&quot;: 1666730713,&#xD;&#xA;        &quot;temp&quot;: 25.71,&#xD;&#xA;        &quot;uvi&quot;: 6.7,&#xD;&#xA;        &quot;visibility&quot;: 10000,&#xD;&#xA;        &quot;weather&quot;: [&#xD;&#xA;            {&#xD;&#xA;                &quot;description&quot;: &quot;broken clouds&quot;,&#xD;&#xA;                &quot;icon&quot;: &quot;04d&quot;,&#xD;&#xA;                &quot;id&quot;: 803,&#xD;&#xA;                &quot;main&quot;: &quot;Clouds&quot;&#xD;&#xA;            }&#xD;&#xA;        ],&#xD;&#xA;        &quot;wind_deg&quot;: 130,&#xD;&#xA;        &quot;wind_gust&quot;: 1.72,&#xD;&#xA;        &quot;wind_speed&quot;: 1.95&#xD;&#xA;    },&#xD;&#xA;    &quot;lat&quot;: -18.5404,&#xD;&#xA;    &quot;lon&quot;: -40.2894,&#xD;&#xA;    &quot;timezone&quot;: &quot;America/Sao_Paulo&quot;,&#xD;&#xA;    &quot;timezone_offset&quot;: -10800&#xD;&#xA;}">
-            <p:TypeAnnotation>
-              <Choice Kind="ImmutableTypeFlag" Name="String" />
-              <FullNameCategoryReference ID="Primitive" />
-            </p:TypeAnnotation>
-          </Pad>
         </Canvas>
         <Patch Id="NlH8RE94ZAROz0zXuDVPsj" Name="Create" />
         <Patch Id="RibxWWdD7FvL7AQXuwPcaz" Name="Update" />
@@ -173,5 +167,5 @@
   <NugetDependency Id="F9eTlA89oQyPE6Padtr7Ye" Location="VL.OpenWeather" Version="0.0.0.0" />
   <PlatformDependency Id="AyUUn7CwMZOPY3aLOaU2tm" Location="System" />
   <PlatformDependency Id="D8iaoHjKfkZO7ZmvXSeZQ9" Location="mscorlib" />
-  <NugetDependency Id="J1m2Rh9AvCkNYq5Qhr5Lah" Location="System.Text.Json" Version="5.0.2" />
+  <NugetDependency Id="J1m2Rh9AvCkNYq5Qhr5Lah" Location="System.Text.Json" Version="6.0.6" />
 </Document>
