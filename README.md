@@ -2,13 +2,22 @@
 
 [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/VL.OpenWeather?style=flat-square)](https://www.nuget.org/packages/VL.OpenWeather/)
 
-Allows to retrieve results from OpenWeather's OneCall API. Only retrieves current weather and previsions for the next 60 minutes, 48 hours and 7 days, as well as weather alerts. Historical data from the last five days is not implemented yet.
+Implements OpenWeahter's One Call API 1.0. As per their website, you can retrieve the following from any geographical coordinates:
 
-Works with OpenWeather's [OneCall API v3.0](https://openweathermap.org/api/one-call-3).
+- Current weather
+- Minute forecast for 1 hour
+- Hourly forecast for 48 hours
+- Daily forecast for 7 days
+- National weather alerts
+- Historical weather data for the previous 5 days
+
+## Compatibility
+
+Starting with `1.0.0-preview07` this plugin only works with vvvv gamma 2021.4.11. Older previews should work with any vvvv version.
 
 ## Installation
 
-Go to VL's command line and type
+Go to vvvv gamma's command line and type
 
 ```
 nuget install VL.OpenWeather -pre
