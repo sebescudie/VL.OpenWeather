@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2021.4.11.1277" Version="0.128">
+  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2021.4.11-1277-g333deca562" />
   <Patch Id="S9iuenDrqEzNzQHPQcl868">
     <Canvas Id="JRcIne9xPwkMXo3eqzNs16" DefaultCategory="IO.OpenWeather" CanvasType="FullCategory">
       <!--
@@ -3827,7 +3827,7 @@
                 <Pin Id="IFi2ucdc9BeO4jAsKRSdTb" Name="Base Url" Kind="InputPin" />
                 <Pin Id="Ubt0ygKJPA0QJzL4DcCbwB" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="TngmbgZe0ZOOyA3aWBgXTl" Bounds="333,305,252,15" ShowValueBox="true" isIOBox="true" Value="https://api.openweathermap.org/data/2.5/onecall">
+              <Pad Id="TngmbgZe0ZOOyA3aWBgXTl" Bounds="333,305,252,15" ShowValueBox="true" isIOBox="true" Value="https://api.openweathermap.org/data/3.0/onecall">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -4868,7 +4868,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Q4sVXpZKxErPXfRSh4230s" Location="VL.CoreLib" Version="2021.4.9" />
+  <NugetDependency Id="Q4sVXpZKxErPXfRSh4230s" Location="VL.CoreLib" Version="2021.4.11-1277-g333deca562" />
   <PlatformDependency Id="O0xlpfB6f4YNjK96wHUb8v" Location="mscorlib" />
   <PlatformDependency Id="IemhgVeTFIWOod06ET9T7r" Location="./src/VL.OpenWeather/bin/Release/netstandard2.0/VL.OpenWeather.dll" />
   <NugetDependency Id="RkC6KZFBYRjLDJhcNJqbQw" Location="RestSharp" Version="106.15.0" />
