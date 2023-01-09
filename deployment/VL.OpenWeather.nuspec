@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.OpenWeather</id>
-    <version>1.0.0-preview07</version>
+    <version>1.0.0-preview08</version>
     <title>VL.OpenWeather</title>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
