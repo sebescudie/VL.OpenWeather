@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="E76UBXvIOlLPdp6iYoSRVp" LanguageVersion="2021.4.11.1227" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="E76UBXvIOlLPdp6iYoSRVp" LanguageVersion="2023.5.2-0020-gc041842068" Version="0.128">
   <Patch Id="LnmepPnCSFIOsxULrBfaD8">
-    <Canvas Id="CKvuYAZY28WQYsdztQBzKm" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="CKvuYAZY28WQYsdztQBzKm" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
@@ -14,17 +14,17 @@
       </p:NodeReference>
       <Patch Id="OruR0bQ5iOKMoF2FhmJwwX">
         <Canvas Id="VQ0EaUNbNllMwJUrCAfGj1" CanvasType="Group">
-          <Node Bounds="127,434,125,19" Id="IAowKAWdaL8QFh0UlUnRPY">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather" LastSymbolSource="VL.OpenWeather.vl">
+          <Node Bounds="127,434,145,19" Id="IAowKAWdaL8QFh0UlUnRPY">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.WeatherHistory" LastDependency="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Historical (Blocking)" />
+              <Choice Kind="ProcessAppFlag" Name="WeatherHistory (Blocking)" />
             </p:NodeReference>
             <Pin Id="JlikFfDVaQbM6nuKIuTgMp" Name="API Key" Kind="InputPin" />
             <Pin Id="BrHbMW1nd5oOUk79tj8n96" Name="Latitude" Kind="InputPin" />
             <Pin Id="LdFVZ2wKUeKOaPHGWRV0pr" Name="Longitude" Kind="InputPin" />
             <Pin Id="KAnboNEQcNWPX1ZA8EGmBP" Name="Date" Kind="InputPin" />
             <Pin Id="S6vzD7sWtr7M9nRnjjDZHX" Name="Only Current" Kind="InputPin" />
-            <Pin Id="QvyM4qi0ApVPexfjZ3MLzA" Name="Units" Kind="InputPin" />
+            <Pin Id="NuA5qW2Eb3QOwUFX9G7RNP" Name="Units" Kind="InputPin" />
             <Pin Id="TeAnLnkhAsKM5zVX5oiB6p" Name="Execute" Kind="InputPin" />
             <Pin Id="KGry4LeXgYsNoeODQy0FNa" Name="Response" Kind="OutputPin" />
             <Pin Id="F4ZVtNpl1tKOL601r2oreP" Name="Is Successful" Kind="OutputPin" />
@@ -32,44 +32,44 @@
             <Pin Id="R82hjEyopUwPlfxXLqyWSm" Name="Error" Kind="OutputPin" />
           </Node>
           <Pad Id="Bot9VBs42stMRkHEU4o2Mc" Comment="Latitude" Bounds="150,253,67,15" ShowValueBox="true" isIOBox="true" Value="48.85341">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VK5yM0VqZvCQJfI9X7R6pz" Comment="Longitude" Bounds="169,282,63,15" ShowValueBox="true" isIOBox="true" Value="2.3488">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="VK5yM0VqZvCQJfI9X7R6pz" Comment="Longitude" Bounds="176,287,63,15" ShowValueBox="true" isIOBox="true" Value="2.3488">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="127,176,63,19" Id="MhEo1JrAKeJP8gVMcXCqr0">
-            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="VL.CoreLib.IO.vl">
+            <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FileReader (String)" />
             </p:NodeReference>
             <Pin Id="KlhgKi2lUSmOCneDjv3JPS" Name="File Path" Kind="InputPin" />
             <Pin Id="UYYBK474ybLMR00bePpgL4" Name="Encoding" Kind="InputPin" />
             <Pin Id="SEvhHbfAr5BOFcN052pMH4" Name="Read" Kind="InputPin" DefaultValue="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="GHQ6ilx7RQONEBlOHAfgwn" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="CHrnU6SFVHMQZtWxBV8pPu" Comment="File Path" Bounds="129,128,35,15" ShowValueBox="true" isIOBox="true" Value="key.txt">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="185,148,54,19" Id="CRhSfS4NQOGLYXa6ZtKnt1">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
             </p:NodeReference>
             <Pin Id="OUaw8Yd4BVgMAh2Qu6XOAg" Name="Simulate" Kind="InputPin" DefaultValue="False" />
             <Pin Id="OE5zpJDaBmQOTRMKqmzjKF" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IZayrXMw8VbPxv2aDl4kJv" Comment="Execute" Bounds="249,419,35,15" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+          <Pad Id="IZayrXMw8VbPxv2aDl4kJv" Comment="Execute" Bounds="269,415,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -77,9 +77,9 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TXrhdWvXjfBMsIletSthhx" Comment="Error" Bounds="249,474,114,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="187,315,125,26" Id="SXVgZha4hTnNOncmiOzNb1">
-            <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="TXrhdWvXjfBMsIletSthhx" Comment="Error" Bounds="269,473,114,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="198,326,125,26" Id="SXVgZha4hTnNOncmiOzNb1">
+            <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="DateTime (UTC)" />
               <Choice Kind="OperationCallFlag" Name="Create (Year Month Day Hour Minute Second Offset)" />
@@ -93,8 +93,8 @@
             <Pin Id="OTbKTxZhPLyNaPyuXdnqcm" Name="Offset" Kind="InputPin" />
             <Pin Id="Tz0qQWHSgG1MPWIvZuS8mP" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="DfcnzQ4lj2NNvJGbYgAa02" Comment="Only Current" Bounds="209,365,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+          <Pad Id="DfcnzQ4lj2NNvJGbYgAa02" Comment="Only Current" Bounds="223,374,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -102,11 +102,11 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G4vWMXkezMnMu81a3pUJSz" Comment="Is Successful" Bounds="169,503,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="127,541,105,26" Id="OGlAh8XNDSRPYaZSDJxT5p">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather.HistoricalResponse" LastSymbolSource="VL.OpenWeather.vl">
+          <Pad Id="G4vWMXkezMnMu81a3pUJSz" Comment="Is Successful" Bounds="176,504,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="127,541,113,26" Id="OGlAh8XNDSRPYaZSDJxT5p">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.HistoricalResponse" LastDependency="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="HistoricalResponse" />
+              <CategoryReference Kind="RecordType" Name="WeatherHistoryResponse" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="Da6TqSZpWtCPdNdfp3r7XS" Name="Input" Kind="StateInputPin" />
@@ -117,8 +117,8 @@
             <Pin Id="B3j27Ji2Q93Lqi4CQ98F4K" Name="Current Weather" Kind="OutputPin" />
             <Pin Id="GuXMK2UIVd0Nw8cKERZt63" Name="Hourly History" Kind="OutputPin" />
           </Node>
-          <Node Bounds="215,586,289,86" Id="PY0hWMduhozMJxBu3iXT9w">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+          <Node Bounds="223,590,289,86" Id="PY0hWMduhozMJxBu3iXT9w">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -128,8 +128,8 @@
               <Patch Id="NmMAFqzrB7cLom4c92Sfqp" Name="Create" ManuallySortedPins="true" />
               <Patch Id="OmTIjSmxg3kO3BfbqT75x0" Name="Update" ManuallySortedPins="true" />
               <Patch Id="HErzLdI9seiP1Z6PDehbBI" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="227,613,265,26" Id="HEsFNsSRJyyONMEM1sFwzP">
-                <p:NodeReference LastCategoryFullName="IO.OpenWeather.HourlyReport" LastSymbolSource="VL.OpenWeather.vl">
+              <Node Bounds="235,617,265,26" Id="HEsFNsSRJyyONMEM1sFwzP">
+                <p:NodeReference LastCategoryFullName="IO.OpenWeather.HourlyReport" LastDependency="VL.OpenWeather.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="HourlyReport" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -151,28 +151,10 @@
                 <Pin Id="RLHDDRojP34ObTv50c3MQo" Name="Pop" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="PFw9onwiXmkQApp7fJYkCK" Bounds="229,592" Alignment="Top" />
-          </Node>
-          <Node Bounds="487,434,125,19" Id="TaFlLfu6x2BNPVUI3ewzRv">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather" LastSymbolSource="VL.OpenWeather.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Historical (Async)" />
-            </p:NodeReference>
-            <Pin Id="NDevJebpy18LarqOwgaZT7" Name="Execute" Kind="InputPin" />
-            <Pin Id="N8YnNpyb6OMP4Dl3sQ4JKv" Name="API Key" Kind="InputPin" />
-            <Pin Id="RYl2dtvRcDYPlNHpCVN3Z9" Name="Latitude" Kind="InputPin" />
-            <Pin Id="NppJr2adPcKLAqOksNMNjz" Name="Longitude" Kind="InputPin" />
-            <Pin Id="PS0DRoNBiA2NRmtqM36Nv7" Name="Date" Kind="InputPin" />
-            <Pin Id="IAWKWS0I1d0M7oUNhoxS04" Name="Only Current" Kind="InputPin" />
-            <Pin Id="NpJQK35j0SIN9kl1jF1Asd" Name="Units" Kind="InputPin" />
-            <Pin Id="GEBtz27Y6tQLkl4VYbBO6b" Name="Result" Kind="OutputPin" />
-            <Pin Id="UxoMjJrTLOHQPLwmrC50cD" Name="Is Successful" Kind="OutputPin" />
-            <Pin Id="PleOW1JsQYmLi2DKGq0lao" Name="Is Error" Kind="OutputPin" />
-            <Pin Id="BlJI33E4bB6QUIFAfZ6l1Q" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="TPi58zpxvu9LbZanKqucPN" Name="Error Message" Kind="OutputPin" />
+            <ControlPoint Id="PFw9onwiXmkQApp7fJYkCK" Bounds="237,596" Alignment="Top" />
           </Node>
           <Pad Id="DmC8GltHFDFLTaPi1yqwzi" Bounds="430,271,332,19" ShowValueBox="true" isIOBox="true" Value="https://openweathermap.org/api/one-call-api#history">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -203,6 +185,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="H3morlSw5jnPfmVZUV2F4t" Location="VL.CoreLib" Version="2021.4.11-1227-gcb1721230f" />
+  <NugetDependency Id="H3morlSw5jnPfmVZUV2F4t" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
   <NugetDependency Id="UyEKhVajoCFLW7rR5WQKHZ" Location="VL.OpenWeather" Version="0.0.0.0" />
 </Document>
