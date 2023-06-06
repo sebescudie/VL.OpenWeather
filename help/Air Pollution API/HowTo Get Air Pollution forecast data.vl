@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="UA2VMbDngK8OPfWr7qRWuG" LanguageVersion="2023.5.2-0020-gc041842068" Version="0.128">
+  <NugetDependency Id="Q6qiMzD2V04PKfySqvQkKD" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
+  <Patch Id="BcQCewISOS9PczDVoRUqzD">
+    <Canvas Id="DngUVoXu6Q9L8SfUN0cPbu" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="BKJjlM2u2qXLFtSw3fZyJg">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="LLIAuBTlbB9NH174k05KOW">
+        <Canvas Id="AIddwNW4utkMUinTQKiXVK" CanvasType="Group">
+          <Node Bounds="271,377,107,19" Id="MgMDXsJrzOcNGC7PG0fthu">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.AirPollution.Forecast" LastDependency="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AirPollutionForecast (Blocking)" />
+            </p:NodeReference>
+            <Pin Id="LHC5C4DP04pPSdwXkEIeRD" Name="API Key" Kind="InputPin" />
+            <Pin Id="Rq2BZauRvbxLJFgdaT2FB3" Name="Latitude" Kind="InputPin" />
+            <Pin Id="R6vrF7JIcVTOiZX4F4IpLN" Name="Longitude" Kind="InputPin" />
+            <Pin Id="CePMpOohA7MMsaf1r9JApu" Name="Execute" Kind="InputPin" />
+            <Pin Id="FllCcun5nTlK92JlkCLGRV" Name="Response" Kind="OutputPin" />
+            <Pin Id="Vq8UMWbn1HIOINDLm1koeu" Name="Is Successful" Kind="OutputPin" />
+            <Pin Id="NN6yKCAqASANIDO8hBhebk" Name="Is Error" Kind="OutputPin" />
+            <Pin Id="Nj2qcyor3CALtvh77fkoK7" Name="Error" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="271,249,63,19" Id="Hh2lpi53vdnOdkkMiXrwfq">
+            <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileReader (String)" />
+            </p:NodeReference>
+            <Pin Id="GJSgworkDbkNwv6JeK1wqD" Name="File Path" Kind="InputPin" />
+            <Pin Id="THPuFH87G1UMdKk1DlaKQx" Name="Encoding" Kind="InputPin" />
+            <Pin Id="TN48YvHOfwEM8sKF4pg0bh" Name="Read" Kind="InputPin" />
+            <Pin Id="FiJftGQoeMrNvzXVLDVH0l" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QQL9KyRU8huLK1XwNZ1TKr" Comment="File Path" Bounds="273,193,140,15" ShowValueBox="true" isIOBox="true" Value="..\assets\key.txt">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="329,219,54,19" Id="E4XxpM74FUkLAklTppbxAq">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+            </p:NodeReference>
+            <Pin Id="DyYsy60x13oLx9Lnz2XWTg" Name="Simulate" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="CQ7CZ50xIqpPWite0TZMF8" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FNUJOWZZFdpMpemrkDGqjp" Comment="Execute" Bounds="375,357,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Goi46GzxTCYPT2aHukjmH6" Comment="Is Successful" Bounds="307,422,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="P6sUwtCQFuOLLXtQy5sA0E" Comment="Latitude" Bounds="306,290,58,15" ShowValueBox="true" isIOBox="true" Value="48.85341">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Q0Kf3La1GWGOfbK7OBWMFM" Comment="Longitude" Bounds="341,320,58,15" ShowValueBox="true" isIOBox="true" Value="2.3488">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="271,479,104,26" Id="K4mhNcw8ZjGMpzN88gYBpV">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.AirPollution.History.AirPollutionHistoryResponse" LastDependency="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="AirPollutionApiResponse" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="ERNXd7gRd91L4cl4mnSiLx" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MnGzqrYxf2iMuCeaZbvEWy" Name="Coordinates" Kind="OutputPin" />
+            <Pin Id="CDT53VgukOcMma8gHUtR4I" Name="List" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="RSyNJz68vvCQTlOi3bHFEG" Name="Create" />
+        <Patch Id="Sm9N0gAy7BsMLzHSLBoKLA" Name="Update" />
+        <ProcessDefinition Id="Rv1cw5Vqy8eLBy8JGcMoeH">
+          <Fragment Id="IZzS3gY62QkPW0l3C91SK8" Patch="RSyNJz68vvCQTlOi3bHFEG" Enabled="true" />
+          <Fragment Id="THRm3SljLu4OJcYAtSjoAq" Patch="Sm9N0gAy7BsMLzHSLBoKLA" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="TwqSnrmJKsEQcG1AtJE5ez" Ids="QQL9KyRU8huLK1XwNZ1TKr,GJSgworkDbkNwv6JeK1wqD" />
+        <Link Id="RHj885Gj1FSLfjAPIpcPd1" Ids="FiJftGQoeMrNvzXVLDVH0l,LHC5C4DP04pPSdwXkEIeRD" />
+        <Link Id="HkLFHO1opIjNRsRsoVxypM" Ids="CQ7CZ50xIqpPWite0TZMF8,TN48YvHOfwEM8sKF4pg0bh" />
+        <Link Id="K1ni8PD69cSP24whG7upDr" Ids="FNUJOWZZFdpMpemrkDGqjp,CePMpOohA7MMsaf1r9JApu" />
+        <Link Id="P8AYByvptcnNKLrOKTFD7Z" Ids="Vq8UMWbn1HIOINDLm1koeu,Goi46GzxTCYPT2aHukjmH6" />
+        <Link Id="SDdY26SScQpMYuJc06e1SM" Ids="P6sUwtCQFuOLLXtQy5sA0E,Rq2BZauRvbxLJFgdaT2FB3" />
+        <Link Id="JdodNmqr8QoQMxHqUYmj45" Ids="Q0Kf3La1GWGOfbK7OBWMFM,R6vrF7JIcVTOiZX4F4IpLN" />
+        <Link Id="SeMhI81L6FxMUbWBni8tIf" Ids="FllCcun5nTlK92JlkCLGRV,ERNXd7gRd91L4cl4mnSiLx" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="UVTwRUwiIKHPiQvM28EEEU" Location="VL.OpenWeather" Version="0.0.0" />
+</Document>
