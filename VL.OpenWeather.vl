@@ -6963,7 +6963,7 @@
     ************************ AirPollutionHistory (Blocking) ************************
 
 -->
-          <Node Name="AirPollutionHistory (Blocking)" Bounds="210,276" Id="IbThajHbYPGNPwulSoU3O7">
+          <Node Name="AirPollutionHistory (Blocking)" Bounds="210,276" Id="IbThajHbYPGNPwulSoU3O7" Summary="Gives air pollution history data." Remarks="Historical data is accessible from 27th November 2020.">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
               <Choice Kind="ContainerDefinition" Name="Process" />
             </p:NodeReference>
