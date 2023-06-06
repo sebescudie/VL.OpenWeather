@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VERk8yIN3fSNQW8jZHvkbL" LanguageVersion="2021.4.11.1227" Version="0.128">
-  <NugetDependency Id="RKvb0FyskEhO1GFRu1YC4n" Location="VL.CoreLib" Version="2021.4.11-1227-gcb1721230f" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VERk8yIN3fSNQW8jZHvkbL" LanguageVersion="2023.5.2-0020-gc041842068" Version="0.128">
+  <NugetDependency Id="RKvb0FyskEhO1GFRu1YC4n" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
   <Patch Id="NMhQUsCN8yLNRhYJWP0f5c">
     <Canvas Id="ROjFlPijv4SPaUrmLUTYuF" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -16,16 +16,16 @@
       <Patch Id="HTLIEqn05wyMQXPtLHY7pP">
         <Canvas Id="GHgLBqVxCQRNdgjci1GNn2" CanvasType="Group">
           <Node Bounds="91,331,185,19" Id="K0tShxCEhfkNPqJtPR1LGT">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather" LastSymbolSource="VL.OpenWeather.vl">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.CurrentAndForecastWeather" LastDependency="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CurrentAndForecast (Blocking)" />
+              <Choice Kind="ProcessAppFlag" Name="CurrentAndForecastWeather (Blocking)" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MUL8HrxfMbWQAxiyd8rIJ4" Name="API Key" Kind="InputPin" />
             <Pin Id="Kbsm1zMLOTzNq0TTwB0SLh" Name="Latitude" Kind="InputPin" />
             <Pin Id="GfN19XzF9zMMhB6B8yubHz" Name="Longitude" Kind="InputPin" />
             <Pin Id="H1ig3O6LgnRPvUv0w4HGHX" Name="Exclude Current Weather" Kind="InputPin" DefaultValue="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
@@ -34,7 +34,7 @@
             <Pin Id="BDOMKZGmBTcMWngmgVJL9d" Name="Exclude Daily Reports" Kind="InputPin" DefaultValue="False" />
             <Pin Id="OZC42zPQxMNQP6JwpevgYx" Name="Exclude Alerts" Kind="InputPin" />
             <Pin Id="Vr6u8YmKij3OK3cjaVeAi7" Name="Units" Kind="InputPin" DefaultValue="Metric">
-              <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastSymbolSource="VL.OpenWeather.dll">
+              <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastDependency="VL.OpenWeather.dll">
                 <Choice Kind="TypeFlag" Name="Units" />
               </p:TypeAnnotation>
             </Pin>
@@ -44,8 +44,8 @@
             <Pin Id="Cw7ZDjvfRJFOz4XhKWuzAF" Name="Is Error" Kind="OutputPin" />
             <Pin Id="UdNUPW6UdomNsQTno4CHzj" Name="Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="VAPtbZ3q9IeNMDKhz6Uw8V" Comment="Trigger" Bounds="273,308,39,20" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+          <Pad Id="VAPtbZ3q9IeNMDKhz6Uw8V" Comment="Trigger" Bounds="273,308,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -54,17 +54,17 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="RCBz6Z3HnjVLkhus4eUOz5" Comment="Latitude" Bounds="113,212,67,15" ShowValueBox="true" isIOBox="true" Value="-18.5404">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="V8C0sj1BSMsPfGTyCUoCfa" Comment="Longitude" Bounds="133,236,63,15" ShowValueBox="true" isIOBox="true" Value="-40.2894">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Ju8E37GZp4VOrObFmep2xN" Bounds="466,164,306,44" ShowValueBox="true" isIOBox="true" Value="For more information on the results provided by the API, check OpenWeather's documentation">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -73,7 +73,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="MXpkGI50jeCLQRHyLoFKoD" Bounds="466,215,284,19" ShowValueBox="true" isIOBox="true" Value="https://openweathermap.org/api/one-call-api">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -83,26 +83,26 @@
           </Pad>
           <Overlay Id="Qxl0XuhfTL1LS4e52fph0l" Name="" Bounds="429,123,388,131" />
           <Node Bounds="90,169,63,19" Id="I082CnAKda5PIPzUfDPEIi">
-            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="VL.CoreLib.IO.vl">
+            <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FileReader (String)" />
             </p:NodeReference>
             <Pin Id="UfvfLP2Bv9TMfwrfPOnx4n" Name="File Path" Kind="InputPin" />
             <Pin Id="PyHsbIB5U1WO0c9nLFa8t3" Name="Encoding" Kind="InputPin" />
             <Pin Id="PsDOmliUUKuOt1LOODEblu" Name="Read" Kind="InputPin" DefaultValue="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Rw6IIdLGWEdNasvTssKat9" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="M5jQlAXeW2aLVNwU7aW2iq" Comment="File Path" Bounds="92,121,35,15" ShowValueBox="true" isIOBox="true" Value="key.txt">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="M5jQlAXeW2aLVNwU7aW2iq" Comment="File Path" Bounds="92,121,35,15" ShowValueBox="true" isIOBox="true" Value="..\assets\key.txt">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="148,141,54,19" Id="PneWLT0GPr1PN8rh2R1ltn">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
             </p:NodeReference>
@@ -110,17 +110,17 @@
             <Pin Id="IBekOi2oWOyQT8XnU1OQ9e" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="MqlAoNp22NPPKr6rOADaXv" Comment="Units" Bounds="253,286,69,15" ShowValueBox="true" isIOBox="true" Value="Metric">
-            <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastSymbolSource="VL.OpenWeather.dll">
+            <p:TypeAnnotation LastCategoryFullName="VL.OpenWeather.Enum" LastDependency="VL.OpenWeather.dll">
               <Choice Kind="TypeFlag" Name="Units" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="OlIHtChVkLmNaBL3MUtRDz" Comment="Is Success" Bounds="153,394,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MYRCGRTNHQgLzpQbb3PrJ2" Comment="Is Error" Bounds="212,422,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FqWv2FNtjIFM7U2zwzxxNt" Comment="Error" Bounds="273,371,109,-12" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="449,331,107,19" Id="AyCF5I94CrEPjIsbLo156g">
-            <p:NodeReference LastCategoryFullName="IO.OpenWeather" LastSymbolSource="VL.OpenWeather.vl">
+          <Pad Id="FqWv2FNtjIFM7U2zwzxxNt" Comment="Error" Bounds="273,371,109,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="449,331,144,19" Id="AyCF5I94CrEPjIsbLo156g">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.CurrentAndForecastWeather" LastDependency="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CurrentAndForecast (Async)" />
+              <Choice Kind="ProcessAppFlag" Name="CurrentAndForecastWeather (Async)" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MlYtx55ZP8fLWJMPeqyxGP" Name="API Key" Kind="InputPin" />
@@ -134,8 +134,8 @@
             <Pin Id="V6QvhwnMfEJOYmbRJdoDAX" Name="Error Message" Kind="OutputPin" />
             <Pin Id="GCcQSVF2kNZQLN6EiN9aSq" Name="In Progress" Kind="OutputPin" />
           </Node>
-          <Pad Id="BwTPvwBqon0LSKZwntd5kA" Bounds="559,338,85,19" ShowValueBox="true" isIOBox="true" Value="Async friend">
-            <p:TypeAnnotation>
+          <Pad Id="BwTPvwBqon0LSKZwntd5kA" Bounds="634,338,85,19" ShowValueBox="true" isIOBox="true" Value="Async friend">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -143,6 +143,23 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="91,442,165,26" Id="OYxS0ePvG7pNex4eJZSvxM">
+            <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.CurrentAndForecastWeather.CurrentAndForecastWeatherResponse" LastDependency="VL.OpenWeather.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="CurrentAndForecastWeatherResponse" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="C9Ec74mdCpbNh3q4RbGCaa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="ABjWTwk8GtkLgqLaizhWLi" Name="Latitude" Kind="OutputPin" />
+            <Pin Id="J81e0wHwR6PPEPvXuQ7431" Name="Longitude" Kind="OutputPin" />
+            <Pin Id="PUVeSNfySkLORed3PQjBeA" Name="Timezone" Kind="OutputPin" />
+            <Pin Id="Jdfqb23hWrfNz2q3YhfdyA" Name="Timezone Offset" Kind="OutputPin" />
+            <Pin Id="Utzkp5R4B9UMRQaA0IK2b5" Name="Current" Kind="OutputPin" />
+            <Pin Id="SbuviwiLqw3NYk29Va3vAt" Name="Minutely Reports" Kind="OutputPin" />
+            <Pin Id="PuAL1FyOAvOLVYEJePXZNR" Name="Hourly Reports" Kind="OutputPin" />
+            <Pin Id="TcZ7iaWG9N8LOfFOQykDuF" Name="Daily Reports" Kind="OutputPin" />
+            <Pin Id="VRc9gSmpAIFNzQvzjgxxhX" Name="Alerts" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="NlH8RE94ZAROz0zXuDVPsj" Name="Create" />
         <Patch Id="RibxWWdD7FvL7AQXuwPcaz" Name="Update" />
@@ -160,12 +177,13 @@
         <Link Id="SeJIozq65MJNdZZjKonhdd" Ids="EdDobBNN2zNL37Yndk96kd,OlIHtChVkLmNaBL3MUtRDz" />
         <Link Id="LJThxbgZ6HdOJJFsIUpHZX" Ids="UdNUPW6UdomNsQTno4CHzj,FqWv2FNtjIFM7U2zwzxxNt" />
         <Link Id="IuOX0duTcG4N2BwEjkjGEu" Ids="Rw6IIdLGWEdNasvTssKat9,MUL8HrxfMbWQAxiyd8rIJ4" />
+        <Link Id="RRZCsFx7y9aL0K58Y5b6yw" Ids="NPuYH0rAq0RNBpnpYaiIl8,C9Ec74mdCpbNh3q4RbGCaa" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EcC5H8cGMDSQT5suTOi9D6" Location="VL.CoreLib" Version="2021.4.11-1227-gcb1721230f" />
+  <NugetDependency Id="EcC5H8cGMDSQT5suTOi9D6" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
   <NugetDependency Id="F9eTlA89oQyPE6Padtr7Ye" Location="VL.OpenWeather" Version="0.0.0.0" />
   <PlatformDependency Id="AyUUn7CwMZOPY3aLOaU2tm" Location="System" />
   <PlatformDependency Id="D8iaoHjKfkZO7ZmvXSeZQ9" Location="mscorlib" />
-  <NugetDependency Id="J1m2Rh9AvCkNYq5Qhr5Lah" Location="System.Text.Json" Version="6.0.6" />
+  <NugetDependency Id="J1m2Rh9AvCkNYq5Qhr5Lah" Location="System.Text.Json" Version="6.0.5" />
 </Document>
