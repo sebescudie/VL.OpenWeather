@@ -19,11 +19,12 @@ Wraps some of OpenWeather's APIs :
 ### [Air Pollution API](https://openweathermap.org/api/air-pollution)
 
 - Air pollution history
+- Air pollution forecast
 
 ## Compatibility
 
 - Starting with `1.0.0-preview07` this plugin only works with vvvv gamma 2021.4.11. Older previews should work with any vvvv version
-- Starting with `1.0.0` stable, this plugin was only tested with vvvv gamma 5.1
+- Starting with `1.0.0`, this plugin was only tested with vvvv gamma 5.1
 
 ## Installation
 
