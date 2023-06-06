@@ -110,7 +110,7 @@
           <Node Bounds="188,590,117,26" Id="QZF7ptX7RyyPqbc3NjOcEw">
             <p:NodeReference LastCategoryFullName="IO.OpenWeather.AirPollution.History.AirPollutionHistoryResponse" LastDependency="VL.OpenWeather.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="AirPollutionHistoryResponse" />
+              <CategoryReference Kind="RecordType" Name="AirPollutionApiResponse" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="CullxhqpMt9MOVxJRars4p" Name="Input" Kind="StateInputPin" />
