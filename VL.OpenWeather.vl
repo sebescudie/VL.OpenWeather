@@ -7840,7 +7840,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="Vr0Ib62i38NLiZmQOefPi2" Name="Input" Kind="InputPin" />
-                    <Pin Id="GmIC0yRw06bL0EYHmrb7L8" Name="Path" Kind="InputPin" DefaultValue="//list/main/aqi" />
+                    <Pin Id="GmIC0yRw06bL0EYHmrb7L8" Name="Path" Kind="InputPin" DefaultValue="main/aqi" />
                     <Pin Id="P4GqpalC2ExOMGcvUMwo81" Name="Value" Kind="OutputPin" />
                     <Pin Id="G1tJF9JMYO3PQPUNYBOZBU" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7855,7 +7855,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="IxPGxyY9ciENq2IszNtyLq" Name="Input" Kind="InputPin" />
-                    <Pin Id="P8R9G2pYuKYO37YQARm1D8" Name="Path" Kind="InputPin" DefaultValue="//list/components/co" />
+                    <Pin Id="P8R9G2pYuKYO37YQARm1D8" Name="Path" Kind="InputPin" DefaultValue="components/co" />
                     <Pin Id="Q9qC1GBLb0QMZmpNSXX8sL" Name="Value" Kind="OutputPin" />
                     <Pin Id="ALJYnR0b7u0LhZUwb4aj8I" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7867,7 +7867,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="BVSSPnyOHnxQBjnLF8oYrL" Name="Input" Kind="InputPin" />
-                    <Pin Id="FzJMR7qfWrDN4o7ODR4Pns" Name="Path" Kind="InputPin" DefaultValue="//list/components/no" />
+                    <Pin Id="FzJMR7qfWrDN4o7ODR4Pns" Name="Path" Kind="InputPin" DefaultValue="components/no" />
                     <Pin Id="GhnUWnq8Wz4N2Mv7JnKgkv" Name="Value" Kind="OutputPin" />
                     <Pin Id="LN74dQLu8YDM0xf7wIceb0" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7879,7 +7879,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="PpGIOVSt0cTNoQXdD51rc6" Name="Input" Kind="InputPin" />
-                    <Pin Id="EZ5hazCacowOt6QIu1Sxo6" Name="Path" Kind="InputPin" DefaultValue="//list/components/no2" />
+                    <Pin Id="EZ5hazCacowOt6QIu1Sxo6" Name="Path" Kind="InputPin" DefaultValue="components/no2" />
                     <Pin Id="FHRDu3vuzovOFJNsz7CVpA" Name="Value" Kind="OutputPin" />
                     <Pin Id="FQApptoRk8fMD3QoazTG14" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7891,7 +7891,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="SJW8xIw2b29Ln5Bfigfn0m" Name="Input" Kind="InputPin" />
-                    <Pin Id="PRnRICktCt9Lpie8MDzsug" Name="Path" Kind="InputPin" DefaultValue="//list/components/o3" />
+                    <Pin Id="PRnRICktCt9Lpie8MDzsug" Name="Path" Kind="InputPin" DefaultValue="components/o3" />
                     <Pin Id="Fho6zfmOnw3LDvvplRj347" Name="Value" Kind="OutputPin" />
                     <Pin Id="LHCFrWSZfgzLrElaI2XRV7" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7903,7 +7903,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="H7I0KeqJFprLyhYv2Q7vOb" Name="Input" Kind="InputPin" />
-                    <Pin Id="ByXr13bc6LANZAfOAcV9OO" Name="Path" Kind="InputPin" DefaultValue="//list/components/so2" />
+                    <Pin Id="ByXr13bc6LANZAfOAcV9OO" Name="Path" Kind="InputPin" DefaultValue="components/so2" />
                     <Pin Id="CuANHhZmOniQVhYkMC8CdQ" Name="Value" Kind="OutputPin" />
                     <Pin Id="Tr4Wq8cUzFqL92kPYEF9Gs" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7915,7 +7915,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="AkDog6PGETjQHCZQ6OKc7V" Name="Input" Kind="InputPin" />
-                    <Pin Id="Oi0552KaHJvLUMKkUVtXwd" Name="Path" Kind="InputPin" DefaultValue="//list/components/pm2_5" />
+                    <Pin Id="Oi0552KaHJvLUMKkUVtXwd" Name="Path" Kind="InputPin" DefaultValue="components/pm2_5" />
                     <Pin Id="Nms6SoM2DLCNYN6Y474ZlX" Name="Value" Kind="OutputPin" />
                     <Pin Id="VhmRDdW2nzJOCbifZML9dc" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7927,7 +7927,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="BOf6sw9tEoeNYow7vY8aa8" Name="Input" Kind="InputPin" />
-                    <Pin Id="Vvpip3vn7VnOWvpUtbFWZU" Name="Path" Kind="InputPin" DefaultValue="//list/components/pm10" />
+                    <Pin Id="Vvpip3vn7VnOWvpUtbFWZU" Name="Path" Kind="InputPin" DefaultValue="components/pm10" />
                     <Pin Id="JfZCBtDYXUINpXmzm2y0pJ" Name="Value" Kind="OutputPin" />
                     <Pin Id="C70489wojfTMfvKDFYz9I4" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7939,7 +7939,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="HfRv4BQnfCqLJblR3vxf0f" Name="Input" Kind="InputPin" />
-                    <Pin Id="Jbv0xahsmMQLPysEBSVmQn" Name="Path" Kind="InputPin" DefaultValue="//list/components/nh3" />
+                    <Pin Id="Jbv0xahsmMQLPysEBSVmQn" Name="Path" Kind="InputPin" DefaultValue="components/nh3" />
                     <Pin Id="LMoYNjQD9WyLQL2RJaamNZ" Name="Value" Kind="OutputPin" />
                     <Pin Id="MyFNcEEkI50OzWEyhVtT6g" Name="Success" Kind="OutputPin" />
                   </Node>
@@ -7959,7 +7959,7 @@
                       <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
                     </p:NodeReference>
                     <Pin Id="CvklOZdvuiiQBI7lg1ppSc" Name="Input" Kind="InputPin" />
-                    <Pin Id="U9hgThuE2dJQWvHdYcwhMA" Name="Path" Kind="InputPin" DefaultValue="//list/dt" />
+                    <Pin Id="U9hgThuE2dJQWvHdYcwhMA" Name="Path" Kind="InputPin" DefaultValue="dt" />
                     <Pin Id="NfikSm8NsKPML32SfRTUn8" Name="Value" Kind="OutputPin" />
                     <Pin Id="PRkEcrYN8PCQJScSvy3Kfn" Name="Success" Kind="OutputPin" />
                   </Node>
