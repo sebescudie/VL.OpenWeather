@@ -948,15 +948,6 @@
                       <Pin Id="FbNNzbnGOMDPb2ei89FJjU" Name="Weather" Kind="InputPin" />
                       <Pin Id="BxG7HwL6QUTOhnyOXpAjr8" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="361,604,153,19" Id="TRgiXdjOd5eO6f4XY0Sqdz">
-                      <p:NodeReference LastCategoryFullName="IO.OpenWeather.Utils" LastDependency="VL.OpenWeather.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="UnixSecondsToLocalDateTime" />
-                      </p:NodeReference>
-                      <Pin Id="RL59YPTvv6jONfnNSHSYxg" Name="String" Kind="InputPin" />
-                      <Pin Id="PkXBThXw5y2OjKBaTZLZyT" Name="Local Date Time" Kind="OutputPin" />
-                      <Pin Id="TGzQNfskFdwPAYx320pjA5" Name="Success" Kind="OutputPin" />
-                    </Node>
                     <Node Bounds="380,633,82,19" Id="OogqHmBvOzZOv1R5CkeaWx">
                       <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1151,8 +1142,6 @@
                       <Pin Id="JMhPf9s2EjQP86BLI4kA6n" Name="Input" Kind="InputPin" />
                       <Pin Id="SpJgbSe6C0dNIbGthAVfLn" Name="Output" Kind="OutputPin" />
                     </Node>
-                    <Link Id="EVaNhBVU5ljMO6D42tWihT" Ids="Ll4OE96KSmdLCqU4vkoBJP,RL59YPTvv6jONfnNSHSYxg" />
-                    <Link Id="QlXCpCMK5pCPlKjAf4HUmi" Ids="PkXBThXw5y2OjKBaTZLZyT,LwI8VCc7GBKNriFs4gZQjS" />
                     <Link Id="KATIDHFwgAbPhEVuQpRla9" Ids="Oy5Rek868ktLqxnsYQIlNV,RYKWO6U7JrNN8Vn4v4r9mZ" />
                     <Link Id="Fx8EIrLYiuHMBsnGhdsv48" Ids="NPqUHjgbAwjLA6Oo60An67,EK97hi4vFPMPvG2K1Kkn0W" />
                     <Link Id="QZ3RlccP8gOPBLCh5rXpBp" Ids="Op71uz5YCspMcKHPy09gAm,UNaQsfxC9yfQZv6tyqMzYV" />
@@ -1229,6 +1218,16 @@
                       <Pin Id="UMxMKAqvvxIPvkLI4Fowq8" Name="Success" Kind="OutputPin" />
                     </Node>
                     <Link Id="Iq59h8F2ZxrPCgcO1Qry3s" Ids="JiGhZxBg7CzNvTL9fa3YyQ,GMb75YXyMjANIAwAmG8XUW" />
+                    <Node Bounds="361,605,120,19" Id="GkVhhH6gNCWMjs3uCuvlYA">
+                      <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FromUnixTimeSeconds" />
+                      </p:NodeReference>
+                      <Pin Id="EThQS9HULKHPJt3ddUq0oE" Name="Seconds" Kind="InputPin" />
+                      <Pin Id="COIyEextRx4MHbqEjCJzCD" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="RKMFXblkaPxNkK22wLSbGl" Ids="Ll4OE96KSmdLCqU4vkoBJP,EThQS9HULKHPJt3ddUq0oE" />
+                    <Link Id="SxkouAbnRZELfTWWHEWNUr" Ids="COIyEextRx4MHbqEjCJzCD,LwI8VCc7GBKNriFs4gZQjS" />
                   </Patch>
                 </Node>
               </Canvas>
@@ -1239,7 +1238,7 @@
               </ProcessDefinition>
               <Slot Id="LSrakQi4rJPL5kgAz3ImCy" Name="Datetime">
                 <p:TypeAnnotation p:Type="TypeReference">
-                  <Choice Kind="TypeFlag" Name="DateTime" />
+                  <Choice Kind="TypeFlag" Name="DateTime (UTC)" />
                 </p:TypeAnnotation>
               </Slot>
               <Slot Id="TMr3WjJDijnPp4F2m4SWmP" Name="Sunrise">
@@ -1623,7 +1622,7 @@
     ************************ ParseMinutelyReport ************************
 
 -->
-                <Node Name="ParseMinutelyReport" Bounds="361,650,179,206" Id="SDn64XecfC1QIJuKrevgEW">
+                <Node Name="ParseMinutelyReport" Bounds="363,650,178,210" Id="SDn64XecfC1QIJuKrevgEW">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                     <Choice Kind="OperationDefinition" Name="Operation" />
                   </p:NodeReference>
@@ -1642,16 +1641,7 @@
                       <Pin Id="MUUIewQ4UJEPEGsxzwgDwO" Name="Value" Kind="OutputPin" />
                       <Pin Id="JAxqhF3wReqQP6KCwEqTkK" Name="Success" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="375,734,153,19" Id="ONfdkqLoNzFMMpWck4jwMa">
-                      <p:NodeReference LastCategoryFullName="IO.OpenWeather.Utils" LastDependency="VL.OpenWeather.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="UnixSecondsToLocalDateTime" />
-                      </p:NodeReference>
-                      <Pin Id="CTstPzd0n8TLvy9OKaAmFG" Name="String" Kind="InputPin" />
-                      <Pin Id="ThYmvVBBOghMEFABbg5dcs" Name="Local Date Time" Kind="OutputPin" />
-                      <Pin Id="Nm1dFnuPmWZLqNQfJSnVMT" Name="Success" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="438,766,82,19" Id="BiNqhysNZWxLqq8f1WZD7V">
+                    <Node Bounds="447,766,82,19" Id="BiNqhysNZWxLqq8f1WZD7V">
                       <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="XPathGetValue" />
@@ -1665,7 +1655,7 @@
                       <Pin Id="UxYOQkUpdFtPbtKhy89GA0" Name="Value" Kind="OutputPin" />
                       <Pin Id="GN72SbgQTu6LrW7wekU3Qs" Name="Success" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="374,796,77,26" Id="TzOXFXTeZTsN5rUsWyeDjZ">
+                    <Node Bounds="375,796,77,26" Id="TzOXFXTeZTsN5rUsWyeDjZ">
                       <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.CurrentAndForecastWeather.MinutelyReport" LastDependency="VL.OpenWeather.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="MinutelyReport" />
@@ -1675,18 +1665,26 @@
                       <Pin Id="GTFDTwcM3PsLlk2VZObsNl" Name="Precipitation" Kind="InputPin" />
                       <Pin Id="SPKi13KsHKfPFDrSrgFwtX" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Link Id="AmeiHNYMn3hLvkOy4xhgH7" Ids="MUUIewQ4UJEPEGsxzwgDwO,CTstPzd0n8TLvy9OKaAmFG" />
-                    <Link Id="OVdJJtAAAuDPvQzGxkHHxQ" Ids="ThYmvVBBOghMEFABbg5dcs,Gn3yNXKCXUlLa594zY3q0G" />
                     <Link Id="POBIgQV9gzCOfhJeaAYUeQ" Ids="UxYOQkUpdFtPbtKhy89GA0,GTFDTwcM3PsLlk2VZObsNl" />
                     <ControlPoint Id="KI3fQ6ZNYjINSdmqOeqgpM" Bounds="377,668" />
                     <Link Id="Eu7YSryCBtxNibZe9omiID" Ids="KI3fQ6ZNYjINSdmqOeqgpM,KFjB47z2cFAMzPhNuhbnMb" />
                     <Pin Id="OWYqTkPidsRMQIN3reKplE" Name="Input" Kind="InputPin" Bounds="1167,634" />
                     <Link Id="KUCx6wwI14jNL6Wv9xmMdH" Ids="OWYqTkPidsRMQIN3reKplE,KI3fQ6ZNYjINSdmqOeqgpM" IsHidden="true" />
                     <Link Id="FIJDQjT2EfcOvupTR26wVG" Ids="KI3fQ6ZNYjINSdmqOeqgpM,VDLTv3NmBqROq9XFL9Ow8I" />
-                    <ControlPoint Id="PMqQy1INZxRPEY0EZWOLXF" Bounds="375,839" />
+                    <ControlPoint Id="PMqQy1INZxRPEY0EZWOLXF" Bounds="377,843" />
                     <Link Id="UedqCi2FSvjNCdBEYnwnw8" Ids="SPKi13KsHKfPFDrSrgFwtX,PMqQy1INZxRPEY0EZWOLXF" />
                     <Pin Id="N3HdEpz0w8MNmkTAslk2UP" Name="Output" Kind="OutputPin" Bounds="1046,789" />
                     <Link Id="FsGSwKFfj4NLNlYtSBvJS2" Ids="PMqQy1INZxRPEY0EZWOLXF,N3HdEpz0w8MNmkTAslk2UP" IsHidden="true" />
+                    <Node Bounds="375,734,120,19" Id="EoqrCjRA54gOkbzZVlZjwJ">
+                      <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FromUnixTimeSeconds" />
+                      </p:NodeReference>
+                      <Pin Id="VTKXE7b72B0LlPUfr6Uxfk" Name="Seconds" Kind="InputPin" />
+                      <Pin Id="LGUc9AXxt3bMZNhumcfTQL" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="R0wSMYi27xSNR1nxWXpKYL" Ids="MUUIewQ4UJEPEGsxzwgDwO,VTKXE7b72B0LlPUfr6Uxfk" />
+                    <Link Id="BbOFvzrszmeMNAgO7XzUSs" Ids="LGUc9AXxt3bMZNhumcfTQL,Gn3yNXKCXUlLa594zY3q0G" />
                   </Patch>
                 </Node>
               </Canvas>
@@ -1703,7 +1701,7 @@
               </ProcessDefinition>
               <Slot Id="QDJfHgVS4J5MUCtJrT79LE" Name="Datetime">
                 <p:TypeAnnotation p:Type="TypeReference">
-                  <Choice Kind="TypeFlag" Name="DateTime" />
+                  <Choice Kind="TypeFlag" Name="DateTime (UTC)" />
                 </p:TypeAnnotation>
               </Slot>
               <Slot Id="CsQm6xbsdEwMoEhGxQkMaJ" Name="Precipitation">
@@ -1824,15 +1822,6 @@
                       </Pin>
                       <Pin Id="GOh5VZJ4014L4woq7rxjHj" Name="Value" Kind="OutputPin" />
                       <Pin Id="KCWCIpBLKKfQF0a7aYQVGx" Name="Success" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="256,719,153,19" Id="DJOSb5gpI0xOlLdhgMPxiv">
-                      <p:NodeReference LastCategoryFullName="IO.OpenWeather.Utils" LastDependency="VL.OpenWeather.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="UnixSecondsToLocalDateTime" />
-                      </p:NodeReference>
-                      <Pin Id="QKWcBptTZvsNjpE5Ds3SEB" Name="String" Kind="InputPin" />
-                      <Pin Id="HpGrPon90HFP2c44DMCSDN" Name="Local Date Time" Kind="OutputPin" />
-                      <Pin Id="PyjrZnbzesrMGVtgelAcBK" Name="Success" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="286,769,82,19" Id="RKIagpeeEaUQDC8jMgQmxc">
                       <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
@@ -2018,8 +2007,6 @@
                       <Pin Id="UyV6rFPNjMkNDzeZRCjbWK" Name="Value" Kind="OutputPin" />
                       <Pin Id="Sqp0buRvDfeL5KFQcttKrs" Name="Success" Kind="OutputPin" />
                     </Node>
-                    <Link Id="KEDvddUznYYPirP6EZoUwD" Ids="GOh5VZJ4014L4woq7rxjHj,QKWcBptTZvsNjpE5Ds3SEB" />
-                    <Link Id="OUb9ovatgD3N0dkpRUxMnV" Ids="HpGrPon90HFP2c44DMCSDN,QQWeFHNuKq0PcA4rj9dPGL" />
                     <Link Id="Ky0Yn3x66uiOVwKxfR4fF5" Ids="NZ3MOOgy7RKNsxuFrlFzsd,HThiALhnxUsM3AimLEBu9J" />
                     <Link Id="DpsPSTwXs0dOo9ipk3AXrU" Ids="NdnGxjJNfDNNsXcnPoA3Wc,LaImryefczULXsy2MYVADm" />
                     <Link Id="Kov0e5ZQS4DL6wBLnzCfck" Ids="Pa6cppKhPV7OmToHkQlqTb,N88nIF9KFT4NXUVgpTzGFa" />
@@ -2078,6 +2065,16 @@
                     </Node>
                     <Link Id="TLl5lCGJXiVN9oGK2ObNhQ" Ids="N51EPVX3OuWLfYXKW0KD08,RlZOCt46rhLPmWeOLVrfa8" />
                     <Link Id="Lcl1uQ2mTDZPZXAQ2pmLDW" Ids="D7ZWs6NwOUvNUOZuMJBdhX,LhgkVfCFEUHQPzOyzXviMr" />
+                    <Node Bounds="256,708,120,19" Id="KtRLdcm1eUHORkBVh2IbW2">
+                      <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FromUnixTimeSeconds" />
+                      </p:NodeReference>
+                      <Pin Id="LT1v1C5vE4VL318TTs3aPe" Name="Seconds" Kind="InputPin" />
+                      <Pin Id="Ay9GcJ6BZvRPYbFzge52oL" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="KJucobRwX4tLWBAWD4yfPf" Ids="GOh5VZJ4014L4woq7rxjHj,LT1v1C5vE4VL318TTs3aPe" />
+                    <Link Id="NkcewjRVh82OacWFh45oac" Ids="Ay9GcJ6BZvRPYbFzge52oL,QQWeFHNuKq0PcA4rj9dPGL" />
                   </Patch>
                 </Node>
               </Canvas>
@@ -2101,7 +2098,7 @@
               </ProcessDefinition>
               <Slot Id="QKlwmJpK7XrOjStOnso9BB" Name="Datetime">
                 <p:TypeAnnotation p:Type="TypeReference">
-                  <Choice Kind="TypeFlag" Name="DateTime" />
+                  <Choice Kind="TypeFlag" Name="DateTime (UTC)" />
                 </p:TypeAnnotation>
               </Slot>
               <Slot Id="NBm0usGOicNL9nz4G6FNKk" Name="Temperature">
@@ -2453,15 +2450,6 @@
                       <Pin Id="KwndC3SGMxmQatGWVjXhJI" Name="UV Index" Kind="InputPin" />
                       <Pin Id="DwTmZ987np6M1XDh7BOzWj" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="203,949,153,19" Id="Lx8ukeDQ8m4M1PGwQhQ3WR">
-                      <p:NodeReference LastCategoryFullName="IO.OpenWeather.Utils" LastDependency="VL.OpenWeather.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="UnixSecondsToLocalDateTime" />
-                      </p:NodeReference>
-                      <Pin Id="Ue49LRoOxaFQXyo4kqI370" Name="String" Kind="InputPin" />
-                      <Pin Id="M2bl3wmYn00QC9Rhp7buVW" Name="Local Date Time" Kind="OutputPin" />
-                      <Pin Id="ByODWKML0NsLcTjZlBGcYa" Name="Success" Kind="OutputPin" />
-                    </Node>
                     <Node Bounds="222,981,82,19" Id="Rc4rtSsBNcPMjGbWsWm37Z">
                       <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2645,8 +2633,6 @@
                       <Pin Id="Bd8ESJYpxDyOWhxiaRKf6l" Name="Value" Kind="OutputPin" />
                       <Pin Id="NCQayt6RmweL4JiRsTaT3m" Name="Success" Kind="OutputPin" />
                     </Node>
-                    <Link Id="EUVQCxBtpTFNmYGUF3ezgY" Ids="Orz2M4qjlNDMoMlZ0crp9M,Ue49LRoOxaFQXyo4kqI370" />
-                    <Link Id="MX1zNYPj8PYOKgFBJQLaVs" Ids="M2bl3wmYn00QC9Rhp7buVW,DVyrEKTJkrkMw41Yfdhacb" />
                     <Link Id="MfBy8aL6e6iMrrwsTBuSIH" Ids="Sxf1Z7PeEgVOzfIy5BfgKD,Tq2X648k4sdOsL4txGhXbj" />
                     <Link Id="E9RXWFEhoQoOZwZKi1RvVy" Ids="JqkbCGdykRdPLbGsPfpNeO,HBCQt9k72zJQFv29xOXANc" />
                     <Link Id="VpLprRPsaJCOjjJBP6hh8b" Ids="EqMz8wCXIeDQSlgIjzPeFR,V5Ejpyl5ZokOlb1BLf8sNA" />
@@ -2843,6 +2829,16 @@
                       <Pin Id="PHXnJm301PINjGrKLAX2Th" Name="Success" Kind="OutputPin" />
                     </Node>
                     <Link Id="DbUORZrk6wVL25PhlDpOFR" Ids="CC36V4mHvZcP2ikAzo2KKU,ETRQPO9OQsEPidRnBGTwNA" />
+                    <Node Bounds="203,942,120,19" Id="KwH5sQKBxSLPiBmGUKWAQw">
+                      <p:NodeReference LastCategoryFullName="System.DateTime (UTC)" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FromUnixTimeSeconds" />
+                      </p:NodeReference>
+                      <Pin Id="K3BeuaY9bhANi9j469LSzM" Name="Seconds" Kind="InputPin" />
+                      <Pin Id="NcgRk1c1m4hOxdPHyoHaNj" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="SjfKuvIo1OqONMpDg06l4D" Ids="Orz2M4qjlNDMoMlZ0crp9M,K3BeuaY9bhANi9j469LSzM" />
+                    <Link Id="HWtE7DVspicONcxGJzPZz1" Ids="NcgRk1c1m4hOxdPHyoHaNj,DVyrEKTJkrkMw41Yfdhacb" />
                   </Patch>
                 </Node>
               </Canvas>
@@ -2867,7 +2863,7 @@
               </ProcessDefinition>
               <Slot Id="CurWSVBAdtAOYdtc7tYzG6" Name="Datetime">
                 <p:TypeAnnotation p:Type="TypeReference">
-                  <Choice Kind="TypeFlag" Name="DateTime" />
+                  <Choice Kind="TypeFlag" Name="DateTime (UTC)" />
                 </p:TypeAnnotation>
               </Slot>
               <Slot Id="NJr3o4SnUKeMKk75Zox1oL" Name="Sunrise">
