@@ -58,7 +58,7 @@
               <Pin Id="LYqnwXdzkHwNdTz8TXnlCg" Name="KeepOriginalWidth" Kind="InputPin" />
               <Pin Id="PVE3RbjcnABNHoD4e99HKT" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="417,733,-90,19" Id="EL6oYdtcjFuN4Ekcb5ZBcx">
+            <Node Bounds="417,733,25,19" Id="EL6oYdtcjFuN4Ekcb5ZBcx">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -219,10 +219,10 @@
       </Node>
       <!--
 
-    ************************ CurrentViewer ************************
+    ************************ CurrentWeatherViewer ************************
 
 -->
-      <Node Name="CurrentViewer" Bounds="364,384" Id="R4IV8cS6zJDMRKGG3vxEV4">
+      <Node Name="CurrentWeatherViewer" Bounds="364,384" Id="R4IV8cS6zJDMRKGG3vxEV4">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ClassDefinition" Name="Class" />
         </p:NodeReference>
@@ -523,12 +523,12 @@
     ************************ RegisterServices ************************
 
 -->
-      <Node Name="RegisterServices" Bounds="618,284,222,382" Id="Lxqkpif89NeQX0IvGd1g2q">
+      <Node Name="RegisterServices" Bounds="664,289,265,382" Id="Lxqkpif89NeQX0IvGd1g2q">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="K15UoPbSN1BO4OxcViJBOG">
-          <Node Bounds="702,334,93,84" Id="Cmo3c1gts2ILuhbJcEreH3">
+          <Node Bounds="748,339,93,84" Id="Cmo3c1gts2ILuhbJcEreH3">
             <p:NodeReference LastCategoryFullName="HDE.Viewers" LastDependency="VL.HDE.vl">
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="RegisterViewer" />
@@ -536,8 +536,8 @@
             <Pin Id="A4L4q6UFlu5PyncjDG3cxj" Name="Input" Kind="StateInputPin" />
             <Pin Id="Tt9EFPjGhBsN2FB5GKSzWn" Name="Output" Kind="StateOutputPin" />
             <Patch Id="L38bie3eeplOA1HXSxSjib" Name="Create" ManuallySortedPins="true">
-              <ControlPoint Id="MFNthYBt55wO4T6ogbTJ32" Bounds="716,411" />
-              <Node Bounds="714,357,69,26" Id="AIZsbCmbOQjPuQJRJEMN1e">
+              <ControlPoint Id="MFNthYBt55wO4T6ogbTJ32" Bounds="762,416" />
+              <Node Bounds="760,362,69,26" Id="AIZsbCmbOQjPuQJRJEMN1e">
                 <p:NodeReference LastCategoryFullName="Main.WeatherViewer" LastDependency="VL.OpenWeather.HDE.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -549,11 +549,11 @@
             </Patch>
           </Node>
           <Link Id="R0Mm0fMmcZgMkX1QweWBwz" Ids="MFNthYBt55wO4T6ogbTJ32,Tf10axjLOgfPFPmzpJ4AMS" IsHidden="true" />
-          <ControlPoint Id="EslEO4DyqKaMwItleHwJfJ" Bounds="704,302" />
+          <ControlPoint Id="EslEO4DyqKaMwItleHwJfJ" Bounds="750,307" />
           <Link Id="Th9rXOrcDD4OFjp8uKjA2i" Ids="EslEO4DyqKaMwItleHwJfJ,A4L4q6UFlu5PyncjDG3cxj" />
           <Pin Id="A6X0QCXg46yOVvw0kEWzSI" Name="Factory" Kind="InputPin" Bounds="271,236" />
           <Link Id="J0gDeGN5Q0hMnVgNYmVpij" Ids="A6X0QCXg46yOVvw0kEWzSI,EslEO4DyqKaMwItleHwJfJ" IsHidden="true" />
-          <Node Bounds="702,444,93,84" Id="GOkG0J3WMrIMyQcv5uGjNE">
+          <Node Bounds="748,449,120,84" Id="GOkG0J3WMrIMyQcv5uGjNE">
             <p:NodeReference LastCategoryFullName="HDE.Viewers" LastDependency="VL.HDE.vl">
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="RegisterViewer" />
@@ -561,12 +561,12 @@
             <Pin Id="R7CxNMYWXggPyw7VeXPJsp" Name="Input" Kind="StateInputPin" />
             <Pin Id="UbwzAuYgcTANPEuekKgPuW" Name="Output" Kind="StateOutputPin" />
             <Patch Id="UO9VxuTDKhRLMFlVrIBFKn" Name="Create" ManuallySortedPins="true">
-              <ControlPoint Id="CM5ouhEyuWzMflgJlS6glT" Bounds="716,521" />
-              <Node Bounds="714,467,69,26" Id="QSd6s3ogGfMNLFrps48wz7">
-                <p:NodeReference LastCategoryFullName="Main.CurrentViewer" LastDependency="VL.OpenWeather.HDE.vl">
+              <ControlPoint Id="CM5ouhEyuWzMflgJlS6glT" Bounds="762,526" />
+              <Node Bounds="760,472,96,26" Id="QSd6s3ogGfMNLFrps48wz7">
+                <p:NodeReference LastCategoryFullName="Main.CurrentWeatherViewer" LastDependency="VL.OpenWeather.HDE.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
-                  <CategoryReference Kind="ClassType" Name="CurrentViewer" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="ClassType" Name="CurrentWeatherViewer" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="N56CDZnj270Msap7hOvBE2" Name="Output" Kind="StateOutputPin" />
               </Node>
@@ -577,7 +577,7 @@
           <Link Id="HLxBztOvlfwLc9eWqmXheX" Ids="N56CDZnj270Msap7hOvBE2,CM5ouhEyuWzMflgJlS6glT" />
           <Link Id="B0bjudfsjLfNAOMLp9mlPn" Ids="Tt9EFPjGhBsN2FB5GKSzWn,R7CxNMYWXggPyw7VeXPJsp" />
           <Link Id="RiDjXanr866Qa8QB7qWoCL" Ids="AUUv3MqSjQRP06YKzBLBhn,MFNthYBt55wO4T6ogbTJ32" />
-          <Node Bounds="702,562,126,84" Id="RS0Tf1H96JKNVOPsO5ncid">
+          <Node Bounds="748,567,169,84" Id="RS0Tf1H96JKNVOPsO5ncid">
             <p:NodeReference LastCategoryFullName="HDE.Viewers" LastDependency="VL.HDE.vl">
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="RegisterViewer" />
@@ -585,12 +585,12 @@
             <Pin Id="Beg2Nkw5PdHMM7C1JUarHP" Name="Input" Kind="StateInputPin" />
             <Pin Id="H2vAnHznnHnLACSpYE01fy" Name="Output" Kind="StateOutputPin" />
             <Patch Id="FMlKV3f83YtPp5fY2RlILQ" Name="Create" ManuallySortedPins="true">
-              <ControlPoint Id="Npa0bIlrgZJOdHhkc1mqVn" Bounds="716,639" />
-              <Node Bounds="714,585,102,26" Id="L7iUcclDu5GOxvWpQrHHyq">
-                <p:NodeReference LastCategoryFullName="Main.OneCallResponseViewer" LastDependency="VL.OpenWeather.HDE.vl">
+              <ControlPoint Id="Npa0bIlrgZJOdHhkc1mqVn" Bounds="762,644" />
+              <Node Bounds="760,590,145,26" Id="L7iUcclDu5GOxvWpQrHHyq">
+                <p:NodeReference LastCategoryFullName="Main.CurrentAndForecastResponseViewer" LastDependency="VL.OpenWeather.HDE.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
-                  <CategoryReference Kind="ClassType" Name="OneCallResponseViewer" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="ClassType" Name="CurrentAndForecastResponseViewer" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="SoBxnIkF85rNIdIp5kn8QJ" Name="Output" Kind="StateOutputPin" />
               </Node>
@@ -604,10 +604,10 @@
       </Node>
       <!--
 
-    ************************ OneCallResponseViewer ************************
+    ************************ CurrentAndForecastResponseViewer ************************
 
 -->
-      <Node Name="OneCallResponseViewer" Bounds="364,435" Id="A9DR3sSsGXeLIdtymokCys">
+      <Node Name="CurrentAndForecastResponseViewer" Bounds="364,435" Id="A9DR3sSsGXeLIdtymokCys">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ClassDefinition" Name="Class" />
         </p:NodeReference>
