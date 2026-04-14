@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2023.5.2-0020-gc041842068" Version="0.128">
-  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2025.7.1" Version="0.128">
+  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2025.7.1" />
   <Patch Id="S9iuenDrqEzNzQHPQcl868">
     <Canvas Id="JRcIne9xPwkMXo3eqzNs16" DefaultCategory="IO.OpenWeather" CanvasType="FullCategory">
       <Canvas Id="LVepfi3fWKJPugJvx4BVwc" Name="Internal" Position="431,171">
@@ -40,6 +40,7 @@
                   <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="K5L1TzlZSCVPDov3mwVuQ0" Name="Input" Kind="StateInputPin" />
+                <Pin Id="KWYa1Z2ylDNPRC0RqieGyV" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="D2Exik5MPijMTi0WK56r0N" Name="Local Date Time" Kind="OutputPin" />
               </Node>
               <Link Id="J5aJwrFTgQOPhpEZUCClpx" Ids="UjdiML9hkR1PlgpZfGuEJc,GsHX1UH8nP8Opj3d30eBVg" />
@@ -357,6 +358,7 @@
                     <Choice Kind="OperationCallFlag" Name="Split" />
                   </p:NodeReference>
                   <Pin Id="Sx1X4JuGWw5QHapZ0hw67r" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Ery87csVdvTPpilYU7YdBr" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="E9r60raa0dCLjr7QnnIo55" Name="Datetime" Kind="OutputPin" />
                   <Pin Id="KfIWe28qe8eOoBqxMJK6hW" Name="Sunrise" Kind="OutputPin" />
                   <Pin Id="PnokSmHO7CeLQ0oEjrIFPc" Name="Sunset" Kind="OutputPin" />
@@ -403,6 +405,7 @@
                         <CategoryReference Kind="RecordType" Name="CurrentAndForecastWeatherResponse" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="PwoGq0OHZybMm9vowVixyM" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="AzpWVZqmstlP9ltJiiNa9r" Name="Latitude" Kind="InputPin" />
                       <Pin Id="HRDI7aa5UGrPhZPRBsGlFv" Name="Longitude" Kind="InputPin" />
                       <Pin Id="Bkv2oxN4PZOP1ODYmEZ802" Name="Timezone" Kind="InputPin" />
@@ -932,6 +935,7 @@
                         <CategoryReference Kind="RecordType" Name="CurrentWeather" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="Vd33R61x1ZWP7wbbC3gH71" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="LwI8VCc7GBKNriFs4gZQjS" Name="Datetime" Kind="InputPin" />
                       <Pin Id="EK97hi4vFPMPvG2K1Kkn0W" Name="Sunrise" Kind="InputPin" />
                       <Pin Id="VNxC1qNnFnsM0NGp1brPqg" Name="Sunset" Kind="InputPin" />
@@ -1439,6 +1443,7 @@
                         <CategoryReference Kind="RecordType" Name="Weather" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="CWdBNGRkuTGOkyKTDKeU0h" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="H2U1RdLF3TtNn6r8avAnPv" Name="Id" Kind="InputPin" />
                       <Pin Id="PfFkDJCnSOTQPSw9h0CavA" Name="Main" Kind="InputPin" />
                       <Pin Id="JyGagl3GDnnOvnYv42lOgv" Name="Description" Kind="InputPin" />
@@ -1661,6 +1666,7 @@
                         <CategoryReference Kind="RecordType" Name="MinutelyReport" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="C6JNakA0EutNYQAReiVNs7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="Gn3yNXKCXUlLa594zY3q0G" Name="Datetime" Kind="InputPin" />
                       <Pin Id="GTFDTwcM3PsLlk2VZObsNl" Name="Precipitation" Kind="InputPin" />
                       <Pin Id="SPKi13KsHKfPFDrSrgFwtX" Name="Output" Kind="StateOutputPin" />
@@ -1843,6 +1849,7 @@
                         <CategoryReference Kind="RecordType" Name="HourlyReport" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="RltbysUs1phMbEdvWyg0LY" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="QQWeFHNuKq0PcA4rj9dPGL" Name="Datetime" Kind="InputPin" />
                       <Pin Id="HThiALhnxUsM3AimLEBu9J" Name="Temperature" Kind="InputPin" />
                       <Pin Id="LaImryefczULXsy2MYVADm" Name="Feels Like" Kind="InputPin" />
@@ -2430,6 +2437,7 @@
                         <CategoryReference Kind="RecordType" Name="DailyReport" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="RCJIibwjsKiQXhtIZ87rN6" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="DVyrEKTJkrkMw41Yfdhacb" Name="Datetime" Kind="InputPin" />
                       <Pin Id="HBCQt9k72zJQFv29xOXANc" Name="Sunrise" Kind="InputPin" />
                       <Pin Id="HQqfcVatKc8NMzAsKl2XD0" Name="Sunset" Kind="InputPin" />
@@ -3185,6 +3193,7 @@
                         <CategoryReference Kind="RecordType" Name="Temperature" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="H7Bb3kG4g3ZL2NxMb18bO7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="IIHAdGZV3EPL3JS5xwjUbH" Name="Day" Kind="InputPin" />
                       <Pin Id="Ch4pT7NQp3gMLMtXOlTrgg" Name="Minimum" Kind="InputPin" />
                       <Pin Id="A3FT4R5dor2MRuOzeh7KKt" Name="Maximum" Kind="InputPin" />
@@ -3415,6 +3424,7 @@
                         <CategoryReference Kind="RecordType" Name="FeelsLike" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="SNSqeKQ0nQoLElGur0v917" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="KvTOMVH5zrJLLMfPm1NVqj" Name="Day" Kind="InputPin" />
                       <Pin Id="JbXIHP2vtX8LodaqAQ9gvc" Name="Night" Kind="InputPin" />
                       <Pin Id="PXT7SjkTpaLPt7sf3vkCso" Name="Evening" Kind="InputPin" />
@@ -3611,6 +3621,7 @@
                         <CategoryReference Kind="RecordType" Name="Alert" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="CihYldbFzqiLLQ9KXZecSJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="QxVMLBgtSwvOjHrT8TMpBZ" Name="Sender Name" Kind="InputPin" />
                       <Pin Id="ECVdPFmWH1KN8C66fcoNDL" Name="Event" Kind="InputPin" />
                       <Pin Id="HZ2GA5zkYtLP7c29MfdzG5" Name="Start" Kind="InputPin" />
@@ -3829,16 +3840,6 @@
                   <Pin Id="P7AmcLmuGCiQGCyKJASGO7" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Pad Id="CqV0PA8nT0YPbyQKkbranY" SlotId="TUmKbNwq8rdPMxJuwo5ism" Bounds="260,258" />
-                <Node Bounds="432,198,60,26" Id="GfbblwjSaWvNs2YgNYyKTP">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <PinReference Kind="InputPin" Name="Method" />
-                  </p:NodeReference>
-                  <Pin Id="SkTF6oQOL78LUq6zHyjD1p" Name="Method" Kind="InputPin" />
-                  <Pin Id="O4ypjRPfnfMMsk8Ytz8gGE" Name="Output" Kind="StateOutputPin" />
-                </Node>
                 <Pad Id="ME7pf3fSCrZNA2U4xEvQ0m" SlotId="QP23dHOTYscO4Z2P8kUIMR" Bounds="434,255" />
                 <Node Bounds="257,604,441,334" Id="TXL7OJQgh1LPf239hx8QdS">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -3874,21 +3875,19 @@
                       <Pin Id="SCw3ku2jgLUMdewGJKtf0C" Name="Exclude Alerts" Kind="InputPin" />
                       <Pin Id="OGfvEt2oGdiProvSXSKmVB" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="269,662,83,26" Id="ACOZaMMpR13PPwmmoXLqEs">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="269,662,83,19" Id="ACOZaMMpR13PPwmmoXLqEs">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="RIcoOWs388COPdNIcEXZh2" Name="Input" Kind="StateInputPin" />
                       <Pin Id="UADUSBprXqjNcHMe8dABIK" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="MU5jXBW3DvLPgAiqM4fMej" Name="Content" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="269,713,71,26" Id="Eg5HuqTT4EeP7uz7ClGn6o">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="269,713,71,19" Id="Eg5HuqTT4EeP7uz7ClGn6o">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="NIr4QtGrEP0PIo5pCOi1iA" Name="Input" Kind="StateInputPin" />
                       <Pin Id="H2oDU69uUBbM33RHr1z3P2" Name="Output" Kind="StateOutputPin" />
@@ -3905,7 +3904,7 @@
                       <Patch Id="VqG9Hv9sn1FOUANecnGDqp" ManuallySortedPins="true">
                         <Patch Id="COCrEU3TybcOTDrW3Bxboe" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="EWCatjYWptKMMOXHTzov2t" Name="Then" ManuallySortedPins="true" />
-                        <Node Bounds="347,872,119,19" Id="Q4EOIJGEtrIMKtaCAdE7Hn">
+                        <Node Bounds="347,872,174,19" Id="Q4EOIJGEtrIMKtaCAdE7Hn">
                           <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.CurrentAndForecastWeather.CurrentAndForecastWeatherResponse" LastDependency="VL.OpenWeather.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="ParseCurrentAndForecastResponse" />
@@ -3980,6 +3979,14 @@
                 <ControlPoint Id="GqQCBQbdEEzOp3L90CT8Ne" Bounds="668,972" />
                 <ControlPoint Id="GwUMx0DjWljLpqAnGZj54S" Bounds="528,972" />
                 <ControlPoint Id="GhwxqtNQ5wRMdCF3gMB3fB" Bounds="496,1001" />
+                <Node Bounds="432,200,60,26" Id="L8QUKRObpyeMEinXRWHGxp">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="A1F7m5H8drBMmyxo9F0GGv" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Canvas>
               <ProcessDefinition Id="QeXKEJNMjvMPaYZs3FS3X3">
                 <Fragment Id="CuBhLMKWn5pOccz2Uk9rMy" Patch="QOQ9cWYzHnNMtqFXTzlVIP" Enabled="true" />
@@ -3991,7 +3998,6 @@
                 </p:TypeAnnotation>
               </Slot>
               <Link Id="Tq4lkjjYE8aMfv9KqoLGQl" Ids="P7AmcLmuGCiQGCyKJASGO7,CqV0PA8nT0YPbyQKkbranY" />
-              <Link Id="Ng1wWH6hLxGMHccsowe1HU" Ids="O4ypjRPfnfMMsk8Ytz8gGE,ME7pf3fSCrZNA2U4xEvQ0m" />
               <Slot Id="QP23dHOTYscO4Z2P8kUIMR" Name="Request">
                 <p:TypeAnnotation p:Type="TypeReference">
                   <Choice Kind="TypeFlag" Name="RestRequest" />
@@ -4041,7 +4047,7 @@
               <Link Id="QHi1oFZn3huO857jEzX4pa" Ids="ThNVFGEg1FFLyTKn2TUIVK,NeAOztGjWOoLLto9Dm1Xv4,ROu3XfKjEyxNME7jmtAElQ" />
               <Link Id="PWg3xIy1mesNPvTK1oaACR" Ids="ROu3XfKjEyxNME7jmtAElQ,GhwxqtNQ5wRMdCF3gMB3fB" />
               <Link Id="SPYph7QuCurQXb2fdLyDMd" Ids="GhwxqtNQ5wRMdCF3gMB3fB,S0DH1DJRUKcP8K9vRltu4y" IsHidden="true" />
-              <Patch Id="QOQ9cWYzHnNMtqFXTzlVIP" Name="Create" ParticipatingElements="CaoOFFB9yLOPIK11MWDeDv,GfbblwjSaWvNs2YgNYyKTP,Tq4lkjjYE8aMfv9KqoLGQl,Ng1wWH6hLxGMHccsowe1HU" />
+              <Patch Id="QOQ9cWYzHnNMtqFXTzlVIP" Name="Create" ParticipatingElements="CaoOFFB9yLOPIK11MWDeDv,Tq4lkjjYE8aMfv9KqoLGQl,Cp3BzQr61qiM5QpKuLqdUd" />
               <Patch Id="Jlq5E8K0xSiNSmpdCKoc2E" Name="Update" ParticipatingElements="VDpRmqqnvmoO7u9JzjeKjX,V0rIuPeQU1jOoDG6G2NuR5,JiYAVyWHuFzMD3wiikdBL3" ManuallySortedPins="true">
                 <Pin Id="PEIrTH0Ue03QNNcKFSnMyy" Name="API Key" Kind="InputPin" />
                 <Pin Id="MMn7ceIqBBULe65b3sfils" Name="Latitude" Kind="InputPin" />
@@ -4061,6 +4067,7 @@
               <Link Id="V79LxjEk59jMC4XUQaAy7D" Ids="GNKq22rNPtgN7PpfG7fnW7,QrdCDEnBVqeLhGN1PMpAdV" />
               <Link Id="OPDTpV1ZJjHPuomCoc34Zx" Ids="MU5jXBW3DvLPgAiqM4fMej,O6gMEDAp798MTMjSEL80Eh" />
               <Link Id="GfWRhUj8d67MBd1hG98TdE" Ids="UJNwm7JAdAqLGJy3D0stGp,VWD2LjZKSBpO1vyanhYKBO" />
+              <Link Id="Cp3BzQr61qiM5QpKuLqdUd" Ids="A1F7m5H8drBMmyxo9F0GGv,ME7pf3fSCrZNA2U4xEvQ0m" />
             </Patch>
           </Node>
           <!--
@@ -4080,8 +4087,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="HgdxHST7laKNfHz7Dxf4FQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Logxcy0GXfaO3Yz0SQjEZk" Name="Message" Kind="InputPin" />
                   <Pin Id="TorIc25NDYHN444jAGntaG" Name="Send" Kind="InputPin" />
+                  <Pin Id="B7CqpnGq1UoOD9FNBUG2wn" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IX5L7xNeKltOSVEpCqAOH0" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="251,385,82,19" Id="ToOL8GCoNOXOI3qZrliwOl">
@@ -4089,6 +4098,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="It0SZQ2qbCULWODgFpjGZ4" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="P2GNjJhffz6N7vRlFmwPlE" Name="Value" Kind="InputPin" />
                   <Pin Id="O1xM3GAHZEjMAgcaqxraBl" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -4098,8 +4108,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="Mm9mfmJpTsMMSpInDMqqMV" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UgaKmD93iSvN7qPFaGRPl1" Name="Messages" Kind="InputPin" />
                   <Pin Id="TNhOzLC2L20O7legZl9KMD" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Lcl3Ag4JhhULn3lpPmxM4w" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="HSxwSQKkXceLRLitgpeYQv" Name="Result" Kind="OutputPin" />
                   <Patch Id="GgDqAlUbrP4OeCn5cmIJpe" ManuallySortedPins="true">
                     <Patch Id="OFD1B4Ofb6mLC0fkFNabV8" Name="Create" ManuallySortedPins="true" />
@@ -4167,16 +4179,6 @@
                   <Pin Id="DlgPBN0JasfMmkiyI9cI6s" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Pad Id="V1hjCwIDZGKMkOvb1hkERJ" SlotId="Brpx2CQIHwJP3TFDVsE2M1" Bounds="267,221" />
-                <Node Bounds="439,164,60,26" Id="QJihrKN0teaNzxkfmKEhpr">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <PinReference Kind="InputPin" Name="Method" />
-                  </p:NodeReference>
-                  <Pin Id="KkvMBivCZENO85hZ99tAVg" Name="Method" Kind="InputPin" />
-                  <Pin Id="JC2z3fcETpULNMDB5sGsoa" Name="Output" Kind="StateOutputPin" />
-                </Node>
                 <Pad Id="NXJVVwpgjerOQLuwOLW4Hr" SlotId="QGZO8aPVOhMLGgV709QVFI" Bounds="441,221" />
                 <Overlay Id="TTctDTrWNA2QL1L7qoEjCQ" Name="Create" Bounds="222,116,652,135">
                   <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
@@ -4202,12 +4204,13 @@
                 <ControlPoint Id="IAp3fyw9UHpO4aWmsJ9IQH" Bounds="456,565" />
                 <ControlPoint Id="AyxvkCPso1BLCHQSVwkZgo" Bounds="476,588" />
                 <ControlPoint Id="NPAuG7BLmLyMDGOgsrTg3B" Bounds="496,612" />
-                <Node Bounds="251,988,131,150" Id="UuCMMhlBj8ONCat28g71ii">
+                <Node Bounds="251,988,142,140" Id="UuCMMhlBj8ONCat28g71ii">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Where" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="QNepRLOgFYrOBCyvto2GBc" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="LLZQ7YlMWVrLRYm9bcISKX" Name="Value" Kind="InputPin" />
                   <Pin Id="KJvohMnwb2eQXYshaktbmR" Name="Result" Kind="OutputPin" />
                   <Pin Id="BXbCPtpTC2VPf36ETOjcTP" Name="Changed" Kind="OutputPin" />
@@ -4215,12 +4218,11 @@
                     <Pin Id="Egx5U4ulVTkLo9in42RbXr" Name="Input" Kind="InputPin" />
                     <Pin Id="BOynWNvBjauMUtYnsgnoCV" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="O6ZMTzMWJ8zOlH3j6Mw356" Bounds="265,996" />
-                    <ControlPoint Id="CXQE7tLzRgJNmwLSXRqJAq" Bounds="331,1131" />
-                    <Node Bounds="263,1024,71,26" Id="EFdGieGBti8NqyB7tfMkwR">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="CXQE7tLzRgJNmwLSXRqJAq" Bounds="342,1121" />
+                    <Node Bounds="263,1024,71,19" Id="EFdGieGBti8NqyB7tfMkwR">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="Ojl2OnAmWrRNODt2iWY0m8" Name="Input" Kind="StateInputPin" />
                       <Pin Id="B5eTMsa4f5eM1iw2QmrESq" Name="Output" Kind="StateOutputPin" />
@@ -4228,12 +4230,13 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="634,988,131,142" Id="KtEBpRIBXw0OAHGYRizkE7">
+                <Node Bounds="634,988,142,139" Id="KtEBpRIBXw0OAHGYRizkE7">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Where" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="Pfj9QgiRab4LM61FQ95K28" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="IvZG581PjVPLNag5aOmgVM" Name="Value" Kind="InputPin" />
                   <Pin Id="EHOpoSnXKM9PY0xPEN63Mn" Name="Result" Kind="OutputPin" />
                   <Pin Id="TsiFr3anIBePasT9mbkqvD" Name="Changed" Kind="OutputPin" />
@@ -4241,18 +4244,17 @@
                     <Pin Id="JYld7oZkx1FOBUfIrOOk60" Name="Input" Kind="InputPin" />
                     <Pin Id="JzCldSDXwOkOr9y3zifG3m" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="Se3BOcF9xXOLTwuJoTxPWr" Bounds="648,996" />
-                    <ControlPoint Id="KK0fxNE0ayLORggYo3ct2A" Bounds="714,1123" />
-                    <Node Bounds="646,1024,71,26" Id="GYAxt2dDnD8Ly1zZFWMnVP">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="KK0fxNE0ayLORggYo3ct2A" Bounds="725,1120" />
+                    <Node Bounds="646,1024,71,19" Id="GYAxt2dDnD8Ly1zZFWMnVP">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="UW0Q1uPh55mMvP3SbOAJK9" Name="Input" Kind="StateInputPin" />
                       <Pin Id="CqywINuPM7BOkSWqlP8irH" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="BNtiDdyR7wLOKCyCDQsMtT" Name="Is Successful" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="712,1073,37,19" Id="IrYkOimOgOtM0EFVr4TdQ8">
+                    <Node Bounds="723,1070,37,19" Id="IrYkOimOgOtM0EFVr4TdQ8">
                       <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -4263,14 +4265,16 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="251,1218,215,202" Id="MbfAP6nzaGWPQwV4oCXsYZ">
+                <Node Bounds="251,1218,261,202" Id="MbfAP6nzaGWPQwV4oCXsYZ">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="TePZyoVmWcINaoHgmh1eC3" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="NwxiXKswJijPt1Rq8eXiAT" Name="Messages" Kind="InputPin" />
                   <Pin Id="Ahh4sYFhwVqO0OzpygrEd7" Name="Reset" Kind="InputPin" />
+                  <Pin Id="C1uJDznlTkeMg6yXRFWWm5" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="GST2Z8TJ2kIN3B4WQVFGbn" Name="Result" Kind="OutputPin" />
                   <Patch Id="BgdszjKxvprOcF0zAxyNaH" ManuallySortedPins="true">
                     <Patch Id="SDNbESMV6IQOuFsjpllWup" Name="Create" ManuallySortedPins="true" />
@@ -4298,11 +4302,10 @@
                       </Pin>
                       <Pin Id="L6ucskzH3xbQFCsbQl6DKf" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="263,1247,68,26" Id="IYuLuHRLFaTPrzVo0vaYNh">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="263,1247,68,19" Id="IYuLuHRLFaTPrzVo0vaYNh">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="PVu7eoA3oBnPQS27pbUjfj" Name="Input" Kind="StateInputPin" />
                       <Pin Id="C665tUoXbYDLQraC7rSZMe" Name="Output" Kind="StateOutputPin" />
@@ -4338,7 +4341,7 @@
                       <Pin Id="MkYqgJaRtCfOsIZ1P1gAou" Name="Data" Kind="InputPin" DefaultValue="False" />
                       <Pin Id="SGjqwES63GhQJR2Pu5cWkn" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="326,1339,119,19" Id="H8Sz4L1blRCOxYRbChTCt6">
+                    <Node Bounds="326,1339,174,19" Id="H8Sz4L1blRCOxYRbChTCt6">
                       <p:NodeReference LastCategoryFullName="IO.OpenWeather.OneCall.CurrentAndForecastWeather.CurrentAndForecastWeatherResponse" LastDependency="VL.OpenWeather.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ParseCurrentAndForecastResponse" />
@@ -4354,8 +4357,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="DKLkCWR3yzUPK7XeCFMHju" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="TaKT6YDQQaFNdpY9VdUwlv" Name="Messages" Kind="InputPin" />
                   <Pin Id="L4lIVY6p65BPb8HjDVRJEw" Name="Reset" Kind="InputPin" />
+                  <Pin Id="IqNMGLAxOOTLh3f4xvnOlJ" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IYvgYvMOlFOP8J3vfoUTxA" Name="Result" Kind="OutputPin" />
                   <Patch Id="EBUrzfRnG1bQBZatEdhN48" ManuallySortedPins="true">
                     <Patch Id="L6HIaOc919TLdO820vw8vH" Name="Create" ManuallySortedPins="true" />
@@ -4365,11 +4370,10 @@
                     </Patch>
                     <ControlPoint Id="NkNH3eM0opZOD6mmUxM7fm" Bounds="648,1223" />
                     <ControlPoint Id="PAYD4ZaKAbNOegtNuA90jL" Bounds="808,1429" />
-                    <Node Bounds="646,1244,68,26" Id="Qa44xiosL1lOdUXCaqpqig">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="646,1244,68,19" Id="Qa44xiosL1lOdUXCaqpqig">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="SOPnHgMh4i1OwXqcTgNYqV" Name="Input" Kind="StateInputPin" />
                       <Pin Id="MxcK6BiuekELp1k6BKNMwD" Name="Output" Kind="StateOutputPin" />
@@ -4418,12 +4422,13 @@
                 </Node>
                 <ControlPoint Id="RyzGdMggflYM3sUiUxdA94" Bounds="253,1489" />
                 <ControlPoint Id="FIpHgoZs50hMzxeqmtAVsd" Bounds="636,1474" />
-                <Node Bounds="570,164,51,19" Id="PeaofIWs58aNrj6CFEqFAk">
+                <Node Bounds="570,164,51,26" Id="PeaofIWs58aNrj6CFEqFAk">
                   <p:NodeReference LastCategoryFullName="Primitive.Reference" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="Njh65aAfsrmOGVAUY3Pm61" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="PhD4cQbzDVGNurdheV0Wil" Name="Data" Kind="InputPin" />
                   <Pin Id="Ea8GoblTgOKPLd2ZBl58Fv" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -4437,12 +4442,13 @@
                     <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Node Bounds="675,164,51,19" Id="F3KhgMK2ONBNxfDz73pwsZ">
+                <Node Bounds="675,164,51,26" Id="F3KhgMK2ONBNxfDz73pwsZ">
                   <p:NodeReference LastCategoryFullName="Primitive.Reference" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="Q6jnJeXa1wwNNPl7yV3jFU" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="RBouTyLdoaULbdKRUXmnu4" Name="Data" Kind="InputPin" />
                   <Pin Id="BtCqkNT0i9KL6NKcd7DvNm" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -4456,12 +4462,13 @@
                     <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Node Bounds="772,164,51,19" Id="Ahf9D4WWZgyPepv4YDYUWM">
+                <Node Bounds="772,164,51,26" Id="Ahf9D4WWZgyPepv4YDYUWM">
                   <p:NodeReference LastCategoryFullName="Primitive.Reference" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="CT2LHf2VhsAM5Vn0ve7buD" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="SnO1XNcKuGGMKPvNqWaaon" Name="Data" Kind="InputPin" />
                   <Pin Id="DjxoVBHlztoNAkdHsvQOrl" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -4520,6 +4527,14 @@
                   <Pin Id="Rh7OVtKHJIvOi3BqHEPSQl" Name="Data" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="Q4Y1CS27suyO4ytxSPPUJh" Bounds="580,1651" />
+                <Node Bounds="439,160,60,26" Id="K3LxSOJGednP03VDUAUrjA">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="HMHjW139B3OMNxV5Gr6bwD" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Canvas>
               <ProcessDefinition Id="ClEYMMui2ZKOxJrbnyxJAd">
                 <Fragment Id="IXpXGtCOP1kM4YLd6EQ8xw" Patch="Ey7Eo1FSRHvN4XmVR1HeSM" Enabled="true" />
@@ -4540,7 +4555,6 @@
                 </p:TypeAnnotation>
               </Slot>
               <Link Id="L2UhBWuxbraNirnqNkHAMc" Ids="DlgPBN0JasfMmkiyI9cI6s,V1hjCwIDZGKMkOvb1hkERJ" />
-              <Link Id="Cq5xKxaUDu8Lm2xq1x9gXK" Ids="JC2z3fcETpULNMDB5sGsoa,NXJVVwpgjerOQLuwOLW4Hr" />
               <Link Id="DA0PM4ecCHJNK75qu5mWsa" Ids="JFrGUMCNOHfL5WEhl7bZXM,EnGdsQsSAjdLg2Zt5E5QJt" />
               <Link Id="BlbwTiiy8FUPsREI9Zm2OA" Ids="LEtqA2HfoUfM3ZSHlWEbs0,TorIc25NDYHN444jAGntaG" />
               <Link Id="UuQorstJdQmN8bY0EfIDUg" Ids="M58t5sHFVODLlFNEf82fT8,LEtqA2HfoUfM3ZSHlWEbs0" IsHidden="true" />
@@ -4645,7 +4659,7 @@
               <Link Id="Pmn1GbeBCPhP9AKa94uhx9" Ids="KAx2ONBchj9LFq4hGjb0s7,BR99bn49v37LFUeGop9e7h" />
               <Link Id="VJAxpHS6Z8pMO8A43Nd7bU" Ids="Rh7OVtKHJIvOi3BqHEPSQl,Q4Y1CS27suyO4ytxSPPUJh" />
               <Link Id="LicE7z5ffP1QWq4AXhvoJT" Ids="Q4Y1CS27suyO4ytxSPPUJh,VnKdgT8wKXvOIvIDB7MoVp" IsHidden="true" />
-              <Patch Id="Ey7Eo1FSRHvN4XmVR1HeSM" Name="Create" ParticipatingElements="Jj8jBlIoLkLLcwTqujTybf,QJihrKN0teaNzxkfmKEhpr,PeaofIWs58aNrj6CFEqFAk,F3KhgMK2ONBNxfDz73pwsZ,Ahf9D4WWZgyPepv4YDYUWM,L2UhBWuxbraNirnqNkHAMc,Cq5xKxaUDu8Lm2xq1x9gXK,Log0MCZiqzILTgs80DEvow,Tn3yI1JXGUfQU2PgeUxEuY,FFUzRnsTHddQI8xPgDvr80,Jyx9muAVYaIPDeSdtIVbAm,AjVKveTUdyoNwUyAfzktn5,RHj4bEAm5BVQVa81veqmCO" />
+              <Patch Id="Ey7Eo1FSRHvN4XmVR1HeSM" Name="Create" ParticipatingElements="Jj8jBlIoLkLLcwTqujTybf,PeaofIWs58aNrj6CFEqFAk,F3KhgMK2ONBNxfDz73pwsZ,Ahf9D4WWZgyPepv4YDYUWM,L2UhBWuxbraNirnqNkHAMc,Log0MCZiqzILTgs80DEvow,Tn3yI1JXGUfQU2PgeUxEuY,FFUzRnsTHddQI8xPgDvr80,Jyx9muAVYaIPDeSdtIVbAm,AjVKveTUdyoNwUyAfzktn5,RHj4bEAm5BVQVa81veqmCO,LSrKRFVhIBFL2mT5OWxx0F" />
               <Patch Id="P9wZxsBaqM3PEl1SfKBcqG" Name="Update" ManuallySortedPins="true">
                 <Pin Id="DAfbi9XeapWPKEs6eOAY41" Name="Result" Kind="OutputPin" Bounds="423,1237" />
                 <Pin Id="SlNNGfX75TOOccnI60JQwC" Name="Is Successful" Kind="OutputPin" Bounds="745,1588" />
@@ -4665,6 +4679,7 @@
               </Patch>
               <Link Id="KSR6Re4pjtfOuDvSqzQmbx" Ids="L6ucskzH3xbQFCsbQl6DKf,FK0V9KKLFSKMQFkXjaW7v8" />
               <Link Id="QukPk5UfIrZPcdc12RZumW" Ids="MnfI774ZNg7NLEEvx4Vk80,UmR8jYQ7pC8MWZpdUyj4sB" />
+              <Link Id="LSrKRFVhIBFL2mT5OWxx0F" Ids="HMHjW139B3OMNxV5Gr6bwD,NXJVVwpgjerOQLuwOLW4Hr" />
             </Patch>
           </Node>
           <Canvas Id="MtqmKjN6FhcOtncPvAWno6" Name="Internal" Position="516,185">
@@ -4673,153 +4688,30 @@
     ************************ CurrentAndForecastWeatherRequestBase ************************
 
 -->
-            <Node Name="CurrentAndForecastWeatherRequestBase" Bounds="238,149,481,889" Id="OkdnvCRPB4ZQRi5Dd5NORk">
+            <Node Name="CurrentAndForecastWeatherRequestBase" Bounds="238,111,486,1037" Id="OkdnvCRPB4ZQRi5Dd5NORk">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
-              <Patch Id="KDuWIe8kIJaL4zeRTUN6TR">
-                <Node Bounds="279,967,52,26" Id="R7Y3P9IwKWpNLg8xNwxMum">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestClient" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestClient" />
-                    <Choice Kind="OperationCallFlag" Name="Execute" />
-                    <PinReference Kind="OutputPin" Name="return">
-                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                        <Choice Kind="TypeFlag" Name="IRestResponse" />
-                      </p:DataTypeReference>
-                    </PinReference>
-                  </p:NodeReference>
-                  <Pin Id="PhnaP93NoKYPvTZGjK2ZVp" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="GVANfHMEVMKNNXgnjzqBYd" Name="Request" Kind="InputPin" />
-                  <Pin Id="FGuDCmMZElFOFscmUI7gOo" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="L7fXvsSQizEP7drdA3stnU" Name="Result" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="IoPQU0BiOneMeFiTuBZrVC" Bounds="252,932" />
-                <Link Id="QCMQQulgbJWNzpHCQtUgAM" Ids="IoPQU0BiOneMeFiTuBZrVC,PhnaP93NoKYPvTZGjK2ZVp" />
+              <Patch Id="KDuWIe8kIJaL4zeRTUN6TR" ManuallySortedPins="true">
+                <ControlPoint Id="IoPQU0BiOneMeFiTuBZrVC" Bounds="252,1037" />
                 <Link Id="Oc6kev8TJ7NMbVigHEUmaG" Ids="QSatOL2Tx6JMHH1N0CNvFi,IoPQU0BiOneMeFiTuBZrVC" IsHidden="true" />
-                <ControlPoint Id="Bk1ZTFLcI4qMmz4LP1ZJia" Bounds="465,167" />
-                <ControlPoint Id="ETpd6i4x5GzOR3yZh6fxaO" Bounds="465,268" />
-                <ControlPoint Id="DU40p1uohSrO5JoAjrjcrJ" Bounds="465,353" />
-                <ControlPoint Id="F2A9NLCxRlROQLAOoVoU1o" Bounds="544,405" />
-                <ControlPoint Id="ESlZF4IkFlgPMxqk0zbitR" Bounds="559,430" />
-                <ControlPoint Id="NL1Q2MqlhqnPxCPJwX0Teq" Bounds="578,452" />
-                <ControlPoint Id="VtMadCFGeLAPbfN9dgNZ9q" Bounds="597,476" />
-                <ControlPoint Id="LA6pLViwMohLQVCD9iibye" Bounds="623,498" />
-                <ControlPoint Id="Ud2Um7t5bPPMGgz6zwsfjQ" Bounds="476,780" />
+                <ControlPoint Id="Bk1ZTFLcI4qMmz4LP1ZJia" Bounds="479,129" />
+                <ControlPoint Id="ETpd6i4x5GzOR3yZh6fxaO" Bounds="479,245" />
+                <ControlPoint Id="F2A9NLCxRlROQLAOoVoU1o" Bounds="549,438" />
+                <ControlPoint Id="ESlZF4IkFlgPMxqk0zbitR" Bounds="564,463" />
+                <ControlPoint Id="NL1Q2MqlhqnPxCPJwX0Teq" Bounds="583,485" />
+                <ControlPoint Id="VtMadCFGeLAPbfN9dgNZ9q" Bounds="602,509" />
+                <ControlPoint Id="LA6pLViwMohLQVCD9iibye" Bounds="628,531" />
+                <ControlPoint Id="Ud2Um7t5bPPMGgz6zwsfjQ" Bounds="480,840" />
                 <Link Id="VKGANDTn10FNsZ7r1LsWq5" Ids="LEXmQSll9izQFM5t2PCgAp,Bk1ZTFLcI4qMmz4LP1ZJia" IsHidden="true" />
                 <Link Id="J21SljTZvVsLZUvo30Z8Be" Ids="EHHFx6VNYB9MNMHMVNInJA,ETpd6i4x5GzOR3yZh6fxaO" IsHidden="true" />
-                <Link Id="VrcFRvcVioQM2uYF3HveXm" Ids="OTfmhC7G6kuMgf8svo30iB,DU40p1uohSrO5JoAjrjcrJ" IsHidden="true" />
                 <Link Id="HK3smVefQeCLRhYpnk3DWl" Ids="RCWv7eLrz0EOnIxygKO1HC,F2A9NLCxRlROQLAOoVoU1o" IsHidden="true" />
                 <Link Id="L1QOgehMq0aPWPCEUAzGfV" Ids="Jc5TZdfbDMfPB0KINJ5jIK,ESlZF4IkFlgPMxqk0zbitR" IsHidden="true" />
                 <Link Id="NGoKRA5XrveLUS1Nl5J8gU" Ids="ScrKgx5tDA1MSOXIPnTfYf,NL1Q2MqlhqnPxCPJwX0Teq" IsHidden="true" />
                 <Link Id="ORFGAHt48hwNPOGjfYZCEs" Ids="QA55DAgJU5qOJ2Pto2uEAN,VtMadCFGeLAPbfN9dgNZ9q" IsHidden="true" />
                 <Link Id="Hhid0KGyFhnPnLsfdmR3d7" Ids="AgHOEiQnTB3MqavDwNvzPB,LA6pLViwMohLQVCD9iibye" IsHidden="true" />
                 <Link Id="HrMeXLKkYUoK90UXdbIdCG" Ids="D6GCavB2z3lMGbqTPnDmUT,Ud2Um7t5bPPMGgz6zwsfjQ" IsHidden="true" />
-                <Node Bounds="324,234,124,26" Id="J3Srb0kTJsOQYzAifhpTE1">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
-                    <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="UGF73LL1VlbO5Ap2HCCu8Q" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="UDWnrfHvCxRNBxkgVXoFlN" Name="Parameter" Kind="InputPin" />
-                  <Pin Id="Knsts6B3Z21QcykokYLiSN" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="KZi92MqJnYGPdxo7WsVSBA" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="443,189,65,26" Id="Pfcy13iUDzDOvznzREFGBM">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                  </p:NodeReference>
-                  <Pin Id="UwNeReeoUPxL4Ki3KeUBy5" Name="Name" Kind="InputPin" DefaultValue="appid">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="TypeFlag" Name="String" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="MJBYxDwWOUIPthmhepzLOM" Name="Value" Kind="InputPin" />
-                  <Pin Id="QNPkVmlYQEGPHbnClnCb3C" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="EDtwBEdtWPqPHyMd6PQ8Ou" Name="Encode" Kind="InputPin" />
-                  <Pin Id="EFDvKGQsYlWNcgRnDzpGPB" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Link Id="P0s4bTrDOdVMF9Tz2FqELw" Ids="EFDvKGQsYlWNcgRnDzpGPB,UDWnrfHvCxRNBxkgVXoFlN" />
-                <Link Id="EsbX9FcjpcYMvqC1wJwPlP" Ids="Bk1ZTFLcI4qMmz4LP1ZJia,MJBYxDwWOUIPthmhepzLOM" />
-                <Node Bounds="324,331,124,26" Id="TJqYekuPwAiLNkqUoJdDWK">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
-                    <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="B33x0MTESH9QNe0Ukrgamp" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="NLMS8RQ4eTbL8hNRUD6Xkw" Name="Parameter" Kind="InputPin" />
-                  <Pin Id="OK1Lih53FCCL9Uc0qYsjkj" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="DFUalHj925AOzLpEZUXaPU" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="443,288,65,26" Id="JtTn8fdJibSLTJ5d7RQsip">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                  </p:NodeReference>
-                  <Pin Id="Ub6HZohOkaLQIrVYsunhuq" Name="Name" Kind="InputPin" DefaultValue="lat">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="TypeFlag" Name="String" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="Jr8IcZinLJrLv3EGLSSyjz" Name="Value" Kind="InputPin" />
-                  <Pin Id="J9FhEnzyVblPMbTLzXFZva" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="O4UbmRt79vXOiv150msmF7" Name="Encode" Kind="InputPin" />
-                  <Pin Id="Rm4geSOJMuVL1TPjJXutiT" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="324,414,124,26" Id="IkLKXiGMbu6Lhp45np9tfu">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
-                    <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="QWMSe0UVRWUNi2H0GFHO57" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="EV5pCrrXFnvLc47DXz5rhG" Name="Parameter" Kind="InputPin" />
-                  <Pin Id="BUAYBT3iDMUM4MfTPajmMj" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="I6jODYvTiLAO6NgknSd1xm" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="443,376,65,26" Id="APBtfnCZRFUPGgyJns8AMr">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="LmiBFZJpnLTPaQMVBurzzN" Name="Name" Kind="InputPin" DefaultValue="lon">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="TypeFlag" Name="String" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="Rx3RaXEWpILOt4X2wXpMyB" Name="Value" Kind="InputPin" />
-                  <Pin Id="BlfW4lwHGMnLx5m0zjAXc2" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="OhesKsf9HM1LaMqtjDhiFu" Name="Encode" Kind="InputPin" />
-                  <Pin Id="MlylE7l5lUvMvSybTOUBDk" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Link Id="RBtXsGaLWgmOqtsQZWbVlT" Ids="OK1Lih53FCCL9Uc0qYsjkj,QWMSe0UVRWUNi2H0GFHO57" />
-                <Link Id="AMK9tZzeBSJPX022sqvrnp" Ids="Rm4geSOJMuVL1TPjJXutiT,NLMS8RQ4eTbL8hNRUD6Xkw" />
-                <Link Id="QYLk0s2YH14QRp91c3zPZC" Ids="MlylE7l5lUvMvSybTOUBDk,EV5pCrrXFnvLc47DXz5rhG" />
-                <Link Id="GuvzbBzyiIVOYUIJBvflrA" Ids="ETpd6i4x5GzOR3yZh6fxaO,Jr8IcZinLJrLv3EGLSSyjz" />
-                <Link Id="IffiqNZQnbrOH2BpNEYnRz" Ids="DU40p1uohSrO5JoAjrjcrJ,Rx3RaXEWpILOt4X2wXpMyB" />
-                <Link Id="RdlWukvpskxOtDxiF09Zks" Ids="Knsts6B3Z21QcykokYLiSN,B33x0MTESH9QNe0Ukrgamp" />
-                <Node Bounds="502,484,45,26" Id="GEIilruKfmpNgv7f2sv62A">
+                <Node Bounds="507,517,45,26" Id="GEIilruKfmpNgv7f2sv62A">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -4830,12 +4722,12 @@
                   <Pin Id="HQZB7JOwoAhN0oPnoR8PTN" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="IjXBADpmH4bLk1lsIgMRPH" Name="Apply" Kind="InputPin" />
                 </Node>
-                <Pad Id="GvExEvNZwgiMtW9qSCdGp1" Comment="Item" Bounds="524,469,41,15" ShowValueBox="true" isIOBox="true" Value="current">
+                <Pad Id="GvExEvNZwgiMtW9qSCdGp1" Comment="Item" Bounds="529,502,41,15" ShowValueBox="true" isIOBox="true" Value="current">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Node Bounds="502,522,59,26" Id="PyFeWfKKHA8P1kaJ79dUMa">
+                <Node Bounds="507,555,59,26" Id="PyFeWfKKHA8P1kaJ79dUMa">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -4850,7 +4742,7 @@
                   <Pin Id="MAYfroV4l5XO5npsvsz4dG" Name="Apply" Kind="InputPin" />
                   <Pin Id="EOhAfN1SA3UNCyIcTpZCJx" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="502,559,78,26" Id="BGgQQShuyliM86orODbxS0">
+                <Node Bounds="507,592,78,26" Id="BGgQQShuyliM86orODbxS0">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -4865,7 +4757,7 @@
                   <Pin Id="BK64LAk0GLlOmplQ9mbsrL" Name="Apply" Kind="InputPin" />
                   <Pin Id="J1mfrBirH2yLTitgKcdHr9" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="502,601,97,26" Id="JcIUUGKgecqNylHHVw2MJB">
+                <Node Bounds="507,634,97,26" Id="JcIUUGKgecqNylHHVw2MJB">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -4880,7 +4772,7 @@
                   <Pin Id="EUqI6UTwRBUOzDl1B3lPUp" Name="Apply" Kind="InputPin" />
                   <Pin Id="E74LDfqDI2vPMsQu5elc8w" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="502,642,123,26" Id="MuZ5UIBIAcpQKSMgFxDnPV">
+                <Node Bounds="507,675,123,26" Id="MuZ5UIBIAcpQKSMgFxDnPV">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -4895,7 +4787,7 @@
                   <Pin Id="PtDFX9XWbSjLzh4FSasyIb" Name="Apply" Kind="InputPin" />
                   <Pin Id="Um2JH4GfOm4QDXDM1qPTUy" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="473,687,34,19" Id="EOyQNaNMY3tL5o9F2hXeL4">
+                <Node Bounds="478,720,34,19" Id="EOyQNaNMY3tL5o9F2hXeL4">
                   <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="StringType" Name="String" />
@@ -4909,53 +4801,18 @@
                   <Pin Id="RZcshldg7MALE3cM6eJ5b5" Name="Values" Kind="InputPin" />
                   <Pin Id="RLBc7xbjcXNMpYAt8ymJjD" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="444,723,92,26" Id="M9dGFAsZSPnMiQmJh9WR9x">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                  </p:NodeReference>
-                  <Pin Id="N2jSaTJ9nDwLJ71148O3c5" Name="Name" Kind="InputPin" DefaultValue="exclude">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="TypeFlag" Name="String" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="BNsFhpzRs29LTpYsanCyxB" Name="Value" Kind="InputPin" />
-                  <Pin Id="P5UpZtHXGV8OH5ddsM5rtV" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="PXl7U50JPoDM3ZTJhbxBMe" Name="Encode" Kind="InputPin" />
-                  <Pin Id="E1MnGfOlSyTNCWn4UC4HJY" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="325,776,124,26" Id="Oab4qQN6HfmMhOOdlprP39">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
-                    <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="IR02HdG4qL2LJaCeXQKRvO" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="PTrK6vzPe3pLpoJSOYpRkA" Name="Parameter" Kind="InputPin" />
-                  <Pin Id="RUs5onInNhxO7YXgfOZkAj" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="RpFvvyRyCf7PbI7tGFh4a2" Name="Result" Kind="OutputPin" />
-                </Node>
                 <Link Id="CW9oQ0zx7h4LIOT2dn7oly" Ids="GvExEvNZwgiMtW9qSCdGp1,AQQ2NjjjByyLqi8Ma0zO1n" />
                 <Link Id="B2ABA6XwdXQNn0fcfBWb1E" Ids="HQZB7JOwoAhN0oPnoR8PTN,QD9XFHfrc3NMyToOGdwgwS" />
                 <Link Id="LXZnVBSQL9dQAsh8n8M7jU" Ids="EOhAfN1SA3UNCyIcTpZCJx,P5tFp7Fu6M9PXmdwk27Rc5" />
                 <Link Id="QgauSiULMtROKsfQzIXzIO" Ids="J1mfrBirH2yLTitgKcdHr9,SfcqzFdsdd8LkJj8MUKLNc" />
                 <Link Id="DeZM4B4fhijQR2YIfEa6fq" Ids="E74LDfqDI2vPMsQu5elc8w,BdHEM5MgnlPM8i6zfX5mRU" />
                 <Link Id="OWz8OzD1vUILzriPj3tKnR" Ids="Um2JH4GfOm4QDXDM1qPTUy,RZcshldg7MALE3cM6eJ5b5" />
-                <Link Id="P4it1Zd8T3cNsh9CIS3qwX" Ids="RLBc7xbjcXNMpYAt8ymJjD,BNsFhpzRs29LTpYsanCyxB" />
-                <Link Id="UUQEwhCqH3uO8gAh5Lk9fi" Ids="E1MnGfOlSyTNCWn4UC4HJY,PTrK6vzPe3pLpoJSOYpRkA" />
                 <Link Id="JYNx8f75s59PC422BNsFFB" Ids="F2A9NLCxRlROQLAOoVoU1o,IjXBADpmH4bLk1lsIgMRPH" />
                 <Link Id="PYu8Gn95KjDNjImBCDAST1" Ids="ESlZF4IkFlgPMxqk0zbitR,MAYfroV4l5XO5npsvsz4dG" />
                 <Link Id="OeXYBGenkKgLhpxInQJJWq" Ids="NL1Q2MqlhqnPxCPJwX0Teq,BK64LAk0GLlOmplQ9mbsrL" />
                 <Link Id="Trsnoo5XQbpLfIhsDPWoIm" Ids="VtMadCFGeLAPbfN9dgNZ9q,EUqI6UTwRBUOzDl1B3lPUp" />
                 <Link Id="VGmtSasfSe7PmCE2Q03oSr" Ids="LA6pLViwMohLQVCD9iibye,PtDFX9XWbSjLzh4FSasyIb" />
-                <Link Id="AUPC7qmHeVVMCGWJosyYlj" Ids="BUAYBT3iDMUM4MfTPajmMj,IR02HdG4qL2LJaCeXQKRvO" />
-                <Node Bounds="474,806,55,19" Id="VedTE1cytzxL3FBg32yCcf">
+                <Node Bounds="478,866,55,19" Id="VedTE1cytzxL3FBg32yCcf">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -4963,7 +4820,7 @@
                   <Pin Id="QHszAnKs1zyNdX0jCnWZvY" Name="Input" Kind="InputPin" />
                   <Pin Id="HrVukD1apGJOuI4HnbUlnB" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="474,836,55,26" Id="P2WzF1i9umFOSbODvyRmDp">
+                <Node Bounds="478,896,55,26" Id="P2WzF1i9umFOSbODvyRmDp">
                   <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToLower" />
@@ -4972,52 +4829,18 @@
                   <Pin Id="FfziTVCAiOePLrr7dnwfs8" Name="Input" Kind="StateInputPin" />
                   <Pin Id="UdfYQgYVc99Ox5yhLkHsMp" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="326,921,124,26" Id="Dtm4HRKFGEkLTmY0XSb9ok">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
-                    <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="APdo5WlcxOuN1JtoDcrwK5" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="PAjG2myISeYOeJkUS6szmZ" Name="Parameter" Kind="InputPin" />
-                  <Pin Id="Tz09a8eWycANnJ9S2q4Eh8" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="DshbmVBoyFaOxBsrqzKIoq" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="445,878,92,26" Id="UVB5ad3maiLPk0iYpKNZqa">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="GASH0d2R6K9O8XCoKo4biT" Name="Name" Kind="InputPin" DefaultValue="units">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="TypeFlag" Name="String" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="DZlWiz2kkiULqJqEVdhOM9" Name="Value" Kind="InputPin" />
-                  <Pin Id="ISyjw27CjBjQMJ7Q1b9Bbg" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="CYepb6B1am8Opyi1r0VPLZ" Name="Encode" Kind="InputPin" />
-                  <Pin Id="PsTssxbNU05LSXMJMV6Gfp" Name="Output" Kind="OutputPin" />
-                </Node>
                 <Link Id="N60pZsqlw9DOvGWJVw0GFW" Ids="HrVukD1apGJOuI4HnbUlnB,FfziTVCAiOePLrr7dnwfs8" />
-                <Link Id="N651pdnoa8PN7eiOuAUfPl" Ids="UdfYQgYVc99Ox5yhLkHsMp,DZlWiz2kkiULqJqEVdhOM9" />
-                <Link Id="PzBzY6dE1fINc9e6cFkS7v" Ids="PsTssxbNU05LSXMJMV6Gfp,PAjG2myISeYOeJkUS6szmZ" />
                 <Link Id="CNAtbagWSTbNqkyyaCNZQb" Ids="Ud2Um7t5bPPMGgz6zwsfjQ,QHszAnKs1zyNdX0jCnWZvY" />
-                <Link Id="Ig9s86JRD7wOrVLCdEyo5m" Ids="RUs5onInNhxO7YXgfOZkAj,APdo5WlcxOuN1JtoDcrwK5" />
-                <Link Id="Sv0p5GNpqIrNB8kWldXnOv" Ids="Tz09a8eWycANnJ9S2q4Eh8,GVANfHMEVMKNNXgnjzqBYd" />
-                <ControlPoint Id="DtDwZGJfi8cNvh7DkYXVVG" Bounds="328,1021" />
-                <Link Id="NCxjO2CrUMPOJffywDhosl" Ids="L7fXvsSQizEP7drdA3stnU,DtDwZGJfi8cNvh7DkYXVVG" />
+                <ControlPoint Id="DtDwZGJfi8cNvh7DkYXVVG" Bounds="284,1131" />
                 <Link Id="A9ok41ARznyMeq375R2UbD" Ids="DtDwZGJfi8cNvh7DkYXVVG,KhvoifHWtRSPX2Y4uzYqJA" IsHidden="true" />
-                <ControlPoint Id="UZ63NdU1GKRPKEF8suZY3D" Bounds="326,206" />
-                <Link Id="CAV1pJJSAfmNePPihdk9i4" Ids="UZ63NdU1GKRPKEF8suZY3D,UGF73LL1VlbO5Ap2HCCu8Q" />
+                <ControlPoint Id="UZ63NdU1GKRPKEF8suZY3D" Bounds="326,129" />
                 <Link Id="FQpEcdPUDjLMYh17y1LH4W" Ids="M9eLuTn1D06OCqq2HHu1LE,UZ63NdU1GKRPKEF8suZY3D" IsHidden="true" />
                 <Pin Id="QSatOL2Tx6JMHH1N0CNvFi" Name="Client" Kind="InputPin" Bounds="316,584" />
-                <Pin Id="M9eLuTn1D06OCqq2HHu1LE" Name="Request" Kind="InputPin" Bounds="518,645" />
+                <Pin Id="M9eLuTn1D06OCqq2HHu1LE" Name="Request" Kind="InputPin" Bounds="518,645">
+                  <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
+                    <Choice Kind="TypeFlag" Name="RestRequest" />
+                  </p:TypeAnnotation>
+                </Pin>
                 <Pin Id="LEXmQSll9izQFM5t2PCgAp" Name="API Key" Kind="InputPin" Summary="Your API key">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
@@ -5064,6 +4887,157 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="KhvoifHWtRSPX2Y4uzYqJA" Name="Result" Kind="OutputPin" Bounds="517,1489" />
+                <Node Bounds="282,1070,91,26" Id="PARPPi99oLYOqUkQmNaWIG">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestClientExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestClientExtensions" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="RestSharp" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                    <Choice Kind="OperationCallFlag" Name="Execute" />
+                    <PinReference Kind="InputPin" Name="Http Method" />
+                    <PinReference Kind="OutputPin" Name="Result">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
+                        <Choice Kind="TypeFlag" Name="RestResponse" />
+                        <FullNameCategoryReference ID="RestSharp" />
+                        <AssemblyReference ID="RestSharp.dll" />
+                      </p:DataTypeReference>
+                    </PinReference>
+                  </p:NodeReference>
+                  <Pin Id="QAj54KDDDMBOsvEmyp8Ca1" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DoWdXxXFjBRQaFY2B170Az" Name="Request" Kind="InputPin" />
+                  <Pin Id="AwmhddZuhnQNgsguUB2bzu" Name="Http Method" Kind="InputPin" />
+                  <Pin Id="RlJZOtuiARAMNxvgmkBPER" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="NeOJcR1oZm5PWSy7uWtFih" Ids="RlJZOtuiARAMNxvgmkBPER,DtDwZGJfi8cNvh7DkYXVVG" />
+                <Link Id="Rqh8UrlOV7mOB8AVMP7niK" Ids="IoPQU0BiOneMeFiTuBZrVC,QAj54KDDDMBOsvEmyp8Ca1" />
+                <Node Bounds="443,149,74,26" Id="SDhOfJPaOuzN1FwhfXYsjO">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="RestSharp.QueryParameter" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="MHx9PsGKP62LdTx9Mlvob9" Name="Name" Kind="InputPin" DefaultValue="appid" />
+                  <Pin Id="KNiSYhvC1LNNCilhNUAzjS" Name="Value" Kind="InputPin" />
+                  <Pin Id="G7lYqROR7CqO0p6fxhTSpY" Name="Encode" Kind="InputPin" />
+                  <Pin Id="N8AaurHLS9INgIuWAQsUYt" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="324,200,124,26" Id="UBwR7DwTWj1OILW8pdKfcK">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
+                    <PinReference Kind="InputPin" Name="Parameter" />
+                  </p:NodeReference>
+                  <Pin Id="LZ5tY6M5efPLirjvw3HQAV" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Ay1Iuvckg77NzJ6syf08uc" Name="Parameter" Kind="InputPin" />
+                  <Pin Id="NEzODUTkSwTLNUL22B9ZsH" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Link Id="AVLCVMfASeJM3HOOkW5Flp" Ids="UZ63NdU1GKRPKEF8suZY3D,LZ5tY6M5efPLirjvw3HQAV" />
+                <Link Id="LNDpVEysNZMPe5Vfd01RBm" Ids="N8AaurHLS9INgIuWAQsUYt,Ay1Iuvckg77NzJ6syf08uc" />
+                <Link Id="FKwhazb3tcuNHEb53z8qT5" Ids="Bk1ZTFLcI4qMmz4LP1ZJia,KNiSYhvC1LNNCilhNUAzjS" />
+                <Node Bounds="443,279,74,26" Id="LO9hQFgsjZtPgxMcRXab1A">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="RestSharp.QueryParameter" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="EvZn3DaCsp3MGqUNEwjEzc" Name="Name" Kind="InputPin" DefaultValue="lat" />
+                  <Pin Id="RPVwWqGEKwCMCGyp6kv87i" Name="Value" Kind="InputPin" />
+                  <Pin Id="Q26xjZwe9pwLzeLZd9mwO1" Name="Encode" Kind="InputPin" />
+                  <Pin Id="T9LsVCLUgwUPNJm78EhFRx" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="HFuhNLznKDGLFz5mg82fRH" Ids="ETpd6i4x5GzOR3yZh6fxaO,RPVwWqGEKwCMCGyp6kv87i" />
+                <Node Bounds="324,320,124,26" Id="PCYkuqAMPhrL4jjYrTtjkf">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
+                    <PinReference Kind="InputPin" Name="Parameter" />
+                  </p:NodeReference>
+                  <Pin Id="IEWK9D1wSaANiuHSqSX62d" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Nu96HwOfH3rLh47tALItp7" Name="Parameter" Kind="InputPin" />
+                  <Pin Id="Tl3RHnRp3yhLgyk5hLHPUW" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Link Id="IdtFGiGlmPTPX4etrtYmUU" Ids="NEzODUTkSwTLNUL22B9ZsH,IEWK9D1wSaANiuHSqSX62d" />
+                <Link Id="UIOCgcekkarPYiKyER6BSd" Ids="T9LsVCLUgwUPNJm78EhFRx,Nu96HwOfH3rLh47tALItp7" />
+                <Node Bounds="443,385,74,26" Id="BCecAz4LCe1Oz5RCIx0hmB">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="RestSharp.QueryParameter" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="Bp5tGt634hcLWhMbd4qAJI" Name="Name" Kind="InputPin" DefaultValue="lon" />
+                  <Pin Id="KQ4Zxnzft3tPMB2cdYvqdM" Name="Value" Kind="InputPin" />
+                  <Pin Id="Coh8cmNYpNxLEkcYvSyEbG" Name="Encode" Kind="InputPin" />
+                  <Pin Id="H3Tleq8P0amN1S8ZoxvL3b" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <ControlPoint Id="Tina6gWecYZLBlnmxJYHDO" Bounds="479,365" />
+                <Link Id="NLeVa8fFXbbOxAfXfkVGyS" Ids="OTfmhC7G6kuMgf8svo30iB,Tina6gWecYZLBlnmxJYHDO" IsHidden="true" />
+                <Link Id="GsFMwpcNgnZNDLyWYE7vXI" Ids="Tina6gWecYZLBlnmxJYHDO,KQ4Zxnzft3tPMB2cdYvqdM" />
+                <Node Bounds="324,425,124,26" Id="MbIeO0SaqaFPUb5C16yJgW">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
+                    <PinReference Kind="InputPin" Name="Parameter" />
+                  </p:NodeReference>
+                  <Pin Id="MW80WmeMsebOQRpqWsz5ax" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DEgYFcLPPlcOnlQwP4DuTJ" Name="Parameter" Kind="InputPin" />
+                  <Pin Id="DrhaY1d7B5gQFuksVU2yvA" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Link Id="H6Dr4pyOq8FMY11erZzMeW" Ids="H3Tleq8P0amN1S8ZoxvL3b,DEgYFcLPPlcOnlQwP4DuTJ" />
+                <Link Id="SsMgMxxvnJLONBbnZGAIKX" Ids="Tl3RHnRp3yhLgyk5hLHPUW,MW80WmeMsebOQRpqWsz5ax" />
+                <Node Bounds="444,755,74,26" Id="TL613NaimnPPPQfxhnEM2B">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="RestSharp.QueryParameter" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="CLSvM3t5gRDNjR7DCfcpog" Name="Name" Kind="InputPin" DefaultValue="exclude" />
+                  <Pin Id="QBn2JXT7QyzMaVANvMNHXG" Name="Value" Kind="InputPin" />
+                  <Pin Id="RIXr2VawkA4PU0SfZTmKRX" Name="Encode" Kind="InputPin" />
+                  <Pin Id="VgWRg2KLQ54LtpJe0XJFxj" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="QBqyyNAEntLQbXengT5np1" Ids="RLBc7xbjcXNMpYAt8ymJjD,QBn2JXT7QyzMaVANvMNHXG" />
+                <Node Bounds="325,795,124,26" Id="BFLgoQjOErQQClqSsdZeLX">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
+                    <PinReference Kind="InputPin" Name="Parameter" />
+                  </p:NodeReference>
+                  <Pin Id="SsxOkYK4dUYNaJmXw1Q2rs" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="CeUiaK0xqn8OZ7jlxwPvhh" Name="Parameter" Kind="InputPin" />
+                  <Pin Id="FgRrnrqXzf5N27Pq9kSQdv" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Link Id="Nms1lDV9PiPODiFLJkXyd0" Ids="VgWRg2KLQ54LtpJe0XJFxj,CeUiaK0xqn8OZ7jlxwPvhh" />
+                <Link Id="LWhacPD7DgDOCauOBkn3cF" Ids="DrhaY1d7B5gQFuksVU2yvA,SsxOkYK4dUYNaJmXw1Q2rs" />
+                <Node Bounds="444,945,74,26" Id="KXitAGKI3JeNlG2R960H1G">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="RestSharp.QueryParameter" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="C0jAuyjdiduOxsw6gbYFXr" Name="Name" Kind="InputPin" DefaultValue="units" />
+                  <Pin Id="V5LpEYhCzMOOsVLXADG1OM" Name="Value" Kind="InputPin" />
+                  <Pin Id="Fj8Svpx28quLNNqFxI0eUk" Name="Encode" Kind="InputPin" />
+                  <Pin Id="LQADisRJ1VSPr0SU4MfriS" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="LmuZY4f8z9pOky3qOksDGq" Ids="UdfYQgYVc99Ox5yhLkHsMp,V5LpEYhCzMOOsVLXADG1OM" />
+                <Node Bounds="325,985,124,26" Id="V7EdRZ6VkMzQDPieTMqspS">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
+                    <PinReference Kind="InputPin" Name="Parameter" />
+                  </p:NodeReference>
+                  <Pin Id="RSl7IoWnaVlQYWLKGBBFDL" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="KDrbq7ntSqvN4AJl0TVtsq" Name="Parameter" Kind="InputPin" />
+                  <Pin Id="BAt2jxRqLHMNwjld6GcnhO" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Link Id="DBb5Uj7Vv7aOTXF46G8lFZ" Ids="LQADisRJ1VSPr0SU4MfriS,KDrbq7ntSqvN4AJl0TVtsq" />
+                <Link Id="EM7b7DgqP7wOHEmKG1z38B" Ids="FgRrnrqXzf5N27Pq9kSQdv,RSl7IoWnaVlQYWLKGBBFDL" />
+                <Link Id="AKskFTlsqLtOjhqz6RLbG1" Ids="BAt2jxRqLHMNwjld6GcnhO,DoWdXxXFjBRQaFY2B170Az" />
               </Patch>
             </Node>
           </Canvas>
@@ -5139,21 +5113,19 @@
                       <Pin Id="Byey4ljwyB4QSdPCPrJYJi" Name="Result" Kind="OutputPin" />
                       <Pin Id="ILulzHX59yzO84fln9hgZx" Name="Units" Kind="InputPin" />
                     </Node>
-                    <Node Bounds="285,571,83,26" Id="JtB4M3cj0HEPuK6Ty6whaI">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="285,571,83,19" Id="JtB4M3cj0HEPuK6Ty6whaI">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="A9ZMylMOF11OfFHWHCXygs" Name="Input" Kind="StateInputPin" />
                       <Pin Id="R0kNs80755tPqV6G2ED7Qk" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="VF2nSPbGDnjP1pWBHXXy2R" Name="Content" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="285,622,71,26" Id="LExnUNw1QX4QK8bLbJhWw0">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="285,622,71,19" Id="LExnUNw1QX4QK8bLbJhWw0">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="GcVNAIZDUpOPPqjP5q3NQ0" Name="Input" Kind="StateInputPin" />
                       <Pin Id="OfWm5cOXeHyOWNc8L0ytxM" Name="Output" Kind="StateOutputPin" />
@@ -5359,6 +5331,7 @@
                         <CategoryReference Kind="RecordType" Name="WeatherHistoryResponse" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="Db51pdvAWHuNmidVyql6Br" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="SHR75BtvsXJLQMidNstXG3" Name="Latitude" Kind="InputPin" />
                       <Pin Id="QkNVbhlNJZGQMsQkJhM5gA" Name="Longitude" Kind="InputPin" />
                       <Pin Id="SG21K2wLLI9MFIlJlNSXJx" Name="Timezone" Kind="InputPin" />
@@ -5527,8 +5500,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="HZaqsbOAMjdPwOiFCyuSSc" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="SFEbPPNATLoQAGC8JU5Wyb" Name="Message" Kind="InputPin" />
                   <Pin Id="QlhaxncfYf4OxyguO2tkO4" Name="Send" Kind="InputPin" />
+                  <Pin Id="HD4oUjJPHzaMfQ1LC0yXn5" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="MSOk9pFJ7hzPvimzGMEC4u" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="248,422,82,19" Id="NYOPqzuSW1lOJJDiE3cmNZ">
@@ -5536,6 +5511,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="EPZrqW0VEieQWr70S916Ie" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UpiUXlLUDIaLTg4vPP7F9I" Name="Value" Kind="InputPin" />
                   <Pin Id="IOWuXkD4TV0LW69co3U462" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -5545,8 +5521,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="VEhQRAlXSEvNjWWo4LYEuR" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="TQo7CzE3iv6MjAz1Rjwl16" Name="Messages" Kind="InputPin" />
                   <Pin Id="Il2HzlTX6ylMNMfao5vadW" Name="Reset" Kind="InputPin" />
+                  <Pin Id="FW61J4io4oZPIRN3pMj3iR" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="TmwyiJ5hgHwMKkAugIHGVV" Name="Result" Kind="OutputPin" />
                   <Patch Id="DFfymVhcvjCOQ2kQ6zSlGH" ManuallySortedPins="true">
                     <Patch Id="Fj1HHEwO5pkPExJGMkWCNh" Name="Create" ManuallySortedPins="true" />
@@ -5647,12 +5625,13 @@
                 <ControlPoint Id="GU2aChDZwDGMrHwCJqnfyI" Bounds="355,553" />
                 <ControlPoint Id="I6mcT9FK4NkMqKaXw329PP" Bounds="375,574" />
                 <ControlPoint Id="SocdJrCiQKuNmKudws4Xwq" Bounds="433,663" />
-                <Node Bounds="248,1025,131,150" Id="Lkymo6RNkuwPWXhheAMIwT">
+                <Node Bounds="248,1025,142,93" Id="Lkymo6RNkuwPWXhheAMIwT">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Where" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="EK7ZlkApTIXOpuKs6QjDnz" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UaSbKhLhRziMWjUP7yvo0J" Name="Value" Kind="InputPin" />
                   <Pin Id="BVm7lm6Y1bLO8FtXzQKX2U" Name="Result" Kind="OutputPin" />
                   <Pin Id="BQ2pTY2jaJjNd67kyQEmph" Name="Changed" Kind="OutputPin" />
@@ -5660,12 +5639,11 @@
                     <Pin Id="FdZnKqHDPpMQCxdjfzSu0A" Name="Input" Kind="InputPin" />
                     <Pin Id="LFsiM7n4f7vOMtGDJV0JFZ" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="JP2K3vXx8KgMt6rMImEXvi" Bounds="262,1033" />
-                    <ControlPoint Id="GVN8eY9HQtLNCRkbjI7vSK" Bounds="328,1168" />
-                    <Node Bounds="260,1061,71,26" Id="OyrmlwECCwvMr1XJ9P38CT">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="GVN8eY9HQtLNCRkbjI7vSK" Bounds="339,1111" />
+                    <Node Bounds="260,1061,71,19" Id="OyrmlwECCwvMr1XJ9P38CT">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="Gxq4SJMKWIrLcwgjjpuUa4" Name="Input" Kind="StateInputPin" />
                       <Pin Id="D9VnbWaiPpUOD6KRy9NzKP" Name="Output" Kind="StateOutputPin" />
@@ -5673,12 +5651,13 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="631,1025,131,142" Id="HBblV6WGFzxODJGsHt8YET">
+                <Node Bounds="631,1025,142,123" Id="HBblV6WGFzxODJGsHt8YET">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Where" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="RypS3lJiDCnOtBsYIqFEdn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="HEw4SvgdLeYLOX3seHEnzz" Name="Value" Kind="InputPin" />
                   <Pin Id="InAbLMqhcOWMZOT5vo9Kcu" Name="Result" Kind="OutputPin" />
                   <Pin Id="Fm60GuFytdIOsHRRG9Cn4k" Name="Changed" Kind="OutputPin" />
@@ -5686,18 +5665,17 @@
                     <Pin Id="VSOLblRTb80MVgsrKwpNAM" Name="Input" Kind="InputPin" />
                     <Pin Id="HZ02NSPFk9iPme6mzhO6lI" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="S2aSEpbIT8cORUGWQW5Fgc" Bounds="645,1033" />
-                    <ControlPoint Id="Ja5aypYPzt1LHHbJykaDxP" Bounds="711,1160" />
-                    <Node Bounds="643,1061,71,26" Id="JPDFToLK0DlNcl5NJY6BBk">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="Ja5aypYPzt1LHHbJykaDxP" Bounds="722,1141" />
+                    <Node Bounds="643,1061,71,19" Id="JPDFToLK0DlNcl5NJY6BBk">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="B1PS1vmd3XBLEi4LVBrvpR" Name="Input" Kind="StateInputPin" />
                       <Pin Id="UP1XCY7DKraN5m9tRZsrYa" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="FgQrq5qWEWaOOSmweDTudy" Name="Is Successful" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="709,1110,37,19" Id="MTvC6lyBlXkM6SGn2dlMsl">
+                    <Node Bounds="720,1100,37,19" Id="MTvC6lyBlXkM6SGn2dlMsl">
                       <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -5708,14 +5686,16 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="248,1255,215,202" Id="TrqEjfVRYVnPalNBscCGd4">
+                <Node Bounds="248,1255,240,202" Id="TrqEjfVRYVnPalNBscCGd4">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="CtpN2T5c06iMjtIQ3mcsTh" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DAOq8Yw6jvvOP6yA6ELKqT" Name="Messages" Kind="InputPin" />
                   <Pin Id="AaaxLqkJWYgO6p77JT18ts" Name="Reset" Kind="InputPin" />
+                  <Pin Id="PfZYgyNriSqPG0IwSnx72B" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IsWuQvb20eWPdYv2FJ0lcw" Name="Result" Kind="OutputPin" />
                   <Patch Id="ScqkT4OXHmVPpwnAo0OA5t" ManuallySortedPins="true">
                     <Patch Id="CcDDdZ2yoJLOyQsEx8SWBg" Name="Create" ManuallySortedPins="true" />
@@ -5743,11 +5723,10 @@
                       </Pin>
                       <Pin Id="I8sKaGD8bHbLIGVqgBGfKf" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="260,1284,68,26" Id="D1GtlZvUxKrPxszor0OMpU">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="260,1284,68,19" Id="D1GtlZvUxKrPxszor0OMpU">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="LBEjZiGrUJ6PQ9QHVsLInf" Name="Input" Kind="StateInputPin" />
                       <Pin Id="UONcRrH96pPOfi4tfJ3LDy" Name="Output" Kind="StateOutputPin" />
@@ -5799,8 +5778,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="ELklSJOV7JPPc4yjtQS6V3" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="EEtl5dOs0wyQVL51rceMmJ" Name="Messages" Kind="InputPin" />
                   <Pin Id="DgzeuDwDdT5PitXduTxyN6" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Pzj8nccOVOCNk8Hf8eCoWe" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="DHBCYqB8ZYcMD4yxrP5qfm" Name="Result" Kind="OutputPin" />
                   <Patch Id="C01picNzaM6PQagbvpLnM1" ManuallySortedPins="true">
                     <Patch Id="N8l6AAveII6QUbdafCHNIT" Name="Create" ManuallySortedPins="true" />
@@ -5810,11 +5791,10 @@
                     </Patch>
                     <ControlPoint Id="T0IDlv4H069NVshKTirT7n" Bounds="645,1260" />
                     <ControlPoint Id="FAeozxFzN0jLnBP15nJpCW" Bounds="805,1466" />
-                    <Node Bounds="643,1281,68,26" Id="TO4qbtVWSmONQM86AtIXts">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="643,1281,68,19" Id="TO4qbtVWSmONQM86AtIXts">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="T83ZMdIe7xPNIsmtsXYb8R" Name="Input" Kind="StateInputPin" />
                       <Pin Id="FsLVsNk7qJrMcevqYcLjf4" Name="Output" Kind="StateOutputPin" />
@@ -5869,6 +5849,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="SBZbWglrU1mOnRefRTNEXk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="EO32GLFXpk3M2NJmcY4frI" Name="Data" Kind="InputPin" />
                   <Pin Id="IpxIlxRtPiHNivfBzJ2v8S" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -5888,6 +5869,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="HkdobR3I5bPPV5SGsPfqQU" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="H0j1giwe2yGP4ty1Rc1BBM" Name="Data" Kind="InputPin" />
                   <Pin Id="MbkcIgnrPxOMrTsafnKbj5" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -5907,6 +5889,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="OJaVahgZiLEPKrXSEqar1z" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="LYsT6z80nMEPbMBhm0hodU" Name="Data" Kind="InputPin" />
                   <Pin Id="NOanFCoaGdAND181rm5ijX" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -6111,47 +6094,51 @@
     ************************ WeatherHistoryRequestBase ************************
 
 -->
-            <Node Name="WeatherHistoryRequestBase" Bounds="355,169,350,1294" Id="IWUPXgYxItNMZdg7ygo8gP">
+            <Node Name="WeatherHistoryRequestBase" Bounds="358,172,361,1303" Id="IWUPXgYxItNMZdg7ygo8gP">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="DoyQEEn0aSxLnzDOt4JG4r" ManuallySortedPins="true">
-                <Node Bounds="399,1392,52,26" Id="EWYtfnlTlXOOkPL5gzxa1C">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestClient" LastDependency="RestSharp.dll">
+                <Node Bounds="403,1400,91,26" Id="EWYtfnlTlXOOkPL5gzxa1C">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestClientExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestClient" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestClientExtensions" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="RestSharp" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
                     <Choice Kind="OperationCallFlag" Name="Execute" />
-                    <PinReference Kind="OutputPin" Name="return">
+                    <PinReference Kind="InputPin" Name="Http Method" />
+                    <PinReference Kind="OutputPin" Name="Result">
                       <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                        <Choice Kind="TypeFlag" Name="IRestResponse" />
+                        <Choice Kind="TypeFlag" Name="RestResponse" />
+                        <FullNameCategoryReference ID="RestSharp" />
+                        <AssemblyReference ID="RestSharp.dll" />
                       </p:DataTypeReference>
                     </PinReference>
                   </p:NodeReference>
                   <Pin Id="S7j67clIM41QGQAEvPZbWh" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Gex4hEDpy9QQQiMhOTkzEJ" Name="Request" Kind="InputPin" />
-                  <Pin Id="NDGNnzx59AqOfk0issR0gT" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="CloBSrKz2kUMmoG9jO4KkE" Name="Result" Kind="OutputPin" />
+                  <Pin Id="BL7C9V3eEppM5QBF81k8fE" Name="Http Method" Kind="InputPin" />
                 </Node>
                 <ControlPoint Id="HDlacjGNlAVPQGnWzyBnoR" Bounds="372,1357" />
-                <ControlPoint Id="KZJrwTHoMsgOC9AKCSC6I1" Bounds="586,187" />
-                <ControlPoint Id="TDQpR2mD2lzNJz1WhKPJuS" Bounds="586,288" />
-                <ControlPoint Id="BvGTrND6MdZQFmrFlUrgzh" Bounds="586,389" />
+                <ControlPoint Id="KZJrwTHoMsgOC9AKCSC6I1" Bounds="600,190" />
+                <ControlPoint Id="TDQpR2mD2lzNJz1WhKPJuS" Bounds="600,281" />
+                <ControlPoint Id="BvGTrND6MdZQFmrFlUrgzh" Bounds="600,381" />
                 <Node Bounds="445,254,124,26" Id="SD9jMByXxwVPlivAMCfYMd">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="FcpPlS0RJxOLLlwBo92miS" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Rex1WA2RVdWMShFp0wzuuR" Name="Parameter" Kind="InputPin" />
                   <Pin Id="CQC5zA4AkxXOigGBV76aOx" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="LYF93K1tzfONKTuQcICmaB" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="564,209,65,26" Id="AWhGy01gZ8TQKGmL0TJSFO">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="564,209,74,26" Id="AWhGy01gZ8TQKGmL0TJSFO">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="IrOh9H4bHGvMgQGHEXCifA" Name="Name" Kind="InputPin" DefaultValue="appid">
@@ -6160,30 +6147,24 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="BZyRX7is2skQW07rpe2j9E" Name="Value" Kind="InputPin" />
-                  <Pin Id="CCErdrR2ps5LXc8afkvOIT" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="MPMKFOZQAwSLB5aCnC4Jro" Name="Encode" Kind="InputPin" />
                   <Pin Id="MWgiIUpRtxmM5bDFF6drDN" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="445,351,124,26" Id="JtFySUlA5U0MWxXcHsyJnf">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="BiIoXVaDfEqP1CmUFPnowC" Name="Input" Kind="StateInputPin" />
                   <Pin Id="DPYDntdhju0OdLC3UonDix" Name="Parameter" Kind="InputPin" />
                   <Pin Id="IVEzb81qKSCMfokfiqIBnB" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Ve0t4FzUarELDUbnccJp8W" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="564,308,65,26" Id="M8Wfht4SEuGMB2Ag1DbD8j">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="564,308,74,26" Id="M8Wfht4SEuGMB2Ag1DbD8j">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="FhhGTDDr9AgNIj5v5QF5YJ" Name="Name" Kind="InputPin" DefaultValue="lat">
@@ -6192,31 +6173,25 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="J7ptkK7hxv5NiMEsxlzJeM" Name="Value" Kind="InputPin" />
-                  <Pin Id="JEqGVvvQ4bGNW90zLu3zYl" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="RVeYmcs8hQKLSMBJf6jurL" Name="Encode" Kind="InputPin" />
                   <Pin Id="C8ItKRu8e5mO6iKY2cvcWm" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="445,441,124,26" Id="IMYimiCvGNmMm1i1KAz1zx">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="Okxujd9omMWQTL3QtgHwoc" Name="Input" Kind="StateInputPin" />
                   <Pin Id="MqEGKxFuNDTPxu99p3udBf" Name="Parameter" Kind="InputPin" />
                   <Pin Id="KWPg7Axt2pZPw6U1EDB8hD" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="AkGF4g1zzNYOtrmT9Uykwx" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="564,403,65,26" Id="FjBBh7PbcvBMDYhvtoYwIW">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="564,403,74,26" Id="FjBBh7PbcvBMDYhvtoYwIW">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="AKB6ZzEhGATO02eqAFSt0Y" Name="Name" Kind="InputPin" DefaultValue="lon">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -6224,15 +6199,10 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="Ar9qkGei5ifLYCOBnJQM5l" Name="Value" Kind="InputPin" />
-                  <Pin Id="HANNd53lAmoNoIUf80AT0A" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="AB1rlmSD5aNLsMCQXscm6C" Name="Encode" Kind="InputPin" />
                   <Pin Id="JqiM7hTSsNyM5mdyE6lgvU" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="Kl1Ujgh90CUPDNAVzHowP5" Bounds="448,1446" />
+                <ControlPoint Id="Kl1Ujgh90CUPDNAVzHowP5" Bounds="405,1458" />
                 <ControlPoint Id="BEi20oHVOiHO0UQ9ewJlIs" Bounds="447,222" />
                 <Link Id="OAUhXNBHGHKMDEstJG9Klr" Ids="HDlacjGNlAVPQGnWzyBnoR,S7j67clIM41QGQAEvPZbWh" />
                 <Link Id="RM56DdVSTEdMR1q1RIcP9B" Ids="SFFR0gyeSuxLyZCQiOCC7D,HDlacjGNlAVPQGnWzyBnoR" IsHidden="true" />
@@ -6253,36 +6223,36 @@
                 <Link Id="AOBKUVKQPGULI80DgFrMmX" Ids="Q0C0vJWRiNkPmWosq0mmPQ,BEi20oHVOiHO0UQ9ewJlIs" IsHidden="true" />
                 <ControlPoint Id="M7jGVjwzWPANZsvbnElooD" Bounds="380,757" />
                 <Link Id="VjS7tJe0zGjQdFwG9VjhJk" Ids="QjSHjAMDun5LMr85K1EKlL,M7jGVjwzWPANZsvbnElooD" IsHidden="true" />
-                <ControlPoint Id="DBz4CG28afaLEwIkSeX9QK" Bounds="587,489" />
+                <ControlPoint Id="DBz4CG28afaLEwIkSeX9QK" Bounds="601,480" />
                 <Link Id="RzvO5JsaByYL0K5P0l4OyY" Ids="UBLX9YwOievLzxtKEOloTC,DBz4CG28afaLEwIkSeX9QK" IsHidden="true" />
-                <Node Bounds="585,509,108,26" Id="JuIKSDuQ6osLi2QfhG2y2Y">
+                <Node Bounds="599,500,108,26" Id="JuIKSDuQ6osLi2QfhG2y2Y">
                   <p:NodeReference LastCategoryFullName="System.DateTimeOffset" LastDependency="mscorlib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToUnixTimeSeconds" />
                     <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="KmNiUQmYugvNPENKTFDvfS" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LxnVrqRuFv5P7ZNnGYGmpz" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Bp8oTe27ZeSPOiQNs9Vsts" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="IxP2Qs0RVTmPP4me3a4Esn" Ids="DBz4CG28afaLEwIkSeX9QK,KmNiUQmYugvNPENKTFDvfS" />
-                <Node Bounds="446,591,124,26" Id="P2KxZaa6mmpQYxwNrjayKx">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                <Node Bounds="446,640,124,26" Id="P2KxZaa6mmpQYxwNrjayKx">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="CvcZBLtoK2WPQTY8dLxLg2" Name="Input" Kind="StateInputPin" />
                   <Pin Id="T8D87XPe28NNeUfpG7F6hM" Name="Parameter" Kind="InputPin" />
                   <Pin Id="IhA0GKTejJJL2NliKB8Jk7" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Vbwaf01tgK7NenaU8O0BNl" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="RCiOlyjl1izPWn8S6aEPR2" Ids="KWPg7Axt2pZPw6U1EDB8hD,CvcZBLtoK2WPQTY8dLxLg2" />
-                <Node Bounds="565,549,65,26" Id="B4mdH8MGLwtL8Vl8cVqPoF">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="565,590,74,26" Id="B4mdH8MGLwtL8Vl8cVqPoF">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="BoD4YfFIRPuO85MUEwqQgU" Name="Name" Kind="InputPin" DefaultValue="dt">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -6290,31 +6260,25 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="Azho3v6SDaEOnNu80pZsI7" Name="Value" Kind="InputPin" />
-                  <Pin Id="LvoO5lL48wvMxGC1kueTPR" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="SBsgfq5TeWFOi9Y7tzXTao" Name="Encode" Kind="InputPin" />
                   <Pin Id="He81K4me9HqLb9FMrhrlra" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Link Id="Q0Io5sim6G3QNPqAeamtIR" Ids="Bp8oTe27ZeSPOiQNs9Vsts,Azho3v6SDaEOnNu80pZsI7" />
                 <Link Id="HicLFOkJqXbLJs6NGB3tvQ" Ids="He81K4me9HqLb9FMrhrlra,T8D87XPe28NNeUfpG7F6hM" />
-                <Node Bounds="435,846,255,129" Id="S4OrzVSSlfAMf1wF81F2Cj">
+                <Node Bounds="435,843,270,132" Id="S4OrzVSSlfAMf1wF81F2Cj">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="VoJFhwxg7a4MaeudTNST3I" Name="Condition" Kind="InputPin" />
-                  <ControlPoint Id="SWSsrMggsNvQTf8bjAkY2Q" Bounds="449,852" Alignment="Top" />
+                  <ControlPoint Id="SWSsrMggsNvQTf8bjAkY2Q" Bounds="449,849" Alignment="Top" />
                   <ControlPoint Id="VGqBOaLlenPPI86CNLqZkW" Bounds="449,969" Alignment="Bottom" />
                   <Patch Id="FXTr2MxlXe9OmL0asSbIHe" ManuallySortedPins="true">
                     <Patch Id="SqCog11X6SMNkUlNBovxf0" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Iot25xv9DIgOA0fP46v5Nm" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="566,891,92,26" Id="QnUquDzJhDHLTN4AI4iTFr">
-                      <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                      <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                        <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
                       <Pin Id="PfV6fPbquaBMZC6yBPKJfB" Name="Name" Kind="InputPin" DefaultValue="only_current">
@@ -6323,27 +6287,21 @@
                         </p:TypeAnnotation>
                       </Pin>
                       <Pin Id="Eq2PnxUsJyGLVRSMYtoySP" Name="Value" Kind="InputPin" />
-                      <Pin Id="DRLFkYIpVFKNQ1gkzA61W4" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                        <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                          <Choice Kind="TypeFlag" Name="ParameterType" />
-                        </p:TypeAnnotation>
-                      </Pin>
                       <Pin Id="Ju2Nif6XQQmPqYcIUpyn8G" Name="Encode" Kind="InputPin" />
                       <Pin Id="V4wTu11yRL9PDhO0BcJksC" Name="Output" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="447,929,124,26" Id="C2nQj6A9p14LQdY0NuaSvT">
-                      <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                         <PinReference Kind="InputPin" Name="Parameter" />
-                        <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="UNNqmT9292FNYA7pbmaiUf" Name="Input" Kind="StateInputPin" />
                       <Pin Id="SxULlJpECAuO90KDmKsTZP" Name="Parameter" Kind="InputPin" />
                       <Pin Id="GLp75HflYd8MYfJI04ZhOw" Name="Output" Kind="StateOutputPin" />
-                      <Pin Id="RowEaSUhf28N8iIfJWDqUv" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Pad Id="EsMuL2bzZ9KNfYYm3IhNSB" Comment="Input" Bounds="597,874,35,15" ShowValueBox="true" isIOBox="true" Value="{true}">
+                    <Pad Id="EsMuL2bzZ9KNfYYm3IhNSB" Comment="Input" Bounds="612,871,35,15" ShowValueBox="true" isIOBox="true" Value="{true}">
                       <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="ImmutableTypeFlag" Name="String" />
                         <FullNameCategoryReference ID="Primitive" />
@@ -6357,22 +6315,22 @@
                 <Link Id="JMyBGglS2sAN3wgXnTi1BZ" Ids="GLp75HflYd8MYfJI04ZhOw,VGqBOaLlenPPI86CNLqZkW" />
                 <Link Id="DuRxFt5OIMHNQnJP6ziby0" Ids="M7jGVjwzWPANZsvbnElooD,VoJFhwxg7a4MaeudTNST3I" />
                 <Link Id="M3N9bGBzQEULzOtjwC9OTM" Ids="EsMuL2bzZ9KNfYYm3IhNSB,Eq2PnxUsJyGLVRSMYtoySP" />
-                <Node Bounds="428,1051,209,254" Id="LXYWJw7Oq6VNW8plfVzoeh">
+                <Node Bounds="428,1051,209,306" Id="LXYWJw7Oq6VNW8plfVzoeh">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="A5HI7PGxxTxOZZ7DcA5rh3" Name="Condition" Kind="InputPin" />
                   <ControlPoint Id="AjGKXDy7ohDP4llGL5jAR6" Bounds="448,1057" Alignment="Top" />
-                  <ControlPoint Id="KpkqLSLtaMyLDWoyJTi4VI" Bounds="448,1299" Alignment="Bottom" />
+                  <ControlPoint Id="KpkqLSLtaMyLDWoyJTi4VI" Bounds="448,1351" Alignment="Bottom" />
                   <Patch Id="VUJvWxlgx7KNpxr52Pdltw" ManuallySortedPins="true">
                     <Patch Id="OOfAfm4GlaTMufPohioMFq" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="RVgzxQMTJmMK9zJRWA62Wq" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="446,1074,67,26" Id="TlF6qu6qXYHPSYcc7CQtBc">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestRequest" LastDependency="RestSharp.dll">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="Parameters" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestRequest" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="AiMk27mZWNNLCpo4kZk1uO" Name="Input" Kind="StateInputPin" />
                       <Pin Id="BnEAqAW2JQUPhvZsmAnLQQ" Name="Output" Kind="StateOutputPin" />
@@ -6413,16 +6371,16 @@
                         </Node>
                       </Patch>
                     </Node>
-                    <Node Bounds="508,1258,57,26" Id="LuJ4KOs2LV5ND7LwkiPTuA">
-                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
+                    <Node Bounds="508,1260,98,26" Id="LrXtzeqZaGbMEctaDv9mtB">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RequestParameters" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="ClassType" Name="MutableList" />
-                        <Choice Kind="OperationCallFlag" Name="Remove" />
+                        <CategoryReference Kind="AssemblyCategory" Name="RequestParameters" />
+                        <Choice Kind="OperationCallFlag" Name="RemoveParameter" />
+                        <PinReference Kind="InputPin" Name="Parameter" />
                       </p:NodeReference>
-                      <Pin Id="Orw4MGyRtsbNhqi6dQmH2L" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="TZUw4ycY3TROctPEX1UNKK" Name="Item" Kind="InputPin" />
-                      <Pin Id="RZ2CBH956tQM7IFZN092vP" Name="Output" Kind="StateOutputPin" />
-                      <Pin Id="KgfEdDID8plL6H1dsOY5M5" Name="Result" Kind="OutputPin" />
+                      <Pin Id="E40Zh7IxKPqPfLIKT6UGxB" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="A8W8Tlap9DpPnSUk51XCNz" Name="Parameter" Kind="InputPin" />
+                      <Pin Id="FzHPFNcxbbALYh9bfZueSs" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
                 </Node>
@@ -6446,11 +6404,9 @@
                 <Link Id="Ls76LAeLrR8OqwhMjpfEM1" Ids="IABubG11mpXNCmUYGYD7W0,KpVY92oWQC9PPI9nSumkls" />
                 <Link Id="RNMTO4dOcGDLjrKHi4dNVa" Ids="C18vyKSrvYtLweSE1izTBf,FwC9HUBQseKLodsuCOySzv" />
                 <Link Id="EgvtxPR33ZeMuJuPFxmUAf" Ids="FAH5AjGdYBNMthoqBgL2Aj,DVvRo9M4PE4ORuEO1WbGxR" />
-                <Link Id="U8SA5oO9kCKLKOUEh34X9s" Ids="DIBtNL3xXfcMnWdZGjDovS,Orw4MGyRtsbNhqi6dQmH2L" />
-                <Link Id="GZnKO61hXSBN7k7i38L1VS" Ids="KUf7rPmxsJuPBheL1jrYZ6,TZUw4ycY3TROctPEX1UNKK" />
                 <Link Id="B1TLyHqBJSRPcpNWPkaA3J" Ids="KpkqLSLtaMyLDWoyJTi4VI,Gex4hEDpy9QQQiMhOTkzEJ" />
-                <ControlPoint Id="MwJ1T2PFSLJL2TGB4FtGPK" Bounds="597,644" />
-                <Node Bounds="595,670,55,19" Id="G2LTvbDopUBMsyo7iVOPwA">
+                <ControlPoint Id="MwJ1T2PFSLJL2TGB4FtGPK" Bounds="602,671" />
+                <Node Bounds="600,690,55,19" Id="G2LTvbDopUBMsyo7iVOPwA">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -6458,7 +6414,7 @@
                   <Pin Id="Vyd41GDrZneNhmwqoYuzVL" Name="Input" Kind="InputPin" />
                   <Pin Id="ECbXKvV6cmDMOkn78iJFVV" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="595,700,55,26" Id="VaJ1klaeJGZP2ZwHSsVpIF">
+                <Node Bounds="600,720,55,26" Id="VaJ1klaeJGZP2ZwHSsVpIF">
                   <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToLower" />
@@ -6468,22 +6424,21 @@
                   <Pin Id="S1GABN4EKQ6NzTm1LtKe9E" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="447,785,124,26" Id="HvHA9IawBs8LuvtiWDRiwX">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="OEOFm60z0ZFPlkLEmj3mC2" Name="Input" Kind="StateInputPin" />
                   <Pin Id="CzycqFnzWRcPB4Z9N8Ljbw" Name="Parameter" Kind="InputPin" />
                   <Pin Id="RuDrPmrVD8xLG2pvB3Bol3" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="LTTUaXK1AjyNCYjOOk0e0z" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="566,742,92,26" Id="LjZvMv3cTHUPTlwo3mhMML">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="566,752,74,26" Id="LjZvMv3cTHUPTlwo3mhMML">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="QlTK6rR0hRUNga137Xt53z" Name="Name" Kind="InputPin" DefaultValue="units">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -6491,11 +6446,6 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="LwSOu0lCGgxQIk01QWDIQE" Name="Value" Kind="InputPin" />
-                  <Pin Id="PikhLWMvsHeMVTdMP8kD0K" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="LqJ1gGzqZZyQU2NQxVNS2v" Name="Encode" Kind="InputPin" />
                   <Pin Id="SsZXl7vjpOIQM4m5Fjv0b6" Name="Output" Kind="OutputPin" />
                 </Node>
@@ -6540,6 +6490,18 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="ML3bhSWslI9LKiJnSbFb0y" Name="Result" Kind="OutputPin" Bounds="517,1489" />
+                <Link Id="TE8SwJtCMjDNtnkGayuTBw" Ids="KUf7rPmxsJuPBheL1jrYZ6,A8W8Tlap9DpPnSUk51XCNz" />
+                <Link Id="N7ndDKpcAKzOTRTBmAeFJX" Ids="DIBtNL3xXfcMnWdZGjDovS,E40Zh7IxKPqPfLIKT6UGxB" />
+                <Node Bounds="599,550,55,19" Id="G1OUxhMdIyYN4ZvleU0QgB">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="LHvAUT2SwQxLybDKnqnFkK" Name="Input" Kind="InputPin" />
+                  <Pin Id="C5NLUgVaYL9LA1muowehHP" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="EvQzRz8ZJ48LItzFVTssY2" Ids="Bp8oTe27ZeSPOiQNs9Vsts,LHvAUT2SwQxLybDKnqnFkK" />
+                <Link Id="B3TTBz0tqmyPOQvjNVJqYA" Ids="C5NLUgVaYL9LA1muowehHP,Azho3v6SDaEOnNu80pZsI7" />
               </Patch>
             </Node>
           </Canvas>
@@ -6550,12 +6512,12 @@
     ************************ OneCall3Client ************************
 
 -->
-          <Node Name="OneCall3Client" Bounds="183,171,76,96" Id="BQmIyPOLs3jPfNUb8ECL6K">
+          <Node Name="OneCall3Client" Bounds="183,171,89,96" Id="BQmIyPOLs3jPfNUb8ECL6K">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
               <Choice Kind="OperationDefinition" Name="Operation" />
             </p:NodeReference>
             <Patch Id="NYk0BiKIJ9FN9yOyTCbDAg">
-              <Node Bounds="195,194,52,26" Id="VXVPyYCsT2tM5X0Q8MINBA">
+              <Node Bounds="195,194,65,26" Id="VXVPyYCsT2tM5X0Q8MINBA">
                 <p:NodeReference LastCategoryFullName="RestSharp.RestClient" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="RestClient" />
@@ -6568,6 +6530,9 @@
                 </p:NodeReference>
                 <Pin Id="L1p7PEDVd32NODlRr4QvG2" Name="Base Url" Kind="InputPin" DefaultValue="https://api.openweathermap.org/data/3.0/onecall" />
                 <Pin Id="JhvKbkFoRHBQCdgaQXHNt7" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="H9Q5bETCQhuPJQyfINZGGb" Name="Configure Rest Client" Kind="InputPin" />
+                <Pin Id="AEYBJC3jJ7JNLvibJBTgkr" Name="Configure Default Headers" Kind="InputPin" />
+                <Pin Id="APlcHbd0CK9OW1f2ajXqGg" Name="Configure Serialization" Kind="InputPin" />
               </Node>
               <ControlPoint Id="NkhrlZLPMmMLRslPYKiAd2" Bounds="197,250" />
               <Link Id="O0ru2Af6RJ3NKJYNrRzi0W" Ids="JhvKbkFoRHBQCdgaQXHNt7,NkhrlZLPMmMLRslPYKiAd2" />
@@ -6633,47 +6598,51 @@
     ************************ AirPollutionHistoryRequestBase ************************
 
 -->
-            <Node Name="AirPollutionHistoryRequestBase" Bounds="172,187,414,716" Id="GgIRX3TML1QM9RrGCa1Mmc">
+            <Node Name="AirPollutionHistoryRequestBase" Bounds="172,192,428,715" Id="GgIRX3TML1QM9RrGCa1Mmc">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="PdYleAs0jr4OLy2h5qaOzX" ManuallySortedPins="true">
-                <Node Bounds="226,832,52,26" Id="D5FmXJsU5THQGrXjzBfgdY">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestClient" LastDependency="RestSharp.dll">
+                <Node Bounds="226,832,91,26" Id="D5FmXJsU5THQGrXjzBfgdY">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestClientExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestClient" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestClientExtensions" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="RestSharp" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
                     <Choice Kind="OperationCallFlag" Name="Execute" />
-                    <PinReference Kind="OutputPin" Name="return">
+                    <PinReference Kind="InputPin" Name="Http Method" />
+                    <PinReference Kind="OutputPin" Name="Result">
                       <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                        <Choice Kind="TypeFlag" Name="IRestResponse" />
+                        <Choice Kind="TypeFlag" Name="RestResponse" />
+                        <FullNameCategoryReference ID="RestSharp" />
+                        <AssemblyReference ID="RestSharp.dll" />
                       </p:DataTypeReference>
                     </PinReference>
                   </p:NodeReference>
                   <Pin Id="KIaexYtkfUEM3GbW0w2f6a" Name="Input" Kind="StateInputPin" />
                   <Pin Id="E4Tjcw6h5FYPQjOsCVClzP" Name="Request" Kind="InputPin" />
-                  <Pin Id="FG5M3hdNIddNr5SsF72KvW" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="BHeYGwAGY4KPP5w5EinCUW" Name="Result" Kind="OutputPin" />
+                  <Pin Id="UIN1ULDuEeTMd0HGslJjIY" Name="Http Method" Kind="InputPin" />
                 </Node>
                 <ControlPoint Id="EqGKyEefiP5OJTMUYhdvNy" Bounds="186,782" />
-                <ControlPoint Id="Q3kG2Et3R9mP2PCuOWAVab" Bounds="468,205" />
-                <ControlPoint Id="K5Qdg8LOMxBNkPknk4qLDK" Bounds="468,306" />
-                <ControlPoint Id="TJwxMgWTLLxLPpdWGngHxz" Bounds="468,407" />
+                <ControlPoint Id="Q3kG2Et3R9mP2PCuOWAVab" Bounds="482,210" />
+                <ControlPoint Id="K5Qdg8LOMxBNkPknk4qLDK" Bounds="482,301" />
+                <ControlPoint Id="TJwxMgWTLLxLPpdWGngHxz" Bounds="482,391" />
                 <Node Bounds="327,272,124,26" Id="Qegm3dxrrwjNcj9Ppe7JH8">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="HgS3EqCsLMtLJWJ56GNULK" Name="Input" Kind="StateInputPin" />
                   <Pin Id="FhjBRIYNSAlNZnptuuOyDC" Name="Parameter" Kind="InputPin" />
                   <Pin Id="VJNo9eTWhX0Ohs8ONwxDrJ" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="BKKF5zngHSAPigzLbuKpKx" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="446,227,65,26" Id="CwLqQSrgbByMLZEXCRyUTv">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="446,227,74,26" Id="CwLqQSrgbByMLZEXCRyUTv">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="Lk528gvtkE1Mdt9IpMnHNQ" Name="Name" Kind="InputPin" DefaultValue="appid">
@@ -6682,30 +6651,24 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="AbKSmH74slVLGYA7tUSpAN" Name="Value" Kind="InputPin" />
-                  <Pin Id="RGzDpASyzJFLs4HY9OJsNK" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="JhC61dplKx7L34WPWgL6yH" Name="Encode" Kind="InputPin" />
                   <Pin Id="LZXJkjADvzpM2L4yFTGJjF" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="327,369,124,26" Id="Nt9MYFbRPzlOF4tJ26ax22">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="FhIXT0fXtjbO9pH5QBHV49" Name="Input" Kind="StateInputPin" />
                   <Pin Id="KtU99bhrVgdQWJNf7xsjAP" Name="Parameter" Kind="InputPin" />
                   <Pin Id="OUCnnd8ognwM6yTKhEURSa" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Tj1iFc5igrYNgopNRiVHjO" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="446,326,65,26" Id="UyLNaue30lhOZnkRojEOXs">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="446,326,74,26" Id="UyLNaue30lhOZnkRojEOXs">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="NFlwyyLIiMnQAtRpgGqASL" Name="Name" Kind="InputPin" DefaultValue="lat">
@@ -6714,31 +6677,25 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="KVkX3XHSPkXLHfyUjfw3iZ" Name="Value" Kind="InputPin" />
-                  <Pin Id="CkqVpVYYlT9PWSObtYdlJE" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="C13K2b1YeVON4GUwvzih05" Name="Encode" Kind="InputPin" />
                   <Pin Id="KczvfcHHmoHOJAA5Zdhfc5" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="327,459,124,26" Id="CsCdVeDx1seLC7Bfd2e3Yb">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="SyuVgs0Y59WP2mkdW9rsyo" Name="Input" Kind="StateInputPin" />
                   <Pin Id="OMcfNl60IABNcbnE6DgUGE" Name="Parameter" Kind="InputPin" />
                   <Pin Id="HvVtCorwWHKP5EibgwLP5w" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="C8LvHWceqR3NZABVmv1ziP" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="446,421,65,26" Id="GHL0NlE85F1PrmWjBj2qjm">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="446,421,74,26" Id="GHL0NlE85F1PrmWjBj2qjm">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="Atj7MPgWFugLan5DEvPpZ6" Name="Name" Kind="InputPin" DefaultValue="lon">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -6746,15 +6703,10 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="BBri3qQIyNXL1uGZDTr3Gt" Name="Value" Kind="InputPin" />
-                  <Pin Id="CCFVRaamLuJPmkjI1mAb6f" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="Cjwwbq5EHqTMr9DLN2yKuW" Name="Encode" Kind="InputPin" />
                   <Pin Id="O8o5fplGwywQLex1ciuoqa" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="AUqgHczDFkiLde7oHPc9Tc" Bounds="275,886" />
+                <ControlPoint Id="AUqgHczDFkiLde7oHPc9Tc" Bounds="228,890" />
                 <Link Id="O2pNcSU4z84Oo2j9DBvErm" Ids="EqGKyEefiP5OJTMUYhdvNy,KIaexYtkfUEM3GbW0w2f6a" />
                 <Link Id="T1VhOUIyBkUNQQHoH6733M" Ids="Lzmm97DBh82MdhZKP5F3cb,EqGKyEefiP5OJTMUYhdvNy" IsHidden="true" />
                 <Link Id="FVR4zchSNJiNeoeXjtlMhY" Ids="CMWEJmwwG6dQEc4rzSSW3Y,Q3kG2Et3R9mP2PCuOWAVab" IsHidden="true" />
@@ -6770,36 +6722,36 @@
                 <Link Id="SVLUW66sS71MoPgTQPXokX" Ids="VJNo9eTWhX0Ohs8ONwxDrJ,FhIXT0fXtjbO9pH5QBHV49" />
                 <Link Id="BbomW8maIS6QURfsY5dJeu" Ids="BHeYGwAGY4KPP5w5EinCUW,AUqgHczDFkiLde7oHPc9Tc" />
                 <Link Id="KRxQrySkGTTLHfcO27wg0N" Ids="AUqgHczDFkiLde7oHPc9Tc,QOJ445flucfN7A2pUmsqow" IsHidden="true" />
-                <ControlPoint Id="BQWjIeo1SzVM9nX3B0ABCp" Bounds="468,507" />
+                <ControlPoint Id="BQWjIeo1SzVM9nX3B0ABCp" Bounds="482,480" />
                 <Link Id="DwRWxoRXJKeMJgU3lCAcdf" Ids="LM9pFfhXumrL9aAPLtgftA,BQWjIeo1SzVM9nX3B0ABCp" IsHidden="true" />
-                <Node Bounds="466,527,108,26" Id="CrhP7S5yNhXQXx4SWw3OvC">
+                <Node Bounds="480,500,108,26" Id="CrhP7S5yNhXQXx4SWw3OvC">
                   <p:NodeReference LastCategoryFullName="System.DateTimeOffset" LastDependency="mscorlib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToUnixTimeSeconds" />
                     <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="UEqvuK0TSKlOEEMcBcKzGj" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TborLeoKutBOD83Kc989Fy" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Bb4Q5VzF8HDPZ2Z2iKzdA8" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="AMuv65j0FsXMmoB3VRXgnp" Ids="BQWjIeo1SzVM9nX3B0ABCp,UEqvuK0TSKlOEEMcBcKzGj" />
                 <Node Bounds="327,609,124,26" Id="Lldbc98qEUSLnrz1TLWHL7">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="D6Mt43BtGkwLCPqTLCSK8U" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Vvf5nRGgphmNpYfDKQWiL7" Name="Parameter" Kind="InputPin" />
                   <Pin Id="Vjlo77PazUgNa7kue9IrZI" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="H0clRc5NzEiPoI5mf92RwV" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="FziB2qZFtWZMDHqKPYlfuy" Ids="HvVtCorwWHKP5EibgwLP5w,D6Mt43BtGkwLCPqTLCSK8U" />
-                <Node Bounds="446,567,65,26" Id="OhpkNDqBpVYNuZaOYY0Pt8">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="446,567,74,26" Id="OhpkNDqBpVYNuZaOYY0Pt8">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="OOx3dK3ZS1BNRPogKlXRrQ" Name="Name" Kind="InputPin" DefaultValue="start">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -6807,43 +6759,38 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="DyVNi8bhL1YMAAs2BgjRAb" Name="Value" Kind="InputPin" />
-                  <Pin Id="F7hbRde44EqMuUFbs19xbe" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="Vy1DugbQnSYLNQ8d2IpQ9G" Name="Encode" Kind="InputPin" />
                   <Pin Id="MWUGNCkNuoONqBIcojCtPy" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Link Id="FyX44RBJBCgNqFNAESFpAA" Ids="Bb4Q5VzF8HDPZ2Z2iKzdA8,DyVNi8bhL1YMAAs2BgjRAb" />
+                <Link Id="FyX44RBJBCgNqFNAESFpAA" Ids="Bb4Q5VzF8HDPZ2Z2iKzdA8,PTNCqSAeg7zPvuP2tAvPrT" />
                 <Link Id="LmQQl3N4OnwOD60wSj8xMW" Ids="MWUGNCkNuoONqBIcojCtPy,Vvf5nRGgphmNpYfDKQWiL7" />
-                <ControlPoint Id="GlQleR1QskoMzst48bDQdX" Bounds="468,658" />
-                <Node Bounds="466,678,108,26" Id="GDMJpGjU2QDLYrOY3geWfx">
+                <ControlPoint Id="GlQleR1QskoMzst48bDQdX" Bounds="482,630" />
+                <Node Bounds="480,650,108,26" Id="GDMJpGjU2QDLYrOY3geWfx">
                   <p:NodeReference LastCategoryFullName="System.DateTimeOffset" LastDependency="mscorlib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToUnixTimeSeconds" />
                     <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="T547BqsYXKFNrA8Wqxac5V" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DboqaqDvJJDQSoqFbUOfcS" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="KGoYjJwdSFOMvjIWrCLtuT" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="327,760,124,26" Id="QuGayFac4PmL57WWrDA02a">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="PpR4BkzzZnVLFWzTtVNRlN" Name="Input" Kind="StateInputPin" />
                   <Pin Id="GO39hX1RQJ5PVHZpLKJih7" Name="Parameter" Kind="InputPin" />
                   <Pin Id="S5E9OXThKUHL7O1fT09qMu" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="DAr8JIWNNgXP9HozEDJ16B" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="446,718,65,26" Id="RDATNqEVn38K92IKd1L2cD">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="446,718,74,26" Id="RDATNqEVn38K92IKd1L2cD">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="FLoYKpyaDncL8oRRoskC8a" Name="Name" Kind="InputPin" DefaultValue="end">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -6851,16 +6798,11 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="EceYs98QdJGOOMC8kl5ypS" Name="Value" Kind="InputPin" />
-                  <Pin Id="EmtruO7p8CuL0b2NIrgZTs" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="H6wScVs7JQCMV131WBgmCa" Name="Encode" Kind="InputPin" />
                   <Pin Id="IFm5N31SeZdOSVCnMSqrqx" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Link Id="GPKEpW0BKemPYCvplYXBXq" Ids="GlQleR1QskoMzst48bDQdX,T547BqsYXKFNrA8Wqxac5V" />
-                <Link Id="NGJDB6NBM5EOynnhj9kw6H" Ids="KGoYjJwdSFOMvjIWrCLtuT,EceYs98QdJGOOMC8kl5ypS" />
+                <Link Id="NGJDB6NBM5EOynnhj9kw6H" Ids="KGoYjJwdSFOMvjIWrCLtuT,PExqnQ0qvw5Nv2iFJYRHOt" />
                 <Link Id="ILQccaRqE8yOxHPxtcCYIL" Ids="IFm5N31SeZdOSVCnMSqrqx,GO39hX1RQJ5PVHZpLKJih7" />
                 <Link Id="KwNC6pl4cQLPxehSOJDwZt" Ids="Vjlo77PazUgNa7kue9IrZI,PpR4BkzzZnVLFWzTtVNRlN" />
                 <Link Id="LTIgSFsxIxtNNi9woPmddy" Ids="LQN2Uln1OL6NBII3tw53cc,GlQleR1QskoMzst48bDQdX" IsHidden="true" />
@@ -6896,6 +6838,26 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="QOJ445flucfN7A2pUmsqow" Name="Result" Kind="OutputPin" Bounds="517,1489" />
+                <Node Bounds="480,530,55,19" Id="NvWTdubTMlRNU8O2RKfHav">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="System.Conversion" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="PTNCqSAeg7zPvuP2tAvPrT" Name="Input" Kind="InputPin" />
+                  <Pin Id="HnjlhfpOyScLfOZF4z6xoo" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="B9EnypFRRJnMMk1TCXWPFc" Ids="HnjlhfpOyScLfOZF4z6xoo,DyVNi8bhL1YMAAs2BgjRAb" />
+                <Node Bounds="480,681,55,19" Id="SZz8AGE0tsROvHY2uIofW7">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="System.Conversion" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="PExqnQ0qvw5Nv2iFJYRHOt" Name="Input" Kind="InputPin" />
+                  <Pin Id="HSW2JtAgg2WMc3zhdMCOkY" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="Ev18f4fUa9MNIAkMu1IB27" Ids="HSW2JtAgg2WMc3zhdMCOkY,EceYs98QdJGOOMC8kl5ypS" />
               </Patch>
             </Node>
           </Canvas>
@@ -6952,21 +6914,19 @@
                       <Pin Id="LNHXROi6Q8xPSu3hqE4SNF" Name="End Date" Kind="InputPin" />
                       <Pin Id="NPk16pVhOUSNe851DhxI71" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="285,571,83,26" Id="RAxmZ0EM4slMeyJAQB5WCz">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="285,571,83,19" Id="RAxmZ0EM4slMeyJAQB5WCz">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="Liul8uh4IhTLWtmQtGeItQ" Name="Input" Kind="StateInputPin" />
                       <Pin Id="LbfTgM0IQMYP5VnGD9wne4" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="E3A77FqXW3aNT83RLIUnK3" Name="Content" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="285,622,71,26" Id="H7yBoV94cDoNCnje03hpgb">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="285,622,71,19" Id="H7yBoV94cDoNCnje03hpgb">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="IyT2ZpR8Pf3MjWnzFjSl4X" Name="Input" Kind="StateInputPin" />
                       <Pin Id="VUGuuFyLXyqLzU3hKc5hra" Name="Output" Kind="StateOutputPin" />
@@ -7155,8 +7115,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="DRO0h5KsO8mMN5wF9t0wpl" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DKGViI6THuBOSxruxNw7Mu" Name="Message" Kind="InputPin" />
                   <Pin Id="BYThfluwzGPNcnnkd6kbUh" Name="Send" Kind="InputPin" />
+                  <Pin Id="QCbKrwfr26MLskYik5PYP3" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Qe1evhuqJ5tQJD75IcyZkL" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="248,422,82,19" Id="OT7iI0PnfS7NN8xnMQfv6V">
@@ -7164,6 +7126,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="Vy21jgtDtKpMkqOCvjHtiY" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="JSAu5lY6xJANsz0C8d6w2L" Name="Value" Kind="InputPin" />
                   <Pin Id="TOTB1ZcIuJ9OkDxyMiKt9I" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -7173,8 +7136,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="JyucTfJ95cWO7VPAwBsAae" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="KDd0bEQlJhSLokTrijrlr1" Name="Messages" Kind="InputPin" />
                   <Pin Id="AUCHdh9fN8PL8PIGy8OsgM" Name="Reset" Kind="InputPin" />
+                  <Pin Id="F7xELzd6G46LwdKpsMT3JE" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Qj02fxCP8xqPGo83MiwCtD" Name="Result" Kind="OutputPin" />
                   <Patch Id="DKiqL0sZeTDQbmbESSJ74H" ManuallySortedPins="true">
                     <Patch Id="CDbY3BqmsOmNvDWXKf8jbt" Name="Create" ManuallySortedPins="true" />
@@ -7279,6 +7244,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="PY9jPQiL6BWL2HXSNzmrsk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="ArVXOpfEsceP1F9XtjW0Ho" Name="Value" Kind="InputPin" />
                   <Pin Id="F3t1nTvrEgBNj2OX3rfaXZ" Name="Result" Kind="OutputPin" />
                   <Pin Id="OUMBspWYwWtNPWgkebTc2R" Name="Changed" Kind="OutputPin" />
@@ -7287,11 +7253,10 @@
                     <Pin Id="FlewFlJTrpaLjZ8geFcYoU" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="UdInLIaoCfiLtBRqDDzFOh" Bounds="262,1033" />
                     <ControlPoint Id="K53OqoSHtluNuF5e8ihV3l" Bounds="328,1168" />
-                    <Node Bounds="260,1061,71,26" Id="JjQqzRhnQbNLvcKKkcmI9Y">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="260,1061,71,19" Id="JjQqzRhnQbNLvcKKkcmI9Y">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="TO97AXV27hjOiISP9ZJpJt" Name="Input" Kind="StateInputPin" />
                       <Pin Id="AmSrfmsHb9JPsFt6WwQFVT" Name="Output" Kind="StateOutputPin" />
@@ -7305,6 +7270,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="D7Kpb9RMYjcNwc3rYucryd" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="J2wiyf4x8TnL2bwgy8z0dv" Name="Value" Kind="InputPin" />
                   <Pin Id="BwwtcgbrrkMLaZkIMLohKA" Name="Result" Kind="OutputPin" />
                   <Pin Id="F9A3ATtBt0VN8o05G62Mxp" Name="Changed" Kind="OutputPin" />
@@ -7313,11 +7279,10 @@
                     <Pin Id="GCizJGWnRgcPrE1NUj38BM" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="QUv5XOPcqIkMYCjXG8GmyN" Bounds="645,1033" />
                     <ControlPoint Id="H02UCluQcbUN5ICDXzCTcw" Bounds="711,1160" />
-                    <Node Bounds="643,1061,71,26" Id="L7OqCmJj6yOPbz4XigJHgr">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="643,1061,71,19" Id="L7OqCmJj6yOPbz4XigJHgr">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="MC3uKpEu3qVNFGRMV8cEdA" Name="Input" Kind="StateInputPin" />
                       <Pin Id="RGR8xx1IpOJOs3g2w8S0QO" Name="Output" Kind="StateOutputPin" />
@@ -7340,8 +7305,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="KkfrGGba0FmOpD1tn14GZk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UTeKfcWWyndLAFGnR9AFzT" Name="Messages" Kind="InputPin" />
                   <Pin Id="AfiVGj9YAbOOfedCitIbBW" Name="Reset" Kind="InputPin" />
+                  <Pin Id="VrZorxgOUgFPhoUCa2nViQ" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="DijHNmASQjcP2QXcrg4tDJ" Name="Result" Kind="OutputPin" />
                   <Patch Id="BvzMuRtv9fVQRl4sYJJfgS" ManuallySortedPins="true">
                     <Patch Id="F48onGiuwgdP7uzazlJmac" Name="Create" ManuallySortedPins="true" />
@@ -7369,11 +7336,10 @@
                       </Pin>
                       <Pin Id="AeNHQeKhiaYMTEvGtOX6vK" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="260,1284,68,26" Id="O7bxbyfzfvLM3Po90BGjxk">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="260,1284,68,19" Id="O7bxbyfzfvLM3Po90BGjxk">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="ROJLzHj0NpvLqyq9VtDMWe" Name="Input" Kind="StateInputPin" />
                       <Pin Id="RPF9czJvn3lODBp4x2yHeQ" Name="Output" Kind="StateOutputPin" />
@@ -7425,8 +7391,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="JwAva9OOf9zPgAgGZ7FhGk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VuyBWKCcF2jNq3StQkBtuH" Name="Messages" Kind="InputPin" />
                   <Pin Id="TMGVKOGK9hINHlRRl0Zpd8" Name="Reset" Kind="InputPin" />
+                  <Pin Id="I8qOeQDnQfLPc0p0EyMIah" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="GdPkOboY4KULihRfwjORBD" Name="Result" Kind="OutputPin" />
                   <Patch Id="PkMr4eZfdSiO5S7FiDGrtJ" ManuallySortedPins="true">
                     <Patch Id="AxBGGyP5jWFO0AcpDM5gG9" Name="Create" ManuallySortedPins="true" />
@@ -7436,11 +7404,10 @@
                     </Patch>
                     <ControlPoint Id="Mq5sMCgJJjzNO4ZOGs8ng7" Bounds="645,1260" />
                     <ControlPoint Id="FYSH1KPjCUWPATuivMbl5k" Bounds="805,1466" />
-                    <Node Bounds="643,1281,68,26" Id="TOigledAhepMSEAMYkbGne">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="643,1281,68,19" Id="TOigledAhepMSEAMYkbGne">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="V0IzHNrhWr4OMtup8EHZJ8" Name="Input" Kind="StateInputPin" />
                       <Pin Id="KaCcp4uZF5SOvlihkqDlJy" Name="Output" Kind="StateOutputPin" />
@@ -7495,6 +7462,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="TzutKbdaO3cPf6KGuHFHtp" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="D1YbPzFvUA4OCiADwFocw4" Name="Data" Kind="InputPin" />
                   <Pin Id="QKJmno3DpSoPigmMAdiA4T" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -7514,6 +7482,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="Q1KF6GHEEwMMf8NGxrRAIl" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="MNNoTdbJxYpNXEdeFd8cp5" Name="Data" Kind="InputPin" />
                   <Pin Id="GzvqfekRQeLNt1UCrClPGN" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -7533,6 +7502,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="DL0URXvANkSP1LwiF6ZOxD" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="IozqjUYNyZZNdGF57bkZlz" Name="Data" Kind="InputPin" />
                   <Pin Id="K2KDgIt5ppoP8mk72av2fp" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -7753,6 +7723,9 @@
                 </p:NodeReference>
                 <Pin Id="Rw8yCWoUzHvMTzipZUzl6V" Name="Base Url" Kind="InputPin" DefaultValue="http://api.openweathermap.org/data/2.5/air_pollution" />
                 <Pin Id="C8Sr3MyMmAoOTYR6F8d98d" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="EleiUPZDgNJNEgk59pSeCF" Name="Configure Rest Client" Kind="InputPin" />
+                <Pin Id="RCVQ0t6t11ELjPK7CJ7deH" Name="Configure Default Headers" Kind="InputPin" />
+                <Pin Id="H3dL173zaClMsJuKq98lTV" Name="Configure Serialization" Kind="InputPin" />
               </Node>
               <ControlPoint Id="PWgV5lpGqVINshfEeSI4YO" Bounds="321,294" />
               <Link Id="BbxXa7IEgb6OIOACI28zkm" Ids="C8Sr3MyMmAoOTYR6F8d98d,PWgV5lpGqVINshfEeSI4YO" />
@@ -7818,6 +7791,7 @@
                       <CategoryReference Kind="RecordType" Name="AirPollutionMeasurement" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
                     </p:NodeReference>
+                    <Pin Id="Kt8JQ2zhc5lLaA5JTnRmu2" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="DN5N1wXcFYQN13h4AWgZR0" Name="Air Quality Index" Kind="InputPin" />
                     <Pin Id="QrUCKPhBZZoNEkbOFnmosr" Name="CO" Kind="InputPin" />
                     <Pin Id="Dzu75UZZkblLsTTca3qLTO" Name="NO" Kind="InputPin" />
@@ -8097,47 +8071,49 @@
     ************************ AirPollutionForecastRequestBase ************************
 
 -->
-            <Node Name="AirPollutionForecastRequestBase" Bounds="170,185,349,416" Id="C0TjVrPLKRFPqmSGmHpTk7">
+            <Node Name="AirPollutionForecastRequestBase" Bounds="170,113,363,494" Id="C0TjVrPLKRFPqmSGmHpTk7">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="SIwaqpJ2PLnNvcyFi4qTej" ManuallySortedPins="true">
-                <Node Bounds="262,530,52,26" Id="VO7t0FosWcmMNUUrNKlboS">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestClient" LastDependency="RestSharp.dll">
+                <Node Bounds="223,530,91,26" Id="VO7t0FosWcmMNUUrNKlboS">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestClientExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestClient" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestClientExtensions" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="RestSharp" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
                     <Choice Kind="OperationCallFlag" Name="Execute" />
-                    <PinReference Kind="OutputPin" Name="return">
+                    <PinReference Kind="OutputPin" Name="Result">
                       <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                        <Choice Kind="TypeFlag" Name="IRestResponse" />
+                        <Choice Kind="TypeFlag" Name="RestResponse" />
+                        <FullNameCategoryReference ID="RestSharp" />
+                        <AssemblyReference ID="RestSharp.dll" />
                       </p:DataTypeReference>
                     </PinReference>
                   </p:NodeReference>
                   <Pin Id="BXxBZgx92SqLZ6hGXG3q29" Name="Input" Kind="StateInputPin" />
                   <Pin Id="GtnvFYG77tzQW0j8ih12YF" Name="Request" Kind="InputPin" />
-                  <Pin Id="GHBwsMxTkoOMDUypHksErD" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="JpgbNoaW5LPM0v9ijvGyvS" Name="Result" Kind="OutputPin" />
                 </Node>
                 <ControlPoint Id="HWiJf9MOvXRNXSAUvLjM7K" Bounds="184,486" />
-                <ControlPoint Id="RKMzSAnKYDHQbgmEmVAOp4" Bounds="450,203" />
-                <ControlPoint Id="IGtEinsJpW2NMP5B6rnFEp" Bounds="450,304" />
-                <ControlPoint Id="OH4sCz47DF3MjXUIoK0e1T" Bounds="450,405" />
+                <ControlPoint Id="RKMzSAnKYDHQbgmEmVAOp4" Bounds="464,161" />
+                <ControlPoint Id="IGtEinsJpW2NMP5B6rnFEp" Bounds="464,291" />
+                <ControlPoint Id="OH4sCz47DF3MjXUIoK0e1T" Bounds="464,391" />
                 <Node Bounds="309,270,124,26" Id="JJCOaikVichObdGj5r4jIp">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="AIyALNTUH3lMfOpKuE3lJM" Name="Input" Kind="StateInputPin" />
                   <Pin Id="VKqAePO2M69NRqb8GgfSwr" Name="Parameter" Kind="InputPin" />
                   <Pin Id="UZ4O6byqzOmPls2AMKNvhz" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="TwDwxBlu3i1NN2N5zS8Ueq" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="428,225,65,26" Id="VhXX2SCETJONnsp1Q5e2LQ">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="428,186,74,26" Id="VhXX2SCETJONnsp1Q5e2LQ">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="Af1NRCCwN1iQWInSNOlMpW" Name="Name" Kind="InputPin" DefaultValue="appid">
@@ -8146,30 +8122,24 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="A32vB29l39ELdnFBL1KiQ0" Name="Value" Kind="InputPin" />
-                  <Pin Id="VkejHRI3NluOd83EGPXoVk" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="PPx7MayaR3oM8I4dc0osk7" Name="Encode" Kind="InputPin" />
                   <Pin Id="UmB8ERC29MUP0ywulkBsfX" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="309,367,124,26" Id="M81tNzCnfa9NdeJCxHuLSP">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="RPQE1kDiS6WQbbkbpK3J7N" Name="Input" Kind="StateInputPin" />
                   <Pin Id="UHW4h0qOdHwQEDjbOTtOyX" Name="Parameter" Kind="InputPin" />
                   <Pin Id="FEESsSHv2HDMgGNUIM5dB8" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="UuypH2JOG4AL7qDQkbbElA" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="428,324,65,26" Id="OIwGiQvaihiPnqFjga22ec">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="428,324,74,26" Id="OIwGiQvaihiPnqFjga22ec">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="Fik8RprSfa4O4txtLoUgt9" Name="Name" Kind="InputPin" DefaultValue="lat">
@@ -8178,31 +8148,25 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="GHUT9nWd2ZGMXxQxFwFQ2k" Name="Value" Kind="InputPin" />
-                  <Pin Id="PcyczQ5VJvePUlIhc6DicC" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="PuZkDwe7zPQMjymjXsSVHC" Name="Encode" Kind="InputPin" />
                   <Pin Id="U3ZhKVeV1YKPBtGVpfWzQa" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="309,457,124,26" Id="FCFglDGf9lTLn4TRbi4Xjy">
-                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequest" LastDependency="RestSharp.dll">
+                  <p:NodeReference LastCategoryFullName="RestSharp.RestRequestExtensions" LastDependency="RestSharp.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RestRequestExtensions" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="AddOrUpdateParameter" />
                     <PinReference Kind="InputPin" Name="Parameter" />
-                    <CategoryReference Kind="AssemblyCategory" Name="RestRequest" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="GeP9lPHwyCtLWsLqu5K3GQ" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Dh1zEYcsiw7PZ7EmaozuNy" Name="Parameter" Kind="InputPin" />
                   <Pin Id="GEvcFpkbJOwP2MFbAktas1" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Jb2faFz5TdoOlNRzgcwedd" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="428,419,65,26" Id="SeaJ1CJrrxHMNoLBsLfsSn">
-                  <p:NodeReference LastCategoryFullName="RestSharp.Parameter" LastDependency="RestSharp.dll">
+                <Node Bounds="428,419,74,26" Id="SeaJ1CJrrxHMNoLBsLfsSn">
+                  <p:NodeReference LastCategoryFullName="RestSharp.QueryParameter" LastDependency="RestSharp.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="QueryParameter" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="MSQzeQSWXzpLFcyIoVQp1m" Name="Name" Kind="InputPin" DefaultValue="lon">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -8210,15 +8174,10 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="BSjwHyNxGFzP6AOYcnUQCh" Name="Value" Kind="InputPin" />
-                  <Pin Id="FaD9KutUgiYQE1PsQOlIoU" Name="Type" Kind="InputPin" DefaultValue="QueryString">
-                    <p:TypeAnnotation LastCategoryFullName="RestSharp" LastDependency="RestSharp.dll">
-                      <Choice Kind="TypeFlag" Name="ParameterType" />
-                    </p:TypeAnnotation>
-                  </Pin>
                   <Pin Id="UhQRNujRsQXOxzY2HAQ4IQ" Name="Encode" Kind="InputPin" />
                   <Pin Id="N9OWcyGq5CRLzn9fxu9GkL" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="JfhwbIq4XmXLehlEmeV3LA" Bounds="311,584" />
+                <ControlPoint Id="JfhwbIq4XmXLehlEmeV3LA" Bounds="225,590" />
                 <Link Id="LyFvTZRXyU3OOOeaEbqHXU" Ids="HWiJf9MOvXRNXSAUvLjM7K,BXxBZgx92SqLZ6hGXG3q29" />
                 <Link Id="HGwsEyKHF6ELJT4pwwoFzj" Ids="IyKCosQg6s2M2PQpPlsHbt,HWiJf9MOvXRNXSAUvLjM7K" IsHidden="true" />
                 <Link Id="DoGRTWTGHCrMgpwW6g1EJw" Ids="Uyu4RPpphIsL7A6LToTvdy,RKMzSAnKYDHQbgmEmVAOp4" IsHidden="true" />
@@ -8234,7 +8193,7 @@
                 <Link Id="GcIOlD9ujrLLzyC0A5vEEq" Ids="UZ4O6byqzOmPls2AMKNvhz,RPQE1kDiS6WQbbkbpK3J7N" />
                 <Link Id="AMCXHZG5GGDQRqduJvfV7M" Ids="JpgbNoaW5LPM0v9ijvGyvS,JfhwbIq4XmXLehlEmeV3LA" />
                 <Link Id="V6OCRfxtD2fN6ljlzCCSUp" Ids="JfhwbIq4XmXLehlEmeV3LA,LvhBTpYaJJnQKQmJo3evw3" IsHidden="true" />
-                <ControlPoint Id="P9nz9NJLzVQLchy7tHHoxX" Bounds="311,239" />
+                <ControlPoint Id="P9nz9NJLzVQLchy7tHHoxX" Bounds="311,131" />
                 <Link Id="LgsFLfKRZWeOjuEMNXP4VR" Ids="P9nz9NJLzVQLchy7tHHoxX,AIyALNTUH3lMfOpKuE3lJM" />
                 <Link Id="MbqYMPQJUhdLks2xXi1SQG" Ids="BxnazNminqXLGwLihr7kTP,P9nz9NJLzVQLchy7tHHoxX" IsHidden="true" />
                 <Pin Id="IyKCosQg6s2M2PQpPlsHbt" Name="Air Pollution Client" Kind="InputPin" Bounds="316,584" />
@@ -8310,21 +8269,19 @@
                       <Pin Id="Et2c95mPR5sNoNj1FgCuGY" Name="Longitude" Kind="InputPin" />
                       <Pin Id="GeEwc1iVTAoLDe55vTQ3UF" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="285,571,83,26" Id="M3T6jryM2eSOUG0M1WigDx">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="285,571,83,19" Id="M3T6jryM2eSOUG0M1WigDx">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="UnZQx3TqIo8LJkzg3A0dPT" Name="Input" Kind="StateInputPin" />
                       <Pin Id="NNVpzyIo6NBPW8zYmSwVDY" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="LHNHVjdcY4DL6axPRsRzLQ" Name="Content" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="285,622,71,26" Id="BMvvYN7FZzhLZdCBbIXLnE">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="285,622,71,19" Id="BMvvYN7FZzhLZdCBbIXLnE">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="OL35D6vEEvENV8qxNSYK0Z" Name="Input" Kind="StateInputPin" />
                       <Pin Id="QqzfSdfAwJPNc0hSb8EkBn" Name="Output" Kind="StateOutputPin" />
@@ -8505,8 +8462,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="IGo2gO0brDyMDhLe89O4OP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="QiIPcLECYKoOKAJgXBSLwf" Name="Message" Kind="InputPin" />
                   <Pin Id="BAR6CutvbwkMfayBjjPCnm" Name="Send" Kind="InputPin" />
+                  <Pin Id="VzwiFb7wHdTNIJMDyL0ULF" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="NKkGcLyaM6bMk496xGO196" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="248,422,82,19" Id="FLrwEbQcUubLr9uHQ1XjIh">
@@ -8514,6 +8473,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="MxebzGeGEhKOhTlcBSZc8o" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="QI1jQ4q7nzLPW8sFI9QaIF" Name="Value" Kind="InputPin" />
                   <Pin Id="QEiaWde6UlNNukoFDbSoKn" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -8523,8 +8483,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="FFft49l7YrqMAbSAaLSazn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="HSZSYTNNbsqOwOvk8Nhcct" Name="Messages" Kind="InputPin" />
                   <Pin Id="P6p8IWpGfZfL1ESlTDPFrO" Name="Reset" Kind="InputPin" />
+                  <Pin Id="UHnfZdkODeOL0ArtcwsCHX" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="LSDAJIjDGHlLEPcx9Qokfh" Name="Result" Kind="OutputPin" />
                   <Patch Id="G43f5usHxpRMl5cjTGgpGQ" ManuallySortedPins="true">
                     <Patch Id="MbipLh6sFLqNTqa8nYFjCc" Name="Create" ManuallySortedPins="true" />
@@ -8621,12 +8583,13 @@
                 <ControlPoint Id="APBcq8OUx7BL0w8UefYlpk" Bounds="372,586" />
                 <ControlPoint Id="PMDUySDPPU0Of2aORS3Jza" Bounds="412,627" />
                 <ControlPoint Id="SLUy0ocbDyzPEDZHtttUHc" Bounds="452,655" />
-                <Node Bounds="248,1025,131,150" Id="VGw5TNNzKFXQMfRu4MqdxV">
+                <Node Bounds="248,1025,142,123" Id="VGw5TNNzKFXQMfRu4MqdxV">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Where" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="N7qpjhQbwVnO7039J3F4PP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="BtU8VZdtC4lNmtDlmetJcn" Name="Value" Kind="InputPin" />
                   <Pin Id="OinIkp4ji3gL1p1o1sVc5m" Name="Result" Kind="OutputPin" />
                   <Pin Id="U1GbSOziKXtPKBCw6S6Jyi" Name="Changed" Kind="OutputPin" />
@@ -8634,12 +8597,11 @@
                     <Pin Id="AE9IzhLNS6GNGbQIDYtAIC" Name="Input" Kind="InputPin" />
                     <Pin Id="KG7kotCPEhqO6ZTYojk4rX" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="HqbntDm4PhIMF8npRMaWTK" Bounds="262,1033" />
-                    <ControlPoint Id="NynlAWSb4edOP1FmZ0iTKt" Bounds="328,1168" />
-                    <Node Bounds="260,1061,71,26" Id="E5L1S3cnURqPs3KxvgbfU5">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="NynlAWSb4edOP1FmZ0iTKt" Bounds="339,1141" />
+                    <Node Bounds="260,1061,71,19" Id="E5L1S3cnURqPs3KxvgbfU5">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="HbjQmojVvzpNbz38icCx5C" Name="Input" Kind="StateInputPin" />
                       <Pin Id="RnYUZtRiXNkLdtQT4X2IFM" Name="Output" Kind="StateOutputPin" />
@@ -8647,12 +8609,13 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="631,1025,131,142" Id="EUdAtpQI2KcQKmakxZ7GQE">
+                <Node Bounds="631,1025,142,132" Id="EUdAtpQI2KcQKmakxZ7GQE">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="Where" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="KsEk4U7xhMzPgP5leur4Ge" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="J26Xg2pX4LhQcC2KYsHxTp" Name="Value" Kind="InputPin" />
                   <Pin Id="SFs47AN0UIQQUi1Loqa39k" Name="Result" Kind="OutputPin" />
                   <Pin Id="B1sbSrm2hOXPkRc28kZ5Ov" Name="Changed" Kind="OutputPin" />
@@ -8660,18 +8623,17 @@
                     <Pin Id="Nnh6AYW1GB3QcxLam3Nb0E" Name="Input" Kind="InputPin" />
                     <Pin Id="V79TPQPNsLlQUetc9jrTCJ" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="FtrhyFzG6EJL5wyBMpHxnE" Bounds="645,1033" />
-                    <ControlPoint Id="Ff4TdUYeGOCOnmwMxqlH71" Bounds="711,1160" />
-                    <Node Bounds="643,1061,71,26" Id="MJEPe9drlUBLNCblOXZdFu">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="Ff4TdUYeGOCOnmwMxqlH71" Bounds="722,1150" />
+                    <Node Bounds="643,1061,71,19" Id="MJEPe9drlUBLNCblOXZdFu">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="IsSuccessful" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="PqbnN15WLMuNkDRoO8wwIj" Name="Input" Kind="StateInputPin" />
                       <Pin Id="JhUZrDSq0LhNazuFCfyWgz" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="CdwRTAljtpvOSo320KQ6eW" Name="Is Successful" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="709,1110,37,19" Id="RDzOnExOHJkLPGRSmz4HPr">
+                    <Node Bounds="720,1100,37,19" Id="RDzOnExOHJkLPGRSmz4HPr">
                       <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -8682,14 +8644,16 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="248,1255,256,202" Id="NBHbqQbCB4MMSnqW4i2NRn">
+                <Node Bounds="248,1255,253,202" Id="NBHbqQbCB4MMSnqW4i2NRn">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="COWljsXeCtVL0hhanvUTL8" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VlbdTqVWJjHOM5meWjKGKf" Name="Messages" Kind="InputPin" />
                   <Pin Id="NE4MpGuJDuENgpCxssWvnV" Name="Reset" Kind="InputPin" />
+                  <Pin Id="QttPEIXSUKvQcLvVyNdYYI" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="LvdrJ4iLvYuMgOWu3RBNFv" Name="Result" Kind="OutputPin" />
                   <Patch Id="NmLcKn0wZvkNHUHSBqgz6P" ManuallySortedPins="true">
                     <Patch Id="EjVR7caTs9CNvhAEaPRmmq" Name="Create" ManuallySortedPins="true" />
@@ -8698,8 +8662,8 @@
                       <Pin Id="A4mO2V0BQo5LuXOoBiLdFi" Name="Output" Kind="OutputPin" />
                     </Patch>
                     <ControlPoint Id="BtShMxVqE5DQBf1c7dnnmA" Bounds="262,1263" />
-                    <ControlPoint Id="ElGpwODWwRpOh0PIOKCpua" Bounds="325,1420" />
-                    <Node Bounds="323,1327,63,26" Id="HUVFXJMukqVNThmYHqIerC">
+                    <ControlPoint Id="ElGpwODWwRpOh0PIOKCpua" Bounds="339,1423" />
+                    <Node Bounds="337,1330,63,26" Id="HUVFXJMukqVNThmYHqIerC">
                       <p:NodeReference LastCategoryFullName="System.XML" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ParseJSON" />
@@ -8717,11 +8681,10 @@
                       </Pin>
                       <Pin Id="Cd7LZINE3tRMhSCb7doQK1" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="260,1284,68,26" Id="VEPxLETOupcMYxQytOLFen">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <Node Bounds="260,1284,68,19" Id="VEPxLETOupcMYxQytOLFen">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="RoPrxan37VHO8kTrIqZxMn" Name="Input" Kind="StateInputPin" />
                       <Pin Id="Kva7ZMPRLasOHqH0XwpmEi" Name="Output" Kind="StateOutputPin" />
@@ -8757,7 +8720,7 @@
                       <Pin Id="PIOsaTKQtRxNyEeEmBasB9" Name="Data" Kind="InputPin" DefaultValue="False" />
                       <Pin Id="GU9t2HYGoA7NAoxbjNRi81" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="323,1376,152,19" Id="FQisrjAYNKPLyH86IzLmue">
+                    <Node Bounds="337,1379,152,19" Id="FQisrjAYNKPLyH86IzLmue">
                       <p:NodeReference LastCategoryFullName="IO.OpenWeather.AirPollution.AirPollutionApiResponse" LastDependency="VL.OpenWeather.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ParseAirPollutionApiResponse" />
@@ -8767,14 +8730,16 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="631,1252,229,221" Id="S2raYRRNy5iMm7E2hThsW9">
+                <Node Bounds="631,1252,243,217" Id="S2raYRRNy5iMm7E2hThsW9">
                   <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ProcessAppFlag" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="BTB6Q6acpRCOOU4cGzdJRl" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="BTJqxNlzpysMoLXCoSH1Hf" Name="Messages" Kind="InputPin" />
                   <Pin Id="GY0wGNzDRAGOdeWY6yThjK" Name="Reset" Kind="InputPin" />
+                  <Pin Id="HKhmVfOZu16PDg9TkMAFkf" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="T3EUoJzngkwOGzi2TPWglL" Name="Result" Kind="OutputPin" />
                   <Patch Id="QkgsJIXiCTNPKcqpANgKcz" ManuallySortedPins="true">
                     <Patch Id="HyBrk9IZemIQDQhhUvOgXv" Name="Create" ManuallySortedPins="true" />
@@ -8783,18 +8748,17 @@
                       <Pin Id="JeLH3ZQ8JQBQJfKyXx4rKD" Name="Output" Kind="OutputPin" />
                     </Patch>
                     <ControlPoint Id="UMCOYvaYvfELD9fMs4qhn1" Bounds="645,1260" />
-                    <ControlPoint Id="IcN5gwhrhKeMkDSo9zaO30" Bounds="805,1466" />
-                    <Node Bounds="643,1281,68,26" Id="NRTJKq1hqjXMmlJuo21aUT">
-                      <p:NodeReference LastCategoryFullName="RestSharp.IRestResponse" LastDependency="RestSharp.dll">
+                    <ControlPoint Id="IcN5gwhrhKeMkDSo9zaO30" Bounds="819,1457" />
+                    <Node Bounds="643,1281,68,19" Id="NRTJKq1hqjXMmlJuo21aUT">
+                      <p:NodeReference LastCategoryFullName="RestSharp.RestResponseBase" LastDependency="RestSharp.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Content" />
-                        <CategoryReference Kind="AssemblyCategory" Name="IRestResponse" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="LEGoEbS2ePhMTJlpB9xBp2" Name="Input" Kind="StateInputPin" />
                       <Pin Id="Rwdporli0MwMS7L63MnsWk" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="NSl6mXMZx9tLbIe94Y6IcE" Name="Content" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="706,1329,102,19" Id="AAWjGHw01D8PvbxYukgLpf">
+                    <Node Bounds="720,1320,102,19" Id="AAWjGHw01D8PvbxYukgLpf">
                       <p:NodeReference LastCategoryFullName="IO.OpenWeather.Utils" LastDependency="VL.OpenWeather.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ParseErrorMessage" />
@@ -8843,6 +8807,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="LsMDBUYV0FsNr3emplxQha" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DJ7ulcBroZlNNqbwRtGK6q" Name="Data" Kind="InputPin" />
                   <Pin Id="T5YVEE0OrDWOqFY5N9FntH" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -8862,6 +8827,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="CRdHv9fJXv9MqQLWQvecUN" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="JmvlqrkdtfeOkyTZ0zB2gV" Name="Data" Kind="InputPin" />
                   <Pin Id="EJmjoew3k0VMLaB2RBMy3P" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -8881,6 +8847,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="SXb5QzXGKHJP1YTa6hoi0V" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VnOBi3re5OYLvRB2mLnfcT" Name="Data" Kind="InputPin" />
                   <Pin Id="MZCYMhSOcVrP08lXtZqOCX" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -9140,6 +9107,7 @@
                           <CategoryReference Kind="RecordType" Name="AirPollutionApiResponse" />
                           <Choice Kind="OperationCallFlag" Name="Create" />
                         </p:NodeReference>
+                        <Pin Id="ICwMahaBRdHOJ74EB0snJS" Name="Node Context" Kind="InputPin" IsHidden="true" />
                         <Pin Id="RZK51wApYzONqrskV4Gzd2" Name="Coordinates" Kind="InputPin" />
                         <Pin Id="BIvdh8bEv8yLuTykJWox5X" Name="List" Kind="InputPin" />
                         <Pin Id="P9m2BTwBFaROhQRPHkK5dO" Name="Output" Kind="StateOutputPin" />
@@ -9285,24 +9253,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Q4sVXpZKxErPXfRSh4230s" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
   <PlatformDependency Id="O0xlpfB6f4YNjK96wHUb8v" Location="mscorlib" />
   <PlatformDependency Id="IemhgVeTFIWOod06ET9T7r" Location="./src/VL.OpenWeather/bin/Release/netstandard2.0/VL.OpenWeather.dll" />
-  <NugetDependency Id="RkC6KZFBYRjLDJhcNJqbQw" Location="RestSharp" Version="106.15.0" />
-  <PlatformDependency Id="REj753TzupqO1EBWWHJNeR" Location="mscorlib" />
-  <PlatformDependency Id="DRECgIrl2H9Mdvwxmw5czH" Location="mscorlib" />
-  <PlatformDependency Id="D1sL23G7pYtOhCE7iugk8V" Location="mscorlib" />
-  <PlatformDependency Id="MzWwravtSpGMcnAbs5pLYW" Location="mscorlib" />
-  <PlatformDependency Id="IEaTaVUhBsDLasKqSrcfTb" Location="mscorlib" />
-  <PlatformDependency Id="VHRvvEoW7cJLksb1lxu8mV" Location="mscorlib" />
-  <PlatformDependency Id="IJ4GSfMY9TSOQg7imoMLJn" Location="mscorlib" />
+  <NugetDependency Id="RkC6KZFBYRjLDJhcNJqbQw" Location="RestSharp" Version="114.0.0" />
   <NugetDependency Id="OpG0Kw56RX5NEJvKT97Aue" Location="VL.OpenWeather" Version="0.0.0" />
-  <PlatformDependency Id="C2FbAcgRNTFMexCLAwxqJU" Location="mscorlib" />
-  <PlatformDependency Id="Rv7X0bIL3yDQZ2fo16oOKB" Location="mscorlib" />
-  <PlatformDependency Id="Vurnn71bKX0MubNbXWcSwP" Location="mscorlib" />
-  <PlatformDependency Id="PlmaSgwx8q3QXrnNjiyqZX" Location="mscorlib" />
-  <PlatformDependency Id="G39bV7NlfkQOnAoH94vhkj" Location="mscorlib" />
-  <PlatformDependency Id="OeUvZPv6JyHOBtH5P2JzAy" Location="mscorlib" />
-  <PlatformDependency Id="T8BqD5muCPIOIbqMdaw5xx" Location="mscorlib" />
-  <PlatformDependency Id="Ti9FZBcwdcoOK6iM3SybzZ" Location="mscorlib" />
 </Document>
