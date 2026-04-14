@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2023.5.2-0020-gc041842068" Version="0.128">
-  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VWdgFyu0uyvMvP10UEP195" LanguageVersion="2025.7.1" Version="0.128">
+  <NugetDependency Id="BWZvPMZ1pACMV6Lwvk3uBt" Location="VL.CoreLib" Version="2025.7.1" />
   <Patch Id="S9iuenDrqEzNzQHPQcl868">
     <Canvas Id="JRcIne9xPwkMXo3eqzNs16" DefaultCategory="IO.OpenWeather" CanvasType="FullCategory">
       <Canvas Id="LVepfi3fWKJPugJvx4BVwc" Name="Internal" Position="431,171">
@@ -40,6 +40,7 @@
                   <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="K5L1TzlZSCVPDov3mwVuQ0" Name="Input" Kind="StateInputPin" />
+                <Pin Id="KWYa1Z2ylDNPRC0RqieGyV" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="D2Exik5MPijMTi0WK56r0N" Name="Local Date Time" Kind="OutputPin" />
               </Node>
               <Link Id="J5aJwrFTgQOPhpEZUCClpx" Ids="UjdiML9hkR1PlgpZfGuEJc,GsHX1UH8nP8Opj3d30eBVg" />
@@ -357,6 +358,7 @@
                     <Choice Kind="OperationCallFlag" Name="Split" />
                   </p:NodeReference>
                   <Pin Id="Sx1X4JuGWw5QHapZ0hw67r" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Ery87csVdvTPpilYU7YdBr" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="E9r60raa0dCLjr7QnnIo55" Name="Datetime" Kind="OutputPin" />
                   <Pin Id="KfIWe28qe8eOoBqxMJK6hW" Name="Sunrise" Kind="OutputPin" />
                   <Pin Id="PnokSmHO7CeLQ0oEjrIFPc" Name="Sunset" Kind="OutputPin" />
@@ -403,6 +405,7 @@
                         <CategoryReference Kind="RecordType" Name="CurrentAndForecastWeatherResponse" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="PwoGq0OHZybMm9vowVixyM" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="AzpWVZqmstlP9ltJiiNa9r" Name="Latitude" Kind="InputPin" />
                       <Pin Id="HRDI7aa5UGrPhZPRBsGlFv" Name="Longitude" Kind="InputPin" />
                       <Pin Id="Bkv2oxN4PZOP1ODYmEZ802" Name="Timezone" Kind="InputPin" />
@@ -932,6 +935,7 @@
                         <CategoryReference Kind="RecordType" Name="CurrentWeather" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="Vd33R61x1ZWP7wbbC3gH71" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="LwI8VCc7GBKNriFs4gZQjS" Name="Datetime" Kind="InputPin" />
                       <Pin Id="EK97hi4vFPMPvG2K1Kkn0W" Name="Sunrise" Kind="InputPin" />
                       <Pin Id="VNxC1qNnFnsM0NGp1brPqg" Name="Sunset" Kind="InputPin" />
@@ -1439,6 +1443,7 @@
                         <CategoryReference Kind="RecordType" Name="Weather" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="CWdBNGRkuTGOkyKTDKeU0h" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="H2U1RdLF3TtNn6r8avAnPv" Name="Id" Kind="InputPin" />
                       <Pin Id="PfFkDJCnSOTQPSw9h0CavA" Name="Main" Kind="InputPin" />
                       <Pin Id="JyGagl3GDnnOvnYv42lOgv" Name="Description" Kind="InputPin" />
@@ -1661,6 +1666,7 @@
                         <CategoryReference Kind="RecordType" Name="MinutelyReport" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="C6JNakA0EutNYQAReiVNs7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="Gn3yNXKCXUlLa594zY3q0G" Name="Datetime" Kind="InputPin" />
                       <Pin Id="GTFDTwcM3PsLlk2VZObsNl" Name="Precipitation" Kind="InputPin" />
                       <Pin Id="SPKi13KsHKfPFDrSrgFwtX" Name="Output" Kind="StateOutputPin" />
@@ -1843,6 +1849,7 @@
                         <CategoryReference Kind="RecordType" Name="HourlyReport" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="RltbysUs1phMbEdvWyg0LY" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="QQWeFHNuKq0PcA4rj9dPGL" Name="Datetime" Kind="InputPin" />
                       <Pin Id="HThiALhnxUsM3AimLEBu9J" Name="Temperature" Kind="InputPin" />
                       <Pin Id="LaImryefczULXsy2MYVADm" Name="Feels Like" Kind="InputPin" />
@@ -2430,6 +2437,7 @@
                         <CategoryReference Kind="RecordType" Name="DailyReport" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="RCJIibwjsKiQXhtIZ87rN6" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="DVyrEKTJkrkMw41Yfdhacb" Name="Datetime" Kind="InputPin" />
                       <Pin Id="HBCQt9k72zJQFv29xOXANc" Name="Sunrise" Kind="InputPin" />
                       <Pin Id="HQqfcVatKc8NMzAsKl2XD0" Name="Sunset" Kind="InputPin" />
@@ -3185,6 +3193,7 @@
                         <CategoryReference Kind="RecordType" Name="Temperature" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="H7Bb3kG4g3ZL2NxMb18bO7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="IIHAdGZV3EPL3JS5xwjUbH" Name="Day" Kind="InputPin" />
                       <Pin Id="Ch4pT7NQp3gMLMtXOlTrgg" Name="Minimum" Kind="InputPin" />
                       <Pin Id="A3FT4R5dor2MRuOzeh7KKt" Name="Maximum" Kind="InputPin" />
@@ -3415,6 +3424,7 @@
                         <CategoryReference Kind="RecordType" Name="FeelsLike" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="SNSqeKQ0nQoLElGur0v917" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="KvTOMVH5zrJLLMfPm1NVqj" Name="Day" Kind="InputPin" />
                       <Pin Id="JbXIHP2vtX8LodaqAQ9gvc" Name="Night" Kind="InputPin" />
                       <Pin Id="PXT7SjkTpaLPt7sf3vkCso" Name="Evening" Kind="InputPin" />
@@ -3611,6 +3621,7 @@
                         <CategoryReference Kind="RecordType" Name="Alert" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="CihYldbFzqiLLQ9KXZecSJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="QxVMLBgtSwvOjHrT8TMpBZ" Name="Sender Name" Kind="InputPin" />
                       <Pin Id="ECVdPFmWH1KN8C66fcoNDL" Name="Event" Kind="InputPin" />
                       <Pin Id="HZ2GA5zkYtLP7c29MfdzG5" Name="Start" Kind="InputPin" />
@@ -4080,8 +4091,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="HgdxHST7laKNfHz7Dxf4FQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Logxcy0GXfaO3Yz0SQjEZk" Name="Message" Kind="InputPin" />
                   <Pin Id="TorIc25NDYHN444jAGntaG" Name="Send" Kind="InputPin" />
+                  <Pin Id="B7CqpnGq1UoOD9FNBUG2wn" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IX5L7xNeKltOSVEpCqAOH0" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="251,385,82,19" Id="ToOL8GCoNOXOI3qZrliwOl">
@@ -4089,6 +4102,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="It0SZQ2qbCULWODgFpjGZ4" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="P2GNjJhffz6N7vRlFmwPlE" Name="Value" Kind="InputPin" />
                   <Pin Id="O1xM3GAHZEjMAgcaqxraBl" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -4098,8 +4112,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="Mm9mfmJpTsMMSpInDMqqMV" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UgaKmD93iSvN7qPFaGRPl1" Name="Messages" Kind="InputPin" />
                   <Pin Id="TNhOzLC2L20O7legZl9KMD" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Lcl3Ag4JhhULn3lpPmxM4w" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="HSxwSQKkXceLRLitgpeYQv" Name="Result" Kind="OutputPin" />
                   <Patch Id="GgDqAlUbrP4OeCn5cmIJpe" ManuallySortedPins="true">
                     <Patch Id="OFD1B4Ofb6mLC0fkFNabV8" Name="Create" ManuallySortedPins="true" />
@@ -4208,6 +4224,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="QNepRLOgFYrOBCyvto2GBc" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="LLZQ7YlMWVrLRYm9bcISKX" Name="Value" Kind="InputPin" />
                   <Pin Id="KJvohMnwb2eQXYshaktbmR" Name="Result" Kind="OutputPin" />
                   <Pin Id="BXbCPtpTC2VPf36ETOjcTP" Name="Changed" Kind="OutputPin" />
@@ -4234,6 +4251,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="Pfj9QgiRab4LM61FQ95K28" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="IvZG581PjVPLNag5aOmgVM" Name="Value" Kind="InputPin" />
                   <Pin Id="EHOpoSnXKM9PY0xPEN63Mn" Name="Result" Kind="OutputPin" />
                   <Pin Id="TsiFr3anIBePasT9mbkqvD" Name="Changed" Kind="OutputPin" />
@@ -4269,8 +4287,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="TePZyoVmWcINaoHgmh1eC3" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="NwxiXKswJijPt1Rq8eXiAT" Name="Messages" Kind="InputPin" />
                   <Pin Id="Ahh4sYFhwVqO0OzpygrEd7" Name="Reset" Kind="InputPin" />
+                  <Pin Id="C1uJDznlTkeMg6yXRFWWm5" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="GST2Z8TJ2kIN3B4WQVFGbn" Name="Result" Kind="OutputPin" />
                   <Patch Id="BgdszjKxvprOcF0zAxyNaH" ManuallySortedPins="true">
                     <Patch Id="SDNbESMV6IQOuFsjpllWup" Name="Create" ManuallySortedPins="true" />
@@ -4354,8 +4374,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="DKLkCWR3yzUPK7XeCFMHju" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="TaKT6YDQQaFNdpY9VdUwlv" Name="Messages" Kind="InputPin" />
                   <Pin Id="L4lIVY6p65BPb8HjDVRJEw" Name="Reset" Kind="InputPin" />
+                  <Pin Id="IqNMGLAxOOTLh3f4xvnOlJ" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IYvgYvMOlFOP8J3vfoUTxA" Name="Result" Kind="OutputPin" />
                   <Patch Id="EBUrzfRnG1bQBZatEdhN48" ManuallySortedPins="true">
                     <Patch Id="L6HIaOc919TLdO820vw8vH" Name="Create" ManuallySortedPins="true" />
@@ -4424,6 +4446,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="Njh65aAfsrmOGVAUY3Pm61" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="PhD4cQbzDVGNurdheV0Wil" Name="Data" Kind="InputPin" />
                   <Pin Id="Ea8GoblTgOKPLd2ZBl58Fv" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -4443,6 +4466,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="Q6jnJeXa1wwNNPl7yV3jFU" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="RBouTyLdoaULbdKRUXmnu4" Name="Data" Kind="InputPin" />
                   <Pin Id="BtCqkNT0i9KL6NKcd7DvNm" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -4462,6 +4486,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="CT2LHf2VhsAM5Vn0ve7buD" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="SnO1XNcKuGGMKPvNqWaaon" Name="Data" Kind="InputPin" />
                   <Pin Id="DjxoVBHlztoNAkdHsvQOrl" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -5359,6 +5384,7 @@
                         <CategoryReference Kind="RecordType" Name="WeatherHistoryResponse" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                       </p:NodeReference>
+                      <Pin Id="Db51pdvAWHuNmidVyql6Br" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="SHR75BtvsXJLQMidNstXG3" Name="Latitude" Kind="InputPin" />
                       <Pin Id="QkNVbhlNJZGQMsQkJhM5gA" Name="Longitude" Kind="InputPin" />
                       <Pin Id="SG21K2wLLI9MFIlJlNSXJx" Name="Timezone" Kind="InputPin" />
@@ -5527,8 +5553,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="HZaqsbOAMjdPwOiFCyuSSc" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="SFEbPPNATLoQAGC8JU5Wyb" Name="Message" Kind="InputPin" />
                   <Pin Id="QlhaxncfYf4OxyguO2tkO4" Name="Send" Kind="InputPin" />
+                  <Pin Id="HD4oUjJPHzaMfQ1LC0yXn5" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="MSOk9pFJ7hzPvimzGMEC4u" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="248,422,82,19" Id="NYOPqzuSW1lOJJDiE3cmNZ">
@@ -5536,6 +5564,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="EPZrqW0VEieQWr70S916Ie" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UpiUXlLUDIaLTg4vPP7F9I" Name="Value" Kind="InputPin" />
                   <Pin Id="IOWuXkD4TV0LW69co3U462" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -5545,8 +5574,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="VEhQRAlXSEvNjWWo4LYEuR" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="TQo7CzE3iv6MjAz1Rjwl16" Name="Messages" Kind="InputPin" />
                   <Pin Id="Il2HzlTX6ylMNMfao5vadW" Name="Reset" Kind="InputPin" />
+                  <Pin Id="FW61J4io4oZPIRN3pMj3iR" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="TmwyiJ5hgHwMKkAugIHGVV" Name="Result" Kind="OutputPin" />
                   <Patch Id="DFfymVhcvjCOQ2kQ6zSlGH" ManuallySortedPins="true">
                     <Patch Id="Fj1HHEwO5pkPExJGMkWCNh" Name="Create" ManuallySortedPins="true" />
@@ -5653,6 +5684,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="EK7ZlkApTIXOpuKs6QjDnz" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UaSbKhLhRziMWjUP7yvo0J" Name="Value" Kind="InputPin" />
                   <Pin Id="BVm7lm6Y1bLO8FtXzQKX2U" Name="Result" Kind="OutputPin" />
                   <Pin Id="BQ2pTY2jaJjNd67kyQEmph" Name="Changed" Kind="OutputPin" />
@@ -5679,6 +5711,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="RypS3lJiDCnOtBsYIqFEdn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="HEw4SvgdLeYLOX3seHEnzz" Name="Value" Kind="InputPin" />
                   <Pin Id="InAbLMqhcOWMZOT5vo9Kcu" Name="Result" Kind="OutputPin" />
                   <Pin Id="Fm60GuFytdIOsHRRG9Cn4k" Name="Changed" Kind="OutputPin" />
@@ -5714,8 +5747,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="CtpN2T5c06iMjtIQ3mcsTh" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DAOq8Yw6jvvOP6yA6ELKqT" Name="Messages" Kind="InputPin" />
                   <Pin Id="AaaxLqkJWYgO6p77JT18ts" Name="Reset" Kind="InputPin" />
+                  <Pin Id="PfZYgyNriSqPG0IwSnx72B" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IsWuQvb20eWPdYv2FJ0lcw" Name="Result" Kind="OutputPin" />
                   <Patch Id="ScqkT4OXHmVPpwnAo0OA5t" ManuallySortedPins="true">
                     <Patch Id="CcDDdZ2yoJLOyQsEx8SWBg" Name="Create" ManuallySortedPins="true" />
@@ -5799,8 +5834,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="ELklSJOV7JPPc4yjtQS6V3" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="EEtl5dOs0wyQVL51rceMmJ" Name="Messages" Kind="InputPin" />
                   <Pin Id="DgzeuDwDdT5PitXduTxyN6" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Pzj8nccOVOCNk8Hf8eCoWe" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="DHBCYqB8ZYcMD4yxrP5qfm" Name="Result" Kind="OutputPin" />
                   <Patch Id="C01picNzaM6PQagbvpLnM1" ManuallySortedPins="true">
                     <Patch Id="N8l6AAveII6QUbdafCHNIT" Name="Create" ManuallySortedPins="true" />
@@ -5869,6 +5906,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="SBZbWglrU1mOnRefRTNEXk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="EO32GLFXpk3M2NJmcY4frI" Name="Data" Kind="InputPin" />
                   <Pin Id="IpxIlxRtPiHNivfBzJ2v8S" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -5888,6 +5926,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="HkdobR3I5bPPV5SGsPfqQU" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="H0j1giwe2yGP4ty1Rc1BBM" Name="Data" Kind="InputPin" />
                   <Pin Id="MbkcIgnrPxOMrTsafnKbj5" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -5907,6 +5946,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="OJaVahgZiLEPKrXSEqar1z" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="LYsT6z80nMEPbMBhm0hodU" Name="Data" Kind="InputPin" />
                   <Pin Id="NOanFCoaGdAND181rm5ijX" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -6262,6 +6302,7 @@
                     <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="KmNiUQmYugvNPENKTFDvfS" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LxnVrqRuFv5P7ZNnGYGmpz" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Bp8oTe27ZeSPOiQNs9Vsts" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="IxP2Qs0RVTmPP4me3a4Esn" Ids="DBz4CG28afaLEwIkSeX9QK,KmNiUQmYugvNPENKTFDvfS" />
@@ -6568,6 +6609,9 @@
                 </p:NodeReference>
                 <Pin Id="L1p7PEDVd32NODlRr4QvG2" Name="Base Url" Kind="InputPin" DefaultValue="https://api.openweathermap.org/data/3.0/onecall" />
                 <Pin Id="JhvKbkFoRHBQCdgaQXHNt7" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="H9Q5bETCQhuPJQyfINZGGb" Name="Configure Rest Client" Kind="InputPin" />
+                <Pin Id="AEYBJC3jJ7JNLvibJBTgkr" Name="Configure Default Headers" Kind="InputPin" />
+                <Pin Id="APlcHbd0CK9OW1f2ajXqGg" Name="Configure Serialization" Kind="InputPin" />
               </Node>
               <ControlPoint Id="NkhrlZLPMmMLRslPYKiAd2" Bounds="197,250" />
               <Link Id="O0ru2Af6RJ3NKJYNrRzi0W" Ids="JhvKbkFoRHBQCdgaQXHNt7,NkhrlZLPMmMLRslPYKiAd2" />
@@ -6779,6 +6823,7 @@
                     <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="UEqvuK0TSKlOEEMcBcKzGj" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TborLeoKutBOD83Kc989Fy" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Bb4Q5VzF8HDPZ2Z2iKzdA8" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="AMuv65j0FsXMmoB3VRXgnp" Ids="BQWjIeo1SzVM9nX3B0ABCp,UEqvuK0TSKlOEEMcBcKzGj" />
@@ -6825,6 +6870,7 @@
                     <CategoryReference Kind="AssemblyCategory" Name="DateTimeOffset" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="T547BqsYXKFNrA8Wqxac5V" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DboqaqDvJJDQSoqFbUOfcS" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="KGoYjJwdSFOMvjIWrCLtuT" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="327,760,124,26" Id="QuGayFac4PmL57WWrDA02a">
@@ -7155,8 +7201,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="DRO0h5KsO8mMN5wF9t0wpl" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DKGViI6THuBOSxruxNw7Mu" Name="Message" Kind="InputPin" />
                   <Pin Id="BYThfluwzGPNcnnkd6kbUh" Name="Send" Kind="InputPin" />
+                  <Pin Id="QCbKrwfr26MLskYik5PYP3" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Qe1evhuqJ5tQJD75IcyZkL" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="248,422,82,19" Id="OT7iI0PnfS7NN8xnMQfv6V">
@@ -7164,6 +7212,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="Vy21jgtDtKpMkqOCvjHtiY" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="JSAu5lY6xJANsz0C8d6w2L" Name="Value" Kind="InputPin" />
                   <Pin Id="TOTB1ZcIuJ9OkDxyMiKt9I" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -7173,8 +7222,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="JyucTfJ95cWO7VPAwBsAae" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="KDd0bEQlJhSLokTrijrlr1" Name="Messages" Kind="InputPin" />
                   <Pin Id="AUCHdh9fN8PL8PIGy8OsgM" Name="Reset" Kind="InputPin" />
+                  <Pin Id="F7xELzd6G46LwdKpsMT3JE" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Qj02fxCP8xqPGo83MiwCtD" Name="Result" Kind="OutputPin" />
                   <Patch Id="DKiqL0sZeTDQbmbESSJ74H" ManuallySortedPins="true">
                     <Patch Id="CDbY3BqmsOmNvDWXKf8jbt" Name="Create" ManuallySortedPins="true" />
@@ -7279,6 +7330,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="PY9jPQiL6BWL2HXSNzmrsk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="ArVXOpfEsceP1F9XtjW0Ho" Name="Value" Kind="InputPin" />
                   <Pin Id="F3t1nTvrEgBNj2OX3rfaXZ" Name="Result" Kind="OutputPin" />
                   <Pin Id="OUMBspWYwWtNPWgkebTc2R" Name="Changed" Kind="OutputPin" />
@@ -7305,6 +7357,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="D7Kpb9RMYjcNwc3rYucryd" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="J2wiyf4x8TnL2bwgy8z0dv" Name="Value" Kind="InputPin" />
                   <Pin Id="BwwtcgbrrkMLaZkIMLohKA" Name="Result" Kind="OutputPin" />
                   <Pin Id="F9A3ATtBt0VN8o05G62Mxp" Name="Changed" Kind="OutputPin" />
@@ -7340,8 +7393,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="KkfrGGba0FmOpD1tn14GZk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="UTeKfcWWyndLAFGnR9AFzT" Name="Messages" Kind="InputPin" />
                   <Pin Id="AfiVGj9YAbOOfedCitIbBW" Name="Reset" Kind="InputPin" />
+                  <Pin Id="VrZorxgOUgFPhoUCa2nViQ" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="DijHNmASQjcP2QXcrg4tDJ" Name="Result" Kind="OutputPin" />
                   <Patch Id="BvzMuRtv9fVQRl4sYJJfgS" ManuallySortedPins="true">
                     <Patch Id="F48onGiuwgdP7uzazlJmac" Name="Create" ManuallySortedPins="true" />
@@ -7425,8 +7480,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="JwAva9OOf9zPgAgGZ7FhGk" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VuyBWKCcF2jNq3StQkBtuH" Name="Messages" Kind="InputPin" />
                   <Pin Id="TMGVKOGK9hINHlRRl0Zpd8" Name="Reset" Kind="InputPin" />
+                  <Pin Id="I8qOeQDnQfLPc0p0EyMIah" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="GdPkOboY4KULihRfwjORBD" Name="Result" Kind="OutputPin" />
                   <Patch Id="PkMr4eZfdSiO5S7FiDGrtJ" ManuallySortedPins="true">
                     <Patch Id="AxBGGyP5jWFO0AcpDM5gG9" Name="Create" ManuallySortedPins="true" />
@@ -7495,6 +7552,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="TzutKbdaO3cPf6KGuHFHtp" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="D1YbPzFvUA4OCiADwFocw4" Name="Data" Kind="InputPin" />
                   <Pin Id="QKJmno3DpSoPigmMAdiA4T" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -7514,6 +7572,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="Q1KF6GHEEwMMf8NGxrRAIl" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="MNNoTdbJxYpNXEdeFd8cp5" Name="Data" Kind="InputPin" />
                   <Pin Id="GzvqfekRQeLNt1UCrClPGN" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -7533,6 +7592,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="DL0URXvANkSP1LwiF6ZOxD" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="IozqjUYNyZZNdGF57bkZlz" Name="Data" Kind="InputPin" />
                   <Pin Id="K2KDgIt5ppoP8mk72av2fp" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -7753,6 +7813,9 @@
                 </p:NodeReference>
                 <Pin Id="Rw8yCWoUzHvMTzipZUzl6V" Name="Base Url" Kind="InputPin" DefaultValue="http://api.openweathermap.org/data/2.5/air_pollution" />
                 <Pin Id="C8Sr3MyMmAoOTYR6F8d98d" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="EleiUPZDgNJNEgk59pSeCF" Name="Configure Rest Client" Kind="InputPin" />
+                <Pin Id="RCVQ0t6t11ELjPK7CJ7deH" Name="Configure Default Headers" Kind="InputPin" />
+                <Pin Id="H3dL173zaClMsJuKq98lTV" Name="Configure Serialization" Kind="InputPin" />
               </Node>
               <ControlPoint Id="PWgV5lpGqVINshfEeSI4YO" Bounds="321,294" />
               <Link Id="BbxXa7IEgb6OIOACI28zkm" Ids="C8Sr3MyMmAoOTYR6F8d98d,PWgV5lpGqVINshfEeSI4YO" />
@@ -7818,6 +7881,7 @@
                       <CategoryReference Kind="RecordType" Name="AirPollutionMeasurement" />
                       <Choice Kind="OperationCallFlag" Name="Create" />
                     </p:NodeReference>
+                    <Pin Id="Kt8JQ2zhc5lLaA5JTnRmu2" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="DN5N1wXcFYQN13h4AWgZR0" Name="Air Quality Index" Kind="InputPin" />
                     <Pin Id="QrUCKPhBZZoNEkbOFnmosr" Name="CO" Kind="InputPin" />
                     <Pin Id="Dzu75UZZkblLsTTca3qLTO" Name="NO" Kind="InputPin" />
@@ -8505,8 +8569,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToObservable" />
                   </p:NodeReference>
+                  <Pin Id="IGo2gO0brDyMDhLe89O4OP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="QiIPcLECYKoOKAJgXBSLwf" Name="Message" Kind="InputPin" />
                   <Pin Id="BAR6CutvbwkMfayBjjPCnm" Name="Send" Kind="InputPin" />
+                  <Pin Id="VzwiFb7wHdTNIJMDyL0ULF" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="NKkGcLyaM6bMk496xGO196" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="248,422,82,19" Id="FLrwEbQcUubLr9uHQ1XjIh">
@@ -8514,6 +8580,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="ToBackground" />
                   </p:NodeReference>
+                  <Pin Id="MxebzGeGEhKOhTlcBSZc8o" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="QI1jQ4q7nzLPW8sFI9QaIF" Name="Value" Kind="InputPin" />
                   <Pin Id="QEiaWde6UlNNukoFDbSoKn" Name="Result" Kind="OutputPin" />
                 </Node>
@@ -8523,8 +8590,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="FFft49l7YrqMAbSAaLSazn" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="HSZSYTNNbsqOwOvk8Nhcct" Name="Messages" Kind="InputPin" />
                   <Pin Id="P6p8IWpGfZfL1ESlTDPFrO" Name="Reset" Kind="InputPin" />
+                  <Pin Id="UHnfZdkODeOL0ArtcwsCHX" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="LSDAJIjDGHlLEPcx9Qokfh" Name="Result" Kind="OutputPin" />
                   <Patch Id="G43f5usHxpRMl5cjTGgpGQ" ManuallySortedPins="true">
                     <Patch Id="MbipLh6sFLqNTqa8nYFjCc" Name="Create" ManuallySortedPins="true" />
@@ -8627,6 +8696,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="N7qpjhQbwVnO7039J3F4PP" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="BtU8VZdtC4lNmtDlmetJcn" Name="Value" Kind="InputPin" />
                   <Pin Id="OinIkp4ji3gL1p1o1sVc5m" Name="Result" Kind="OutputPin" />
                   <Pin Id="U1GbSOziKXtPKBCw6S6Jyi" Name="Changed" Kind="OutputPin" />
@@ -8653,6 +8723,7 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="KsEk4U7xhMzPgP5leur4Ge" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="J26Xg2pX4LhQcC2KYsHxTp" Name="Value" Kind="InputPin" />
                   <Pin Id="SFs47AN0UIQQUi1Loqa39k" Name="Result" Kind="OutputPin" />
                   <Pin Id="B1sbSrm2hOXPkRc28kZ5Ov" Name="Changed" Kind="OutputPin" />
@@ -8688,8 +8759,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="COWljsXeCtVL0hhanvUTL8" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VlbdTqVWJjHOM5meWjKGKf" Name="Messages" Kind="InputPin" />
                   <Pin Id="NE4MpGuJDuENgpCxssWvnV" Name="Reset" Kind="InputPin" />
+                  <Pin Id="QttPEIXSUKvQcLvVyNdYYI" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="LvdrJ4iLvYuMgOWu3RBNFv" Name="Result" Kind="OutputPin" />
                   <Patch Id="NmLcKn0wZvkNHUHSBqgz6P" ManuallySortedPins="true">
                     <Patch Id="EjVR7caTs9CNvhAEaPRmmq" Name="Create" ManuallySortedPins="true" />
@@ -8773,8 +8846,10 @@
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   </p:NodeReference>
+                  <Pin Id="BTB6Q6acpRCOOU4cGzdJRl" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="BTJqxNlzpysMoLXCoSH1Hf" Name="Messages" Kind="InputPin" />
                   <Pin Id="GY0wGNzDRAGOdeWY6yThjK" Name="Reset" Kind="InputPin" />
+                  <Pin Id="HKhmVfOZu16PDg9TkMAFkf" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="T3EUoJzngkwOGzi2TPWglL" Name="Result" Kind="OutputPin" />
                   <Patch Id="QkgsJIXiCTNPKcqpANgKcz" ManuallySortedPins="true">
                     <Patch Id="HyBrk9IZemIQDQhhUvOgXv" Name="Create" ManuallySortedPins="true" />
@@ -8843,6 +8918,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="LsMDBUYV0FsNr3emplxQha" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DJ7ulcBroZlNNqbwRtGK6q" Name="Data" Kind="InputPin" />
                   <Pin Id="T5YVEE0OrDWOqFY5N9FntH" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -8862,6 +8938,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="CRdHv9fJXv9MqQLWQvecUN" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="JmvlqrkdtfeOkyTZ0zB2gV" Name="Data" Kind="InputPin" />
                   <Pin Id="EJmjoew3k0VMLaB2RBMy3P" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -8881,6 +8958,7 @@
                     <CategoryReference Kind="ClassType" Name="Reference" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
+                  <Pin Id="SXb5QzXGKHJP1YTa6hoi0V" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VnOBi3re5OYLvRB2mLnfcT" Name="Data" Kind="InputPin" />
                   <Pin Id="MZCYMhSOcVrP08lXtZqOCX" Name="Output" Kind="StateOutputPin" />
                 </Node>
@@ -9140,6 +9218,7 @@
                           <CategoryReference Kind="RecordType" Name="AirPollutionApiResponse" />
                           <Choice Kind="OperationCallFlag" Name="Create" />
                         </p:NodeReference>
+                        <Pin Id="ICwMahaBRdHOJ74EB0snJS" Name="Node Context" Kind="InputPin" IsHidden="true" />
                         <Pin Id="RZK51wApYzONqrskV4Gzd2" Name="Coordinates" Kind="InputPin" />
                         <Pin Id="BIvdh8bEv8yLuTykJWox5X" Name="List" Kind="InputPin" />
                         <Pin Id="P9m2BTwBFaROhQRPHkK5dO" Name="Output" Kind="StateOutputPin" />
@@ -9285,24 +9364,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Q4sVXpZKxErPXfRSh4230s" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
   <PlatformDependency Id="O0xlpfB6f4YNjK96wHUb8v" Location="mscorlib" />
   <PlatformDependency Id="IemhgVeTFIWOod06ET9T7r" Location="./src/VL.OpenWeather/bin/Release/netstandard2.0/VL.OpenWeather.dll" />
-  <NugetDependency Id="RkC6KZFBYRjLDJhcNJqbQw" Location="RestSharp" Version="106.15.0" />
-  <PlatformDependency Id="REj753TzupqO1EBWWHJNeR" Location="mscorlib" />
-  <PlatformDependency Id="DRECgIrl2H9Mdvwxmw5czH" Location="mscorlib" />
-  <PlatformDependency Id="D1sL23G7pYtOhCE7iugk8V" Location="mscorlib" />
-  <PlatformDependency Id="MzWwravtSpGMcnAbs5pLYW" Location="mscorlib" />
-  <PlatformDependency Id="IEaTaVUhBsDLasKqSrcfTb" Location="mscorlib" />
-  <PlatformDependency Id="VHRvvEoW7cJLksb1lxu8mV" Location="mscorlib" />
-  <PlatformDependency Id="IJ4GSfMY9TSOQg7imoMLJn" Location="mscorlib" />
+  <NugetDependency Id="RkC6KZFBYRjLDJhcNJqbQw" Location="RestSharp" Version="114.0.0" />
   <NugetDependency Id="OpG0Kw56RX5NEJvKT97Aue" Location="VL.OpenWeather" Version="0.0.0" />
-  <PlatformDependency Id="C2FbAcgRNTFMexCLAwxqJU" Location="mscorlib" />
-  <PlatformDependency Id="Rv7X0bIL3yDQZ2fo16oOKB" Location="mscorlib" />
-  <PlatformDependency Id="Vurnn71bKX0MubNbXWcSwP" Location="mscorlib" />
-  <PlatformDependency Id="PlmaSgwx8q3QXrnNjiyqZX" Location="mscorlib" />
-  <PlatformDependency Id="G39bV7NlfkQOnAoH94vhkj" Location="mscorlib" />
-  <PlatformDependency Id="OeUvZPv6JyHOBtH5P2JzAy" Location="mscorlib" />
-  <PlatformDependency Id="T8BqD5muCPIOIbqMdaw5xx" Location="mscorlib" />
-  <PlatformDependency Id="Ti9FZBcwdcoOK6iM3SybzZ" Location="mscorlib" />
 </Document>
